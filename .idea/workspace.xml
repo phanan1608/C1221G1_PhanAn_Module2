@@ -19,14 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e9923e5-3faa-402b-b0e9-9603d33b2713" name="Default Changelist" comment="update ss2.thuc_hanh">
-      <change afterPath="$PROJECT_DIR$/src/ss2/thuc_hanh/thuc_hanh_1_is_prime/IsPrime.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss2/thuc_hanh/thuc_hanh_2_interest_calculator/InterestCalcultor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss2/thuc_hanh/thuc_hanh_3_greate_common_factor/GreateCommonFactor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/ss0_demo/thuc_hanh/thuc_hanh_1/Demo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss0_demo/thuc_hanh/thuc_hanh_1/Demo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ss0_demo/thuc_hanh/thuc_hanh_1/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss0_demo/thuc_hanh/thuc_hanh_1/Demo.java" afterDir="false" />
-    </list>
+    <list default="true" id="5e9923e5-3faa-402b-b0e9-9603d33b2713" name="Default Changelist" comment="update ss2.thuc_hanh" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -64,7 +57,10 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.JavaScript" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -202,6 +198,7 @@
       <workItem from="1644942566111" duration="1028000" />
       <workItem from="1644974434920" duration="854000" />
       <workItem from="1644984459862" duration="15046000" />
+      <workItem from="1645031066408" duration="227000" />
     </task>
     <task id="LOCAL-00001" summary="update thuc hanh">
       <created>1644943142091</created>
@@ -278,10 +275,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1644943601149" />
-    <state x="277" y="57" key="SettingsEditor" timestamp="1644942891012">
+    <state x="277" y="0" key="SettingsEditor" timestamp="1645031294510">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1644942891012" />
+    <state x="277" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1645031294510" />
     <state x="361" y="132" key="Vcs.Push.Dialog.v2" timestamp="1644943286460">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
