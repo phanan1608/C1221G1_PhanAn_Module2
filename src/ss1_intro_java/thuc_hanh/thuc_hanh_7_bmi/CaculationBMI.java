@@ -2,7 +2,7 @@ package ss1_intro_java.thuc_hanh.thuc_hanh_7_bmi;
 
 import java.util.Scanner;
 
-public class Main {
+public class CaculationBMI {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 

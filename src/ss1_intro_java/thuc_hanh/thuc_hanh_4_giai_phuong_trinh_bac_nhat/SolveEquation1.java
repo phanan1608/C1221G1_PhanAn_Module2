@@ -2,7 +2,7 @@ package ss1_intro_java.thuc_hanh.thuc_hanh_4_giai_phuong_trinh_bac_nhat;
 
 import java.util.Scanner;
 
-public class Main {
+public class SolveEquation1 {
     public static void main(String[] args) {
         System.out.println("Linear Equation Resolver");
         System.out.println("Given a equation as 'a * x + b = c', please enter constants:");

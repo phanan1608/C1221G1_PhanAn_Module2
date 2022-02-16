@@ -2,7 +2,7 @@ package ss1_intro_java.thuc_hanh.thuc_hanh_6_kiem_tra_nam_nhuan;
 
 import java.util.Scanner;
 
-public class Main {
+public class LeapYear {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter year: ");

@@ -1,6 +1,6 @@
 package ss1_intro_java.thuc_hanh.thuc_hanh_2_khai_bao_va_su_dung_bien;
 
-public class Main {
+public class Variable {
     public static void main(String[] args) {
         int i = 20;
         float f = 20.5f;
