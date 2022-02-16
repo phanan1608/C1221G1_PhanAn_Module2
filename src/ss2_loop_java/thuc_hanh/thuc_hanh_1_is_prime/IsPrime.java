@@ -1,4 +1,4 @@
-package ss2.thuc_hanh.thuc_hanh_1_is_prime;
+package ss2_loop_java.thuc_hanh.thuc_hanh_1_is_prime;
 
 import java.util.Scanner;
 

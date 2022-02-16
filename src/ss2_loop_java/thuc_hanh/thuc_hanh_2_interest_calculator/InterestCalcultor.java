@@ -1,4 +1,4 @@
-package ss2.thuc_hanh.thuc_hanh_2_interest_calculator;
+package ss2_loop_java.thuc_hanh.thuc_hanh_2_interest_calculator;
 
 import java.util.Scanner;
 
