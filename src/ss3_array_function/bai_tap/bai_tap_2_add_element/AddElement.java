@@ -38,8 +38,8 @@ public class AddElement {
                 System.out.println("Enter index again");
             } else break;
         } while (true);
-        for (int j = indexAdd; j < array.length; j++) {
-            array[indexAdd + 1] = array[indexAdd];
+        for (int j = array.length - 1; j > indexAdd; j--) {
+            array[j] = array[j - 1];
         }
         array[indexAdd] = X;
         System.out.printf("%-20s%s", "Elements in array: ", "");
