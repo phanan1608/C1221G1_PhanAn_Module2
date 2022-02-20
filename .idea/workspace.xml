@@ -20,14 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5e9923e5-3faa-402b-b0e9-9603d33b2713" name="Default Changelist" comment="update ss2.thuc_hanh">
-      <change afterPath="$PROJECT_DIR$/src/ss3_array_function/bai_tap/bai_tap_6_calculate_sum_one_column/CalculateSumColumnInMatrix.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss3_array_function/bai_tap/bai_tap_7_calculate_sum_cross_matrix/SumCrossMatrix.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss3_array_function/bai_tap/bai_tap_8_count_character_in_string/CountCharacterInString.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss3_array_function/thuc_hanh/thuc_hanh_8_apps_count_students_pass/CountStudentsPass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss4_class_object_java/bai_tap/bai_tap_1_quadratic_equation/QuadraticEquation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss4_class_object_java/thuc_hanh/thuc_hanh_1/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss4_class_object_java/thuc_hanh/thuc_hanh_1/Rectangle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../module1/ss11_cau_truc_lap2/bai_tap/KiemTraSoNguyenTo.html" beforeDir="false" afterPath="$PROJECT_DIR$/../module1/ss11_cau_truc_lap2/bai_tap/KiemTraSoNguyenTo.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/ss3_array_function/bai_tap/bai_tap_2_add_element/AddElement.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss3_array_function/bai_tap/bai_tap_2_add_element/AddElement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ss3_array_function/bai_tap/bai_tap_2_add_element/AddElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss3_array_function/bai_tap/bai_tap_2_add_element/AddElement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/ss0_demo/thuc_hanh/thuc_hanh_1/Demo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss0_demo/thuc_hanh/thuc_hanh_1/Demo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/ss3_array_function/bai_tap/bai_tap_8_count_character_in_string/CountCharacterInString.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss3_array_function/bai_tap/bai_tap_8_count_character_in_string/CountCharacterInString.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ss0_demo/thuc_hanh/thuc_hanh_1/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss0_demo/thuc_hanh/thuc_hanh_1/Demo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +37,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JavaScript File" />
         <option value="Class" />
       </list>
     </option>
@@ -69,20 +70,20 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Java" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\CodeGym\project\module2\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CountCharacterInString">
-    <configuration name="AddElement" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss3_array_function.bai_tap.bai_tap_2_add_element.AddElement" />
+  <component name="RunManager" selected="Application.QuadraticEquation">
+    <configuration name="Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss0_demo.thuc_hanh.thuc_hanh_1.Demo" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss3_array_function.bai_tap.bai_tap_2_add_element.*" />
+          <option name="PATTERN" value="ss0_demo.thuc_hanh.thuc_hanh_1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -90,12 +91,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CalculateSumColumnInMatrix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss3_array_function.bai_tap.bai_tap_6_calculate_sum_one_column.CalculateSumColumnInMatrix" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss4_class_object_java.thuc_hanh.thuc_hanh_1.Main" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss3_array_function.bai_tap.bai_tap_6_calculate_sum_one_column.*" />
+          <option name="PATTERN" value="ss4_class_object_java.thuc_hanh.thuc_hanh_1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -103,12 +104,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CountCharacterInString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss3_array_function.bai_tap.bai_tap_8_count_character_in_string.CountCharacterInString" />
+    <configuration name="QuadraticEquation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss4_class_object_java.bai_tap.bai_tap_1_quadratic_equation.QuadraticEquation" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss3_array_function.bai_tap.bai_tap_8_count_character_in_string.*" />
+          <option name="PATTERN" value="ss4_class_object_java.bai_tap.bai_tap_1_quadratic_equation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -116,12 +117,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CountStudentsPass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss3_array_function.thuc_hanh.thuc_hanh_8_apps_count_students_pass.CountStudentsPass" />
+    <configuration name="Rectangle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss4_class_object_java.thuc_hanh.thuc_hanh_1.Rectangle" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss3_array_function.thuc_hanh.thuc_hanh_8_apps_count_students_pass.*" />
+          <option name="PATTERN" value="ss4_class_object_java.thuc_hanh.thuc_hanh_1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -129,26 +130,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SumCrossMatrix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss3_array_function.bai_tap.bai_tap_7_calculate_sum_cross_matrix.SumCrossMatrix" />
-      <module name="module2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ss3_array_function.bai_tap.bai_tap_7_calculate_sum_cross_matrix.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="a.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/ss0_demo/thuc_hanh/thuc_hanh_1/a.js" working-dir="$PROJECT_DIR$/src/ss0_demo/thuc_hanh/thuc_hanh_1">
+      <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.CountCharacterInString" />
-        <item itemvalue="Application.SumCrossMatrix" />
-        <item itemvalue="Application.CalculateSumColumnInMatrix" />
-        <item itemvalue="Application.AddElement" />
-        <item itemvalue="Application.CountStudentsPass" />
+        <item itemvalue="Application.QuadraticEquation" />
+        <item itemvalue="Application.Rectangle" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Demo" />
+        <item itemvalue="Node.js.a.js" />
       </list>
     </recent_temporary>
   </component>
@@ -173,6 +164,10 @@
       <workItem from="1645147360871" duration="1575000" />
       <workItem from="1645149861058" duration="9662000" />
       <workItem from="1645170285377" duration="667000" />
+      <workItem from="1645174540311" duration="4562000" />
+      <workItem from="1645234399184" duration="1731000" />
+      <workItem from="1645266011363" duration="6216000" />
+      <workItem from="1645354538611" duration="6895000" />
     </task>
     <task id="LOCAL-00001" summary="update thuc hanh">
       <created>1644943142091</created>
@@ -213,26 +208,34 @@
     <option name="LAST_COMMIT_MESSAGE" value="update ss2.thuc_hanh" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="484" y="69" key="#a.js" timestamp="1645241233654">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="484" y="69" key="#a.js/0.0.1536.824@0.0.1536.824" timestamp="1645241233654" />
+    <state x="574" y="113" key="#com.intellij.ide.util.MemberChooser" timestamp="1645365565692">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="113" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1645365565692" />
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1644924811576">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1644924811576" />
-    <state width="1493" height="203" key="GridCell.Tab.0.bottom" timestamp="1645170957403">
+    <state width="1493" height="203" key="GridCell.Tab.0.bottom" timestamp="1645368461136">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="203" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1645170957403" />
-    <state width="1493" height="203" key="GridCell.Tab.0.center" timestamp="1645170957403">
+    <state width="1493" height="203" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1645368461136" />
+    <state width="1493" height="203" key="GridCell.Tab.0.center" timestamp="1645368461120">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="203" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1645170957403" />
-    <state width="1493" height="203" key="GridCell.Tab.0.left" timestamp="1645170957403">
+    <state width="1493" height="203" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1645368461120" />
+    <state width="1493" height="203" key="GridCell.Tab.0.left" timestamp="1645368461120">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="203" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1645170957403" />
-    <state width="1493" height="203" key="GridCell.Tab.0.right" timestamp="1645170957403">
+    <state width="1493" height="203" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1645368461120" />
+    <state width="1493" height="203" key="GridCell.Tab.0.right" timestamp="1645368461136">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="203" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1645170957403" />
+    <state width="1493" height="203" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1645368461136" />
     <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1645112289004">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -249,18 +252,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1645112289004" />
-    <state x="277" y="0" key="SettingsEditor" timestamp="1645155470676">
+    <state x="277" y="0" key="SettingsEditor" timestamp="1645356190840">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="277" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1645155470676" />
+    <state x="277" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1645356190840" />
     <state x="361" y="132" key="Vcs.Push.Dialog.v2" timestamp="1644943286460">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="132" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1644943286460" />
-    <state x="499" y="173" key="extract.method.dialog" timestamp="1645166576419">
+    <state x="499" y="173" key="extract.method.dialog" timestamp="1645356779063">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="499" y="173" key="extract.method.dialog/0.0.1536.824@0.0.1536.824" timestamp="1645166576419" />
+    <state x="499" y="173" key="extract.method.dialog/0.0.1536.824@0.0.1536.824" timestamp="1645356779063" />
+    <state x="478" y="11" width="579" height="801" key="find.popup" timestamp="1645174811635">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="478" y="11" width="579" height="801" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1645174811635" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1645104162400">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
