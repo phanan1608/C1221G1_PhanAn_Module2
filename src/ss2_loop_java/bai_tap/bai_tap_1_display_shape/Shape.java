@@ -81,8 +81,8 @@ public class Shape {
                                 System.out.println();
                             }
                             break;
-
                     }
+                    break;
                 case 3:
                     System.out.println("Draw the rectangle");
                     for (int i = 1; i <= 5; i++) {
@@ -101,8 +101,6 @@ public class Shape {
                 default:
                     System.out.println("No choice!");
             }
-
-
         }
     }
 }

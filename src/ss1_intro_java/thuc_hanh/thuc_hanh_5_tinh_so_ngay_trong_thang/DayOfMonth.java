@@ -2,7 +2,7 @@ package ss1_intro_java.thuc_hanh.thuc_hanh_5_tinh_so_ngay_trong_thang;
 
 import java.util.Scanner;
 
-public class SolveEquation2 {
+public class DayOfMonth {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
