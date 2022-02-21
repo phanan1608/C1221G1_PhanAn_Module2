@@ -1,6 +1,6 @@
 package ss4_class_object_java.bai_tap.bai_tap_2_stop_watch;
 
-public class Main {
+public class Test {
     public static void main(String[] args) {
         StopWatch stopWatch = new StopWatch();
         System.out.println(stopWatch.getElapsedTime());
@@ -10,7 +10,6 @@ public class Main {
             for (int j = 0; j < 1000; j++) {
                 sum += j;
             }
-            System.out.println(sum);
         }
         stopWatch.end();
         System.out.println(stopWatch.getElapsedTime());

@@ -2,7 +2,7 @@ package ss4_class_object_java.thuc_hanh.thuc_hanh_1;
 
 import java.util.Scanner;
 
-public class Main {
+public class Test {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter the width:");
