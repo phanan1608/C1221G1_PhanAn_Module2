@@ -20,14 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5e9923e5-3faa-402b-b0e9-9603d33b2713" name="Default Changelist" comment="update ss2.thuc_hanh">
-      <change afterPath="$PROJECT_DIR$/src/ss4_class_object_java/bai_tap/bai_tap_1_quadratic_equation/QuadraticEquation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss4_class_object_java/thuc_hanh/thuc_hanh_1/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss4_class_object_java/thuc_hanh/thuc_hanh_1/Rectangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss4_class_object_java/bai_tap/bai_tap_2_stop_watch/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss4_class_object_java/bai_tap/bai_tap_2_stop_watch/StopWatch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss4_class_object_java/bai_tap/bai_tap_3_fan/Fan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss4_class_object_java/bai_tap/bai_tap_3_fan/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../module1/ss11_cau_truc_lap2/bai_tap/KiemTraSoNguyenTo.html" beforeDir="false" afterPath="$PROJECT_DIR$/../module1/ss11_cau_truc_lap2/bai_tap/KiemTraSoNguyenTo.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/ss0_demo/thuc_hanh/thuc_hanh_1/Demo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss0_demo/thuc_hanh/thuc_hanh_1/Demo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/ss3_array_function/bai_tap/bai_tap_8_count_character_in_string/CountCharacterInString.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss3_array_function/bai_tap/bai_tap_8_count_character_in_string/CountCharacterInString.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ss0_demo/thuc_hanh/thuc_hanh_1/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss0_demo/thuc_hanh/thuc_hanh_1/Demo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,13 +75,26 @@
       <recent name="D:\CodeGym\project\module2\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.QuadraticEquation">
-    <configuration name="Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss0_demo.thuc_hanh.thuc_hanh_1.Demo" />
+  <component name="RunManager" selected="Application.Main (2)">
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss4_class_object_java.bai_tap.bai_tap_2_stop_watch.Main" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss0_demo.thuc_hanh.thuc_hanh_1.*" />
+          <option name="PATTERN" value="ss4_class_object_java.bai_tap.bai_tap_2_stop_watch.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss4_class_object_java.bai_tap.bai_tap_3_fan.Main" />
+      <module name="module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ss4_class_object_java.bai_tap.bai_tap_3_fan.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -130,16 +141,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="a.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/ss0_demo/thuc_hanh/thuc_hanh_1/a.js" working-dir="$PROJECT_DIR$/src/ss0_demo/thuc_hanh/thuc_hanh_1">
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (2)" />
+        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.QuadraticEquation" />
         <item itemvalue="Application.Rectangle" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Demo" />
-        <item itemvalue="Node.js.a.js" />
       </list>
     </recent_temporary>
   </component>
@@ -167,7 +175,8 @@
       <workItem from="1645174540311" duration="4562000" />
       <workItem from="1645234399184" duration="1731000" />
       <workItem from="1645266011363" duration="6216000" />
-      <workItem from="1645354538611" duration="6895000" />
+      <workItem from="1645354538611" duration="8248000" />
+      <workItem from="1645415820647" duration="6661000" />
     </task>
     <task id="LOCAL-00001" summary="update thuc hanh">
       <created>1644943142091</created>
@@ -212,30 +221,30 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="484" y="69" key="#a.js/0.0.1536.824@0.0.1536.824" timestamp="1645241233654" />
-    <state x="574" y="113" key="#com.intellij.ide.util.MemberChooser" timestamp="1645365565692">
+    <state x="574" y="113" key="#com.intellij.ide.util.MemberChooser" timestamp="1645418957819">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="113" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1645365565692" />
+    <state x="574" y="113" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1645418957819" />
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1644924811576">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1644924811576" />
-    <state width="1493" height="203" key="GridCell.Tab.0.bottom" timestamp="1645368461136">
+    <state width="1493" height="203" key="GridCell.Tab.0.bottom" timestamp="1645426596995">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="203" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1645368461136" />
-    <state width="1493" height="203" key="GridCell.Tab.0.center" timestamp="1645368461120">
+    <state width="1493" height="203" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1645426596995" />
+    <state width="1493" height="203" key="GridCell.Tab.0.center" timestamp="1645426596995">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="203" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1645368461120" />
-    <state width="1493" height="203" key="GridCell.Tab.0.left" timestamp="1645368461120">
+    <state width="1493" height="203" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1645426596995" />
+    <state width="1493" height="203" key="GridCell.Tab.0.left" timestamp="1645426596995">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="203" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1645368461120" />
-    <state width="1493" height="203" key="GridCell.Tab.0.right" timestamp="1645368461136">
+    <state width="1493" height="203" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1645426596995" />
+    <state width="1493" height="203" key="GridCell.Tab.0.right" timestamp="1645426596995">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="203" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1645368461136" />
+    <state width="1493" height="203" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1645426596995" />
     <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1645112289004">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
