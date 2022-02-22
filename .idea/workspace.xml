@@ -20,10 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5e9923e5-3faa-402b-b0e9-9603d33b2713" name="Default Changelist" comment="update ss2.thuc_hanh">
+      <change afterPath="$PROJECT_DIR$/src/ss5_access_modifier/thuc_hanh/thuc_hanh_1_static_method/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss5_access_modifier/thuc_hanh/thuc_hanh_1_static_method/Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../module1/ss11_cau_truc_lap2/bai_tap/KiemTraSoNguyenTo.html" beforeDir="false" afterPath="$PROJECT_DIR$/../module1/ss11_cau_truc_lap2/bai_tap/KiemTraSoNguyenTo.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ss1_intro_java/thuc_hanh/thuc_hanh_5_tinh_so_ngay_trong_thang/SolveEquation2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss1_intro_java/thuc_hanh/thuc_hanh_5_tinh_so_ngay_trong_thang/DayOfMonth.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ss2_loop_java/bai_tap/bai_tap_1_display_shape/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss2_loop_java/bai_tap/bai_tap_1_display_shape/Shape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ss4_class_object_java/bai_tap/bai_tap_1_quadratic_equation/QuadraticEquation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss4_class_object_java/bai_tap/bai_tap_1_quadratic_equation/QuadraticEquation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ss4_class_object_java/bai_tap/bai_tap_3_fan/Fan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss4_class_object_java/bai_tap/bai_tap_3_fan/Fan.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,33 +75,7 @@
       <recent name="D:\CodeGym\project\module2\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Shape">
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss4_class_object_java.bai_tap.bai_tap_2_stop_watch.Main" />
-      <module name="module2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ss4_class_object_java.bai_tap.bai_tap_2_stop_watch.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss4_class_object_java.bai_tap.bai_tap_3_fan.Main" />
-      <module name="module2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ss4_class_object_java.bai_tap.bai_tap_3_fan.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.QuadraticEquation">
     <configuration name="QuadraticEquation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ss4_class_object_java.bai_tap.bai_tap_1_quadratic_equation.QuadraticEquation" />
       <module name="module2" />
@@ -153,6 +129,19 @@
       </method>
     </configuration>
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss5_access_modifier.thuc_hanh.thuc_hanh_1_static_method.Test" />
+      <module name="module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ss5_access_modifier.thuc_hanh.thuc_hanh_1_static_method.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ss4_class_object_java.bai_tap.bai_tap_3_fan.Test" />
       <module name="module2" />
       <extension name="coverage">
@@ -180,11 +169,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.QuadraticEquation" />
+        <item itemvalue="Application.Test (1)" />
         <item itemvalue="Application.Shape" />
         <item itemvalue="Application.Test" />
         <item itemvalue="Application.Test" />
-        <item itemvalue="Application.Test" />
-        <item itemvalue="Application.QuadraticEquation" />
       </list>
     </recent_temporary>
   </component>
@@ -215,7 +204,9 @@
       <workItem from="1645354538611" duration="8248000" />
       <workItem from="1645415820647" duration="7460000" />
       <workItem from="1645430088294" duration="1149000" />
-      <workItem from="1645432829781" duration="5508000" />
+      <workItem from="1645432829781" duration="6840000" />
+      <workItem from="1645492937813" duration="1879000" />
+      <workItem from="1645496159305" duration="2105000" />
     </task>
     <task id="LOCAL-00001" summary="update thuc hanh">
       <created>1644943142091</created>
@@ -260,30 +251,30 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="484" y="69" key="#a.js/0.0.1536.824@0.0.1536.824" timestamp="1645241233654" />
-    <state x="574" y="113" key="#com.intellij.ide.util.MemberChooser" timestamp="1645418957819">
+    <state x="574" y="113" key="#com.intellij.ide.util.MemberChooser" timestamp="1645496183125">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="113" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1645418957819" />
+    <state x="574" y="113" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1645496183125" />
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1644924811576">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1644924811576" />
-    <state width="1493" height="203" key="GridCell.Tab.0.bottom" timestamp="1645431366364">
+    <state width="1493" height="203" key="GridCell.Tab.0.bottom" timestamp="1645502257570">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="203" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1645431366364" />
-    <state width="1493" height="203" key="GridCell.Tab.0.center" timestamp="1645431366364">
+    <state width="1493" height="203" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1645502257570" />
+    <state width="1493" height="203" key="GridCell.Tab.0.center" timestamp="1645502257570">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="203" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1645431366364" />
-    <state width="1493" height="203" key="GridCell.Tab.0.left" timestamp="1645431366364">
+    <state width="1493" height="203" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1645502257570" />
+    <state width="1493" height="203" key="GridCell.Tab.0.left" timestamp="1645502257570">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="203" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1645431366364" />
-    <state width="1493" height="203" key="GridCell.Tab.0.right" timestamp="1645431366364">
+    <state width="1493" height="203" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1645502257570" />
+    <state width="1493" height="203" key="GridCell.Tab.0.right" timestamp="1645502257570">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="203" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1645431366364" />
+    <state width="1493" height="203" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1645502257570" />
     <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1645112289004">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -300,10 +291,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1645112289004" />
-    <state x="277" y="0" key="SettingsEditor" timestamp="1645436396732">
+    <state x="277" y="0" key="SettingsEditor" timestamp="1645498747065">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="277" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1645436396732" />
+    <state x="277" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1645498747065" />
     <state x="361" y="132" key="Vcs.Push.Dialog.v2" timestamp="1644943286460">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

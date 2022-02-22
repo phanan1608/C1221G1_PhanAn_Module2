@@ -3,7 +3,7 @@ package ss4_class_object_java.bai_tap.bai_tap_1_quadratic_equation;
 import java.util.Scanner;
 
 public class QuadraticEquation {
-    double a, b, c;
+    private double a, b, c;
 
     private QuadraticEquation(double a, double b, double c) {
         this.a = a;
@@ -63,6 +63,5 @@ public class QuadraticEquation {
         double c = scanner.nextDouble();
         QuadraticEquation quadraticEquation = new QuadraticEquation(a, b, c);
         System.out.println(quadraticEquation.display());
-        System.out.println(quadraticEquation.getA());
     }
 }
