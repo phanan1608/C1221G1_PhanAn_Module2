@@ -15,6 +15,7 @@ public class Student {
     static void change() {
         college = "CODEGYM";
     }
+    
 
     //method to display values
     void display() {
