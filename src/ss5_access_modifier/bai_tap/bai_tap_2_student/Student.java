@@ -22,4 +22,12 @@ public class Student {
     public String getClasses() {
         return classes;
     }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "name='" + name + '\'' +
+                ", classes='" + classes + '\'' +
+                '}';
+    }
 }

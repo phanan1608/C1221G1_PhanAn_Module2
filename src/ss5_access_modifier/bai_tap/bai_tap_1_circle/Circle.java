@@ -19,4 +19,12 @@ public class Circle {
     public double getArea() {
         return Math.pow(this.radius, 2) * PI;
     }
+
+    @Override
+    public String toString() {
+        return "Circle{" +
+                "radius=" + radius +
+                ", color='" + color + '\'' +
+                '}';
+    }
 }

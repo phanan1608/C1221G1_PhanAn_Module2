@@ -20,18 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5e9923e5-3faa-402b-b0e9-9603d33b2713" name="Default Changelist" comment="update ss2.thuc_hanh">
-      <change afterPath="$PROJECT_DIR$/src/ss5_access_modifier/bai_tap/bai_tap_1_circle/Circle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss5_access_modifier/bai_tap/bai_tap_1_circle/TestCircle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss5_access_modifier/bai_tap/bai_tap_2_student/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss5_access_modifier/bai_tap/bai_tap_2_student/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss5_access_modifier/thuc_hanh/thuc_hanh_2_static_property/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss5_access_modifier/thuc_hanh/thuc_hanh_2_static_property/TestStaticProperty.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../module1/ss11_cau_truc_lap2/bai_tap/KiemTraSoNguyenTo.html" beforeDir="false" afterPath="$PROJECT_DIR$/../module1/ss11_cau_truc_lap2/bai_tap/KiemTraSoNguyenTo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/ss5_access_modifier/thuc_hanh/thuc_hanh_1_static_method/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss5_access_modifier/thuc_hanh/thuc_hanh_1_static_method/Student.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/ss5_access_modifier/thuc_hanh/thuc_hanh_1_static_method/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss5_access_modifier/thuc_hanh/thuc_hanh_1_static_method/Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ss5_access_modifier/thuc_hanh/thuc_hanh_1_static_method/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss5_access_modifier/thuc_hanh/thuc_hanh_1_static_method/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ss5_access_modifier/thuc_hanh/thuc_hanh_1_static_method/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss5_access_modifier/thuc_hanh/thuc_hanh_1_static_method/Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +70,7 @@
       <recent name="D:\CodeGym\project\module2\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Test (1)">
+  <component name="RunManager" selected="Application.TestCircle">
     <configuration name="QuadraticEquation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ss4_class_object_java.bai_tap.bai_tap_1_quadratic_equation.QuadraticEquation" />
       <module name="module2" />
@@ -188,8 +177,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Test (1)" />
         <item itemvalue="Application.TestCircle" />
+        <item itemvalue="Application.Test (1)" />
         <item itemvalue="Application.TestStaticProperty" />
         <item itemvalue="Application.Test (1)" />
         <item itemvalue="Application.QuadraticEquation" />
@@ -225,7 +214,7 @@
       <workItem from="1645430088294" duration="1149000" />
       <workItem from="1645432829781" duration="6840000" />
       <workItem from="1645492937813" duration="1879000" />
-      <workItem from="1645496159305" duration="5441000" />
+      <workItem from="1645496159305" duration="6496000" />
     </task>
     <task id="LOCAL-00001" summary="update thuc hanh">
       <created>1644943142091</created>
