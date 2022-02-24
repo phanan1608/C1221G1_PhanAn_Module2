@@ -1,8 +1,6 @@
 package ss7_abstract_class_interface.bai_tap.bai_tap_2_colorable_interface;
 
-import ss7_abstract_class_interface.bai_tap.bai_tap_1_resizeable_interface.IResizeable;
-
-public class Circle extends Shape implements IResizeable {
+public class Circle extends Shape implements IColorable {
     private double radius = 1.0;
 
     public Circle() {
@@ -43,7 +41,7 @@ public class Circle extends Shape implements IResizeable {
     }
 
     @Override
-    public void resize(double percent) {
-        setRadius(percent * getRadius() + getRadius());
+    public void howToColor() {
+        System.out.println("Color around the circle");
     }
 }

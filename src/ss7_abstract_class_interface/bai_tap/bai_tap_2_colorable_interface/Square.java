@@ -1,8 +1,6 @@
 package ss7_abstract_class_interface.bai_tap.bai_tap_2_colorable_interface;
 
-import ss7_abstract_class_interface.bai_tap.bai_tap_1_resizeable_interface.IResizeable;
-
-public class Square extends Rectangle implements IResizeable {
+public class Square extends Rectangle implements IColorable {
     public Square() {
     }
 
@@ -42,7 +40,7 @@ public class Square extends Rectangle implements IResizeable {
     }
 
     @Override
-    public void resize(double percent) {
-        setSide(percent * getSide() + getSide());
+    public void howToColor() {
+        System.out.println("Color all four sides");
     }
 }

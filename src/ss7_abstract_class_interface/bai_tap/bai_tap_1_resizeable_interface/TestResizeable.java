@@ -1,6 +1,6 @@
 package ss7_abstract_class_interface.bai_tap.bai_tap_1_resizeable_interface;
 
-public class Test {
+public class TestResizeable {
     public static void main(String[] args) {
         Rectangle rectangle = new Rectangle();
         Circle circle = new Circle();

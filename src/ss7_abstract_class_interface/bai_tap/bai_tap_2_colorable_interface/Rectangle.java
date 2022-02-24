@@ -1,8 +1,6 @@
 package ss7_abstract_class_interface.bai_tap.bai_tap_2_colorable_interface;
 
-import ss7_abstract_class_interface.bai_tap.bai_tap_1_resizeable_interface.IResizeable;
-
-public class Rectangle extends Shape implements IResizeable {
+public class Rectangle extends Shape implements IColorable {
     private double width = 1.0;
     private double length = 1.0;
 
@@ -57,8 +55,7 @@ public class Rectangle extends Shape implements IResizeable {
     }
 
     @Override
-    public void resize(double percent) {
-        setLength(percent * getLength() + getLength());
-        setWidth(percent * getWidth() + getWidth());
+    public void howToColor() {
+        System.out.println("Color 4 sides of a rectangle");
     }
 }
