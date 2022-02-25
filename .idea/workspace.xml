@@ -20,17 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5e9923e5-3faa-402b-b0e9-9603d33b2713" name="Default Changelist" comment="update ss2.thuc_hanh">
-      <change afterPath="$PROJECT_DIR$/src/ss8_clean_code/bai_tap/bai_tap_1_kata_tennis/TennisGame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss8_clean_code/bai_tap/bai_tap_1_kata_tennis/TennisGameTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss8_clean_code/thuc_hanh/thuc_hanh_1_calculator_refactoring/Calculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss8_clean_code/thuc_hanh/thuc_hanh_1_calculator_refactoring/TestCalculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss8_clean_code/thuc_hanh/thuc_hanh_2_fizz_buzz_refactoring/FizzBuzz.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss8_clean_code/thuc_hanh/thuc_hanh_2_fizz_buzz_refactoring/TestFizzBuzz.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss8_clean_code/thuc_hanh/thuc_hanh_3_cylinder_refactoring/Cylinder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss8_clean_code/thuc_hanh/thuc_hanh_3_cylinder_refactoring/TestCylinder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../module1/ss11_cau_truc_lap2/bai_tap/KiemTraSoNguyenTo.html" beforeDir="false" afterPath="$PROJECT_DIR$/../module1/ss11_cau_truc_lap2/bai_tap/KiemTraSoNguyenTo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/module2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ss8_clean_code/bai_tap/bai_tap_1_kata_tennis/TennisGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss8_clean_code/bai_tap/bai_tap_1_kata_tennis/TennisGame.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -226,7 +217,7 @@
       <workItem from="1645618752759" duration="1494000" />
       <workItem from="1645675603950" duration="14057000" />
       <workItem from="1645714205557" duration="3837000" />
-      <workItem from="1645751743816" duration="9648000" />
+      <workItem from="1645751743816" duration="9948000" />
     </task>
     <task id="LOCAL-00001" summary="update thuc hanh">
       <created>1644943142091</created>

@@ -16,7 +16,7 @@ public class TennisGame {
         } else if (scorePlayer1 >= MATCHPOINT || scorePlayer2 >= MATCHPOINT) {
             score = displaySetPoint(scorePlayer1, scorePlayer2);
         } else {
-            score = displayGetPoint(scorePlayer1, scorePlayer2, score);
+            score = displayScore(scorePlayer1, scorePlayer2, score);
         }
         return score;
     }
@@ -43,7 +43,7 @@ public class TennisGame {
         return score;
     }
 
-    private static String displayGetPoint(int scorePlayer1, int scorePlayer2, String score) {
+    private static String displayScore(int scorePlayer1, int scorePlayer2, String score) {
         int tempScore;
         for (int i = FIFTEEN; i < FORTY; i++) {
             if (i == FIFTEEN) tempScore = scorePlayer1;
