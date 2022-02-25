@@ -20,20 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5e9923e5-3faa-402b-b0e9-9603d33b2713" name="Default Changelist" comment="update ss2.thuc_hanh">
-      <change afterPath="$PROJECT_DIR$/src/ss7_abstract_class_interface/bai_tap/bai_tap_2_colorable_interface/TestColorable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss8_clean_code/bai_tap/bai_tap_1_kata_tennis/TennisGame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss8_clean_code/bai_tap/bai_tap_1_kata_tennis/TennisGameTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss8_clean_code/thuc_hanh/thuc_hanh_1_calculator_refactoring/Calculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss8_clean_code/thuc_hanh/thuc_hanh_1_calculator_refactoring/TestCalculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss8_clean_code/thuc_hanh/thuc_hanh_2_fizz_buzz_refactoring/FizzBuzz.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss8_clean_code/thuc_hanh/thuc_hanh_2_fizz_buzz_refactoring/TestFizzBuzz.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss8_clean_code/thuc_hanh/thuc_hanh_3_cylinder_refactoring/Cylinder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss8_clean_code/thuc_hanh/thuc_hanh_3_cylinder_refactoring/TestCylinder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../module1/ss11_cau_truc_lap2/bai_tap/KiemTraSoNguyenTo.html" beforeDir="false" afterPath="$PROJECT_DIR$/../module1/ss11_cau_truc_lap2/bai_tap/KiemTraSoNguyenTo.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/ss7_abstract_class_interface/bai_tap/bai_tap_1_resizeable_shape/Circle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/ss7_abstract_class_interface/bai_tap/bai_tap_1_resizeable_shape/IResizeable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/ss7_abstract_class_interface/bai_tap/bai_tap_1_resizeable_shape/Rectangle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/ss7_abstract_class_interface/bai_tap/bai_tap_1_resizeable_shape/Shape.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/ss7_abstract_class_interface/bai_tap/bai_tap_1_resizeable_shape/Square.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/ss7_abstract_class_interface/bai_tap/bai_tap_1_resizeable_shape/Test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ss7_abstract_class_interface/bai_tap/bai_tap_1_resizeable_interface/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss7_abstract_class_interface/bai_tap/bai_tap_1_resizeable_interface/TestResizeable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ss7_abstract_class_interface/bai_tap/bai_tap_2_colorable_interface/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss7_abstract_class_interface/bai_tap/bai_tap_2_colorable_interface/Circle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ss7_abstract_class_interface/bai_tap/bai_tap_2_colorable_interface/IColorable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss7_abstract_class_interface/bai_tap/bai_tap_2_colorable_interface/IColorable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ss7_abstract_class_interface/bai_tap/bai_tap_2_colorable_interface/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss7_abstract_class_interface/bai_tap/bai_tap_2_colorable_interface/Rectangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ss7_abstract_class_interface/bai_tap/bai_tap_2_colorable_interface/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss7_abstract_class_interface/bai_tap/bai_tap_2_colorable_interface/Square.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/module2.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,12 +42,14 @@
       <list>
         <option value="JavaScript File" />
         <option value="Interface" />
+        <option value="JUnit5 Test Class" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="ProjectId" id="258aNjC6nIYlIpgvkpQEzJ2qs6x" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -61,12 +60,20 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="true" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/ss7_abstract_class_interface/bai_tap/bai_tap_2_colorable_interface" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -80,91 +87,108 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Java" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="ss8_clean_code.thuc_hanh.thuc_hanh_1_tach_bien" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="ss7_abstract_class_interface.thuc_hanh.thuc_hanh_3_circle_comparable_to_compare" />
       <recent name="ss6_inheritance.bai_tap.bai_tap_4_triangle" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\CodeGym\project\module2\src" />
       <recent name="D:\CodeGym\project\module2\src\ss7_abstract_class_interface\bai_tap\bai_tap_2_colorable_interface" />
       <recent name="D:\CodeGym\project\module2\src\ss7_abstract_class_interface\bai_tap\bai_tap_1_resizeable_shape" />
       <recent name="D:\CodeGym\project\module2\src\ss7_abstract_class_interface\thuc_hanh\thuc_hanh_3_circle_comparable_to_compare" />
       <recent name="D:\CodeGym\project\module2\src\ss7_abstract_class_interface\thuc_hanh\thuc_hanh_2_circle_comparable" />
-      <recent name="D:\CodeGym\project\module2\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TestColorable">
-    <configuration name="Test (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss7_abstract_class_interface.thuc_hanh.thuc_hanh_1_animal_class_edible_interface.Test" />
+  <component name="RunManager" selected="JUnit.TennisGameTest">
+    <configuration name="TennisGameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss7_abstract_class_interface.thuc_hanh.thuc_hanh_1_animal_class_edible_interface.*" />
+          <option name="PATTERN" value="ss8_clean_code.bai_tap.bai_tap_1_kata_tennis.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="ss8_clean_code.bai_tap.bai_tap_1_kata_tennis" />
+      <option name="MAIN_CLASS_NAME" value="ss8_clean_code.bai_tap.bai_tap_1_kata_tennis.TennisGameTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss7_abstract_class_interface.thuc_hanh.thuc_hanh_3_circle_comparator.Test" />
+    <configuration name="TennisGameTest.checkAllScores" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss7_abstract_class_interface.thuc_hanh.thuc_hanh_3_circle_comparator.*" />
+          <option name="PATTERN" value="ss8_clean_code.bai_tap.bai_tap_1_kata_tennis.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="ss8_clean_code.bai_tap.bai_tap_1_kata_tennis" />
+      <option name="MAIN_CLASS_NAME" value="ss8_clean_code.bai_tap.bai_tap_1_kata_tennis.TennisGameTest" />
+      <option name="METHOD_NAME" value="checkAllScores" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss7_abstract_class_interface.thuc_hanh.thuc_hanh_2_circle_comparable.Test" />
+    <configuration name="Test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss7_abstract_class_interface.thuc_hanh.thuc_hanh_2_circle_comparable.*" />
+          <option name="PATTERN" value="ss8_clean_code.thuc_hanh.thuc_hanh_3_cylinder_refactoring.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="ss8_clean_code.thuc_hanh.thuc_hanh_2_tach_phuong_thuc" />
+      <option name="MAIN_CLASS_NAME" value="ss8_clean_code.thuc_hanh.thuc_hanh_2_tach_phuong_thuc.Test2" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestColorable" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss7_abstract_class_interface.bai_tap.bai_tap_2_colorable_interface.TestColorable" />
+    <configuration name="TestCalculator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss7_abstract_class_interface.bai_tap.bai_tap_2_colorable_interface.*" />
+          <option name="PATTERN" value="ss8_clean_code.thuc_hanh.thuc_hanh_1_calculator_refactoring.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="ss8_clean_code.thuc_hanh.thuc_hanh_1_calculator_refactoring" />
+      <option name="MAIN_CLASS_NAME" value="ss8_clean_code.thuc_hanh.thuc_hanh_1_calculator_refactoring.TestCalculator" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestResizeable" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss7_abstract_class_interface.bai_tap.bai_tap_1_resizeable_interface.TestResizeable" />
+    <configuration name="TestCylinder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss7_abstract_class_interface.bai_tap.bai_tap_1_resizeable_interface.*" />
+          <option name="PATTERN" value="ss8_clean_code.thuc_hanh.thuc_hanh_3_cylinder_refactoring.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="ss8_clean_code.thuc_hanh.thuc_hanh_3_cylinder_refactoring" />
+      <option name="MAIN_CLASS_NAME" value="ss8_clean_code.thuc_hanh.thuc_hanh_3_cylinder_refactoring.TestCylinder" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TestColorable" />
-        <item itemvalue="Application.TestResizeable" />
-        <item itemvalue="Application.Test (2)" />
-        <item itemvalue="Application.Test" />
-        <item itemvalue="Application.Test (1)" />
+        <item itemvalue="JUnit.TennisGameTest" />
+        <item itemvalue="JUnit.TennisGameTest.checkAllScores" />
+        <item itemvalue="JUnit.TestCylinder" />
+        <item itemvalue="JUnit.Test2" />
+        <item itemvalue="JUnit.TestCalculator" />
       </list>
     </recent_temporary>
   </component>
@@ -200,7 +224,9 @@
       <workItem from="1645496159305" duration="11960000" />
       <workItem from="1645589208227" duration="14310000" />
       <workItem from="1645618752759" duration="1494000" />
-      <workItem from="1645675603950" duration="13350000" />
+      <workItem from="1645675603950" duration="14057000" />
+      <workItem from="1645714205557" duration="3837000" />
+      <workItem from="1645751743816" duration="9648000" />
     </task>
     <task id="LOCAL-00001" summary="update thuc hanh">
       <created>1644943142091</created>
@@ -253,42 +279,46 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="574" y="113" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1645702986830" />
+    <state x="286" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1645773726985">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="286" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1645773726985" />
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1645517168554">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1645517168554" />
-    <state width="1493" height="203" key="GridCell.Tab.0.bottom" timestamp="1645703042342">
+    <state width="1493" height="203" key="GridCell.Tab.0.bottom" timestamp="1645776474657">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="203" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1645703042342" />
-    <state width="1493" height="203" key="GridCell.Tab.0.center" timestamp="1645703042342">
+    <state width="1493" height="203" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1645776474657" />
+    <state width="1493" height="203" key="GridCell.Tab.0.center" timestamp="1645776474656">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="203" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1645703042342" />
-    <state width="1493" height="203" key="GridCell.Tab.0.left" timestamp="1645703042342">
+    <state width="1493" height="203" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1645776474656" />
+    <state width="1493" height="203" key="GridCell.Tab.0.left" timestamp="1645776474656">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="203" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1645703042342" />
-    <state width="1493" height="203" key="GridCell.Tab.0.right" timestamp="1645703042342">
+    <state width="1493" height="203" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1645776474656" />
+    <state width="1493" height="203" key="GridCell.Tab.0.right" timestamp="1645776474656">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="203" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1645703042342" />
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1645702809512">
+    <state width="1493" height="203" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1645776474656" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1645706021620">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1645702809512" />
-    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1645702809512">
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1645706021620" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1645706021620">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1645702809512" />
-    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1645702809512">
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1645706021620" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1645706021620">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1645702809512" />
-    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1645702809512">
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1645706021620" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1645706021620">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1645702809512" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1645706021620" />
     <state x="277" y="0" key="SettingsEditor" timestamp="1645599120420">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -297,10 +327,18 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="132" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1644943286460" />
-    <state x="499" y="173" key="extract.method.dialog" timestamp="1645356779063">
+    <state x="498" y="304" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1645752140704">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="499" y="173" key="extract.method.dialog/0.0.1536.824@0.0.1536.824" timestamp="1645356779063" />
+    <state x="498" y="304" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1536.824@0.0.1536.824" timestamp="1645752140704" />
+    <state x="496" y="226" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1645717018021">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="496" y="226" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.824@0.0.1536.824" timestamp="1645717018021" />
+    <state x="499" y="173" key="extract.method.dialog" timestamp="1645775604666">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="173" key="extract.method.dialog/0.0.1536.824@0.0.1536.824" timestamp="1645775604666" />
     <state x="478" y="11" width="579" height="801" key="find.popup" timestamp="1645174811635">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
