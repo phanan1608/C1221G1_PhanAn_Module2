@@ -75,13 +75,13 @@ public class Vehicle {
         this.vehicleValue = vehicleValue;
     }
 
-    public double getTax() {
-        if (getCylinderCapacity() < 100) {
-            return getVehicleValue() * 0.01;
+    public double calculatorTax() {
+        if (this.getCylinderCapacity() < 100) {
+            return this.getVehicleValue() * 0.01;
         } else if (getCylinderCapacity() <= 200) {
-            return getVehicleValue() * 0.03;
+            return this.getVehicleValue() * 0.03;
         } else {
-            return getVehicleValue() * 0.05;
+            return this.getVehicleValue() * 0.05;
         }
     }
 

@@ -9,12 +9,12 @@ public class Test {
         Account account2 = new Account(11111, "Phan An", 10000);
         System.out.println(account2.toString());
         System.out.println(account1.toString());
-        account2.tranfer(10000, account1);
+        account2.tranfer(account1);
         System.out.println(account2.toString());
         System.out.println(account1.toString());
-        account2.rechargeMoney(5000);
+        account2.rechargeMoney();
         System.out.println(account2.toString());
-        account1.withdrawMoney(20000);
+        account1.withdrawMoney();
         System.out.println(account1.toString());
     }
 }

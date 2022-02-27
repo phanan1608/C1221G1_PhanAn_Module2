@@ -1,10 +1,12 @@
 package oop_review.exercise2_bank_account_management;
 
+import java.util.Scanner;
+
 public class Account {
     private long accountNumber;
     private String accountName;
     private double money;
-    public static final double INTEREST = 0.035;
+    public static final double INTEREST_RATE = 0.035;
 
     public Account() {
     }
@@ -45,33 +47,55 @@ public class Account {
         this.money = money;
     }
 
-    public void rechargeMoney(double rechargeMoney) {
-        if (rechargeMoney < 0) {
-            System.out.println("!!!Illegal,enter please!!!");
-        } else {
-            this.setMoney(this.getMoney() + rechargeMoney);
-        }
+    Scanner scanner = new Scanner(System.in);
+
+    public void rechargeMoney() {
+        double rechargeMoney;
+        do {
+            System.out.println("Enter recharge money: ");
+            rechargeMoney = Double.parseDouble(scanner.nextLine());
+            if (rechargeMoney <= 0) {
+                System.out.println("!!!Illegal,enter please!!!");
+            } else {
+                break;
+            }
+        } while (true);
+        this.setMoney(this.getMoney() + rechargeMoney);
     }
 
-    public void withdrawMoney(double withdrawMoney) {
-        if (withdrawMoney < 0 || withdrawMoney > this.getMoney()) {
-            System.out.println("!!!Illegal,enter please!!!");
-        } else {
-            this.setMoney(this.getMoney() - withdrawMoney);
-        }
+
+    public void withdrawMoney() {
+        double withdrawMoney;
+        do {
+            System.out.println("Enter withdraw money:");
+            withdrawMoney = Double.parseDouble(scanner.nextLine());
+            if (withdrawMoney <= 0 || withdrawMoney > this.getMoney()) {
+                System.out.println("!!!Illegal,enter please!!!");
+            } else {
+                break;
+            }
+        } while (true);
+        this.setMoney(this.getMoney() - withdrawMoney);
+
     }
 
     public void matureDeposite() {
-        this.setMoney(this.getMoney() + this.getMoney() * INTEREST);
+        this.setMoney(this.getMoney() + this.getMoney() * INTEREST_RATE);
     }
 
-    public void tranfer(double moneyTranfer, Account receiveAccount) {
-        if (moneyTranfer < 0 || moneyTranfer > this.getMoney()) {
-            System.out.println("!!!Illegal,enter please!!!");
-        } else {
-            this.setMoney(this.getMoney() - moneyTranfer);
-            receiveAccount.setMoney(receiveAccount.getMoney() + moneyTranfer);
-        }
+    public void tranfer(Account receiveAccount) {
+        double moneyTranfer;
+        do {
+            System.out.println("Enter tranfer money:");
+            moneyTranfer = Double.parseDouble(scanner.nextLine());
+            if (moneyTranfer <= 0 || moneyTranfer > this.getMoney()) {
+                System.out.println("!!!Illegal,enter please!!!");
+            } else {
+                break;
+            }
+        } while (true);
+        this.setMoney(this.getMoney() - moneyTranfer);
+        receiveAccount.setMoney(receiveAccount.getMoney() + moneyTranfer);
     }
 
     @Override

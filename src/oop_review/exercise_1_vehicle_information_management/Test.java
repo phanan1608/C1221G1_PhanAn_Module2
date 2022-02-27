@@ -28,34 +28,10 @@ public class Test {
 
             switch (choice) {
                 case 1:
-                    System.out.println("-----Create vehicle object and input vehicle information-----");
-                    System.out.println("Enter License Plates");
-                    String licensePlates = scanner.nextLine();
-                    System.out.println("Enter brand");
-                    String brand = scanner.nextLine();
-                    System.out.println("Enter Year Of Manufacture ");
-                    int yearOfManufacture = Integer.parseInt(scanner.nextLine());
-                    System.out.println("Enter Owner");
-                    String owner = scanner.nextLine();
-                    System.out.println("Enter color");
-                    String color = scanner.nextLine();
-                    System.out.println("Enter Cylinder Capacity");
-                    double cylinderCapacity = Double.parseDouble(scanner.nextLine());
-                    System.out.println("Enter Vehicle Value ");
-                    double vehicleValue = Double.parseDouble(scanner.nextLine());
-                    Vehicle vehicle = new Vehicle(licensePlates, brand, yearOfManufacture, owner, color, cylinderCapacity, vehicleValue);
-                    vehicleList.add(vehicle);
-                    System.out.println(vehicleList);
+                    addVehicle(vehicleList, scanner);
                     break;
                 case 2:
-                    System.out.println("-----Vehicle tax declaration sheet-----");
-                    for (Vehicle element : vehicleList
-                    ) {
-                        System.out.println(element.toString());
-                        System.out.println("Tax:" + element.getTax());
-                        System.out.println("----------------------------------------");
-
-                    }
+                    displayTax(vehicleList);
                     break;
                 case 3:
                     System.exit(3);
@@ -64,5 +40,36 @@ public class Test {
             }
 
         } while (true);
+    }
+
+    private static void displayTax(List<Vehicle> vehicleList) {
+        System.out.println("-----Vehicle tax declaration sheet-----");
+        for (Vehicle element : vehicleList
+        ) {
+            System.out.println(element.toString());
+            System.out.println("Tax:" + element.calculatorTax());
+            System.out.println("----------------------------------------");
+        }
+    }
+
+    private static void addVehicle(List<Vehicle> vehicleList, Scanner scanner) {
+        System.out.println("-----Create vehicle object and input vehicle information-----");
+        System.out.println("Enter License Plates");
+        String licensePlates = scanner.nextLine();
+        System.out.println("Enter brand");
+        String brand = scanner.nextLine();
+        System.out.println("Enter Year Of Manufacture ");
+        int yearOfManufacture = Integer.parseInt(scanner.nextLine());
+        System.out.println("Enter Owner");
+        String owner = scanner.nextLine();
+        System.out.println("Enter color");
+        String color = scanner.nextLine();
+        System.out.println("Enter Cylinder Capacity");
+        double cylinderCapacity = Double.parseDouble(scanner.nextLine());
+        System.out.println("Enter Vehicle Value ");
+        double vehicleValue = Double.parseDouble(scanner.nextLine());
+        Vehicle vehicle = new Vehicle(licensePlates, brand, yearOfManufacture, owner, color, cylinderCapacity, vehicleValue);
+        vehicleList.add(vehicle);
+        System.out.println(vehicleList);
     }
 }
