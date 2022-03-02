@@ -20,27 +20,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5e9923e5-3faa-402b-b0e9-9603d33b2713" name="Default Changelist" comment="update ss2.thuc_hanh">
-      <change afterPath="$PROJECT_DIR$/src/oop_exercise_vehicle/oop_exercise/CarController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/oop_exercise_vehicle/oop_exercise/MotorbikeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/oop_exercise_vehicle/oop_exercise/TruckController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss11_dsa_stack_queue/exercise/exercise_2_count_word_in_string/CountWordInString.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../module1/ss11_cau_truc_lap2/bai_tap/KiemTraSoNguyenTo.html" beforeDir="false" afterPath="$PROJECT_DIR$/../module1/ss11_cau_truc_lap2/bai_tap/KiemTraSoNguyenTo.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/oop_exercise/Car.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/oop_exercise/IAddVehicle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/oop_exercise/IDeleteVehicle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/oop_exercise/IDisplayVehicle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/oop_exercise/Motorbike.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/oop_exercise/TestVehicle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/oop_exercise/Truck.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/oop_exercise/Vehicle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/oop_exercise/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/oop_exercise_vehicle/oop_exercise/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/oop_exercise/IAddVehicle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/oop_exercise/IDeleteVehicle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/oop_exercise/IDisplayVehicle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/oop_exercise/Motorbike.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/oop_exercise_vehicle/oop_exercise/Motorbike.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/oop_exercise/TestVehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/oop_exercise_vehicle/oop_exercise/TestVehicle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/oop_exercise/Truck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/oop_exercise_vehicle/oop_exercise/Truck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/oop_exercise/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/oop_exercise_vehicle/oop_exercise/Vehicle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/ss10_dsa_list/exercise/excercise_1_array_list_method/MyList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/ss10_dsa_list/exercise/excercise_1_array_list_method/TestMyList$Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/ss10_dsa_list/exercise/excercise_1_array_list_method/TestMyList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/ss11_dsa_stack_queue/excercise/excercise_1_reverse_element/ReverseElement.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/ss11_dsa_stack_queue/excercise/excercise_4_convert_decimal_to_binary_system/ConvertDecimalToBinarySystem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/ss11_dsa_stack_queue/excercise/excercise_5_check_palindrome/CheckPalindrome.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/ss12_java_collection_framework/exercise/excercise_1_arraylist_linkedlist_in_java_collection/Product.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/ss12_java_collection_framework/exercise/excercise_1_arraylist_linkedlist_in_java_collection/ProductManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/ss12_java_collection_framework/exercise/excercise_1_arraylist_linkedlist_in_java_collection/SortDown.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/ss12_java_collection_framework/exercise/excercise_1_arraylist_linkedlist_in_java_collection/SortUp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/ss12_java_collection_framework/exercise/excercise_1_arraylist_linkedlist_in_java_collection/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ss10_dsa_list/exercise/excercise_1_array_list_method/MyList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss10_dsa_list/exercise/exercise_1_array_list_method/MyList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ss10_dsa_list/exercise/excercise_1_array_list_method/TestMyList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss10_dsa_list/exercise/exercise_1_array_list_method/TestMyList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ss11_dsa_stack_queue/excercise/excercise_1_reverse_element/ReverseElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss11_dsa_stack_queue/exercise/exercise_1_reverse_element/ReverseElement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ss11_dsa_stack_queue/excercise/excercise_4_convert_decimal_to_binary_system/ConvertDecimalToBinarySystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss11_dsa_stack_queue/exercise/exercise_4_convert_decimal_to_binary_system/ConvertDecimalToBinarySystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ss11_dsa_stack_queue/excercise/excercise_5_check_palindrome/CheckPalindrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss11_dsa_stack_queue/exercise/exercise_5_check_palindrome/CheckPalindrome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ss12_java_collection_framework/exercise/excercise_1_arraylist_linkedlist_in_java_collection/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss12_java_collection_framework/exercise/exercise_1_arraylist_linkedlist_in_java_collection/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ss12_java_collection_framework/exercise/excercise_1_arraylist_linkedlist_in_java_collection/ProductManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss12_java_collection_framework/exercise/exercise_1_arraylist_linkedlist_in_java_collection/ProductManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ss12_java_collection_framework/exercise/excercise_1_arraylist_linkedlist_in_java_collection/SortDown.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss12_java_collection_framework/exercise/exercise_1_arraylist_linkedlist_in_java_collection/SortDown.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ss12_java_collection_framework/exercise/excercise_1_arraylist_linkedlist_in_java_collection/SortUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss12_java_collection_framework/exercise/exercise_1_arraylist_linkedlist_in_java_collection/SortUp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ss12_java_collection_framework/exercise/excercise_1_arraylist_linkedlist_in_java_collection/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss12_java_collection_framework/exercise/exercise_1_arraylist_linkedlist_in_java_collection/Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,8 +55,8 @@
       <list>
         <option value="JavaScript File" />
         <option value="JUnit5 Test Class" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -116,13 +119,13 @@
       <recent name="D:\CodeGym\project\module2\src\ss7_abstract_class_interface\thuc_hanh\thuc_hanh_3_circle_comparable_to_compare" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TestVehicle">
-    <configuration name="Test (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss12_java_collection_framework.practice.practice_3_comparable_comparator.Test" />
+  <component name="RunManager" selected="Application.CountWordInString">
+    <configuration name="CountWordInString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss11_dsa_stack_queue.exercise.exercise_2_count_word_in_string.CountWordInString" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss12_java_collection_framework.practice.practice_3_comparable_comparator.*" />
+          <option name="PATTERN" value="ss11_dsa_stack_queue.exercise.exercise_2_count_word_in_string.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -130,12 +133,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss12_java_collection_framework.exercise.excercise_1_arraylist_linkedlist_in_java_collection.Test" />
+    <configuration name="Test (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss12_java_collection_framework.practice.practice_3_comparable_comparator.Test" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss12_java_collection_framework.exercise.excercise_1_arraylist_linkedlist_in_java_collection.*" />
+          <option name="PATTERN" value="ss12_java_collection_framework.practice.practice_3_comparable_comparator.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -156,12 +159,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestMap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss12_java_collection_framework.practice.practice_1_hashmap_linkedhashmap_treemapp.TestMap" />
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss12_java_collection_framework.exercise.exercise_1_arraylist_linkedlist_in_java_collection.Test" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss12_java_collection_framework.practice.practice_1_hashmap_linkedhashmap_treemapp.*" />
+          <option name="PATTERN" value="ss12_java_collection_framework.exercise.exercise_1_arraylist_linkedlist_in_java_collection.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -184,11 +187,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CountWordInString" />
         <item itemvalue="Application.TestVehicle" />
         <item itemvalue="Application.Test (2)" />
         <item itemvalue="Application.Test (1)" />
         <item itemvalue="Application.Test" />
-        <item itemvalue="Application.TestMap" />
       </list>
     </recent_temporary>
   </component>
@@ -236,6 +239,7 @@
       <workItem from="1646057143641" duration="3875000" />
       <workItem from="1646098848908" duration="17444000" />
       <workItem from="1646184480954" duration="21052000" />
+      <workItem from="1646234737490" duration="1213000" />
     </task>
     <task id="LOCAL-00001" summary="update thuc hanh">
       <created>1644943142091</created>
