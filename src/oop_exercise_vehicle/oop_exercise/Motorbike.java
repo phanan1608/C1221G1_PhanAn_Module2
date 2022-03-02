@@ -1,6 +1,6 @@
-package oop_exercise;
+package oop_exercise_vehicle.oop_exercise;
 
-public class Motorbike extends Vehicle implements IDisplayVehicle, IAddVehicle, IDeleteVehicle {
+public class Motorbike extends Vehicle {
     private double capacity;
 
     public Motorbike(String licensePlates, String brand, int yearOfManufacture, String owner, double capacity) {
@@ -20,20 +20,5 @@ public class Motorbike extends Vehicle implements IDisplayVehicle, IAddVehicle, 
     public String toString() {
         return "Motorbike{" + super.toString() + "," + capacity +
                 '}';
-    }
-
-    @Override
-    public void addVehicle() {
-
-    }
-
-    @Override
-    public void deleteVehicle() {
-
-    }
-
-    @Override
-    public void displayVehicle() {
-
     }
 }

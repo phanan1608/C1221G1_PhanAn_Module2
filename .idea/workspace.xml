@@ -20,20 +20,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5e9923e5-3faa-402b-b0e9-9603d33b2713" name="Default Changelist" comment="update ss2.thuc_hanh">
-      <change afterPath="$PROJECT_DIR$/src/ss12_java_collection_framework/exercise/excercise_1_arraylist_linkedlist_in_java_collection/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss12_java_collection_framework/exercise/excercise_1_arraylist_linkedlist_in_java_collection/ProductManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss12_java_collection_framework/exercise/excercise_1_arraylist_linkedlist_in_java_collection/SortDown.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss12_java_collection_framework/exercise/excercise_1_arraylist_linkedlist_in_java_collection/SortUp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss12_java_collection_framework/exercise/excercise_1_arraylist_linkedlist_in_java_collection/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss12_java_collection_framework/practice/practice_1_hashmap_linkedhashmap_treemapp/TestMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss12_java_collection_framework/practice/practice_2_hashmap_hashset/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss12_java_collection_framework/practice/practice_2_hashmap_hashset/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss12_java_collection_framework/practice/practice_3_comparable_comparator/AgeComparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss12_java_collection_framework/practice/practice_3_comparable_comparator/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss12_java_collection_framework/practice/practice_3_comparable_comparator/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/oop_exercise_vehicle/oop_exercise/CarController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/oop_exercise_vehicle/oop_exercise/MotorbikeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/oop_exercise_vehicle/oop_exercise/TruckController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../module1/ss11_cau_truc_lap2/bai_tap/KiemTraSoNguyenTo.html" beforeDir="false" afterPath="$PROJECT_DIR$/../module1/ss11_cau_truc_lap2/bai_tap/KiemTraSoNguyenTo.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/ss11_dsa_stack_queue/practice/practice_2_queue_use_linkedlist/Demo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/oop_exercise/Car.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/oop_exercise/IAddVehicle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/oop_exercise/IDeleteVehicle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/oop_exercise/IDisplayVehicle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/oop_exercise/Motorbike.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/oop_exercise/TestVehicle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/oop_exercise/Truck.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/oop_exercise/Vehicle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/oop_exercise/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/oop_exercise_vehicle/oop_exercise/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/oop_exercise/IAddVehicle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/oop_exercise/IDeleteVehicle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/oop_exercise/IDisplayVehicle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/oop_exercise/Motorbike.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/oop_exercise_vehicle/oop_exercise/Motorbike.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/oop_exercise/TestVehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/oop_exercise_vehicle/oop_exercise/TestVehicle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/oop_exercise/Truck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/oop_exercise_vehicle/oop_exercise/Truck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/oop_exercise/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/oop_exercise_vehicle/oop_exercise/Vehicle.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,8 +52,8 @@
       <list>
         <option value="JavaScript File" />
         <option value="JUnit5 Test Class" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -76,7 +83,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/oop_exercise_vehicle" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -102,27 +109,14 @@
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\CodeGym\project\module2\src\oop_exercise_vehicle" />
       <recent name="D:\CodeGym\project\module2\src" />
       <recent name="D:\CodeGym\project\module2\src\ss7_abstract_class_interface\bai_tap\bai_tap_2_colorable_interface" />
       <recent name="D:\CodeGym\project\module2\src\ss7_abstract_class_interface\bai_tap\bai_tap_1_resizeable_shape" />
       <recent name="D:\CodeGym\project\module2\src\ss7_abstract_class_interface\thuc_hanh\thuc_hanh_3_circle_comparable_to_compare" />
-      <recent name="D:\CodeGym\project\module2\src\ss7_abstract_class_interface\thuc_hanh\thuc_hanh_2_circle_comparable" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Test (2)">
-    <configuration name="Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss11_dsa_stack_queue.practice.practice_2_queue_use_linkedlist.Demo" />
-      <module name="module2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ss11_dsa_stack_queue.practice.practice_2_queue_use_linkedlist.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.TestVehicle">
     <configuration name="Test (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ss12_java_collection_framework.practice.practice_3_comparable_comparator.Test" />
       <module name="module2" />
@@ -175,13 +169,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestVehicle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="oop_exercise_vehicle.oop_exercise.TestVehicle" />
+      <module name="module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="oop_exercise_vehicle.oop_exercise.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestVehicle" />
         <item itemvalue="Application.Test (2)" />
         <item itemvalue="Application.Test (1)" />
         <item itemvalue="Application.Test" />
         <item itemvalue="Application.TestMap" />
-        <item itemvalue="Application.Demo" />
       </list>
     </recent_temporary>
   </component>
@@ -228,7 +235,7 @@
       <workItem from="1646030605925" duration="10184000" />
       <workItem from="1646057143641" duration="3875000" />
       <workItem from="1646098848908" duration="17444000" />
-      <workItem from="1646184480954" duration="13599000" />
+      <workItem from="1646184480954" duration="21052000" />
     </task>
     <task id="LOCAL-00001" summary="update thuc hanh">
       <created>1644943142091</created>
@@ -277,10 +284,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1645609884386" />
-    <state x="574" y="113" key="#com.intellij.ide.util.MemberChooser" timestamp="1646210954760">
+    <state x="574" y="113" key="#com.intellij.ide.util.MemberChooser" timestamp="1646227506062">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="113" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1646210954760" />
+    <state x="574" y="113" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1646227506062" />
     <state x="286" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1645933260325">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -293,22 +300,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1645517168554" />
-    <state width="1493" height="198" key="GridCell.Tab.0.bottom" timestamp="1646223401037">
+    <state width="1493" height="198" key="GridCell.Tab.0.bottom" timestamp="1646231281205">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="198" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1646223401037" />
-    <state width="1493" height="198" key="GridCell.Tab.0.center" timestamp="1646223401037">
+    <state width="1493" height="198" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1646231281205" />
+    <state width="1493" height="198" key="GridCell.Tab.0.center" timestamp="1646231281205">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="198" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1646223401037" />
-    <state width="1493" height="198" key="GridCell.Tab.0.left" timestamp="1646223401037">
+    <state width="1493" height="198" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1646231281205" />
+    <state width="1493" height="198" key="GridCell.Tab.0.left" timestamp="1646231281205">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="198" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1646223401037" />
-    <state width="1493" height="198" key="GridCell.Tab.0.right" timestamp="1646223401037">
+    <state width="1493" height="198" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1646231281205" />
+    <state width="1493" height="198" key="GridCell.Tab.0.right" timestamp="1646231281205">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="198" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1646223401037" />
+    <state width="1493" height="198" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1646231281205" />
     <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1646151545242">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -337,14 +344,18 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="498" y="304" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1536.824@0.0.1536.824" timestamp="1645752140704" />
+    <state x="578" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1646225739149">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="578" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1646225739149" />
     <state x="496" y="226" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1645717018021">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="496" y="226" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.824@0.0.1536.824" timestamp="1645717018021" />
-    <state x="499" y="173" key="extract.method.dialog" timestamp="1645934368244">
+    <state x="499" y="173" key="extract.method.dialog" timestamp="1646230953463">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="499" y="173" key="extract.method.dialog/0.0.1536.824@0.0.1536.824" timestamp="1645934368244" />
+    <state x="499" y="173" key="extract.method.dialog/0.0.1536.824@0.0.1536.824" timestamp="1646230953463" />
     <state x="478" y="11" width="579" height="801" key="find.popup" timestamp="1645174811635">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -353,9 +364,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1645847445710" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1646108705475">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1646224291860">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1646108705475" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1646224291860" />
   </component>
 </project>

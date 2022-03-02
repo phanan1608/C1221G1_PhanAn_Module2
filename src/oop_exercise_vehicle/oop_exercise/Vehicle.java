@@ -1,4 +1,4 @@
-package oop_exercise;
+package oop_exercise_vehicle.oop_exercise;
 
 import java.util.ArrayList;
 
@@ -53,4 +53,5 @@ public abstract class Vehicle {
     public String toString() {
         return licensePlates + "," + brand + "," + yearOfManufacture + "," + owner;
     }
+    
 }

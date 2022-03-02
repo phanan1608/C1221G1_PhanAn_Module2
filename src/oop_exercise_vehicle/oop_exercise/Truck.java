@@ -1,6 +1,6 @@
-package oop_exercise;
+package oop_exercise_vehicle.oop_exercise;
 
-public class Truck extends Vehicle implements IAddVehicle, IDeleteVehicle, IDisplayVehicle {
+public class Truck extends Vehicle {
     private double tonnage;
 
     public Truck(String licensePlates, String brand, int yearOfManufacture, String owner, double tonnage) {
@@ -18,20 +18,8 @@ public class Truck extends Vehicle implements IAddVehicle, IDeleteVehicle, IDisp
 
     @Override
     public String toString() {
-        return "Truck{" + super.toString() + "," + tonnage;
+        return "Truck{" + super.toString() + "," + tonnage + "}";
     }
 
-    @Override
-    public void deleteVehicle() {
-    }
 
-    @Override
-    public void displayVehicle() {
-        
-    }
-
-    @Override
-    public void addVehicle() {
-
-    }
 }
