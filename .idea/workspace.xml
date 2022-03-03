@@ -20,15 +20,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5e9923e5-3faa-402b-b0e9-9603d33b2713" name="Default Changelist" comment="update ss2.thuc_hanh">
-      <change afterPath="$PROJECT_DIR$/src/oop_exercise_vehicle/oop_exercise/ManufactureBrand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/oop_exercise_vehicle/oop_exercise/VehicleBrand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss13_searching_algorithms/practice/practice_1_setting_binary_search_algorithms/SettingBinarySearchAlgorithms.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/case_study/controllers/FuramaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/case_study/models/Booking.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/case_study/models/Contract.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/case_study/models/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/case_study/models/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/case_study/models/Facility.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/case_study/models/House.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/case_study/models/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/case_study/models/Room.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/case_study/models/Villa.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../module1/ss11_cau_truc_lap2/bai_tap/KiemTraSoNguyenTo.html" beforeDir="false" afterPath="$PROJECT_DIR$/../module1/ss11_cau_truc_lap2/bai_tap/KiemTraSoNguyenTo.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/oop_exercise_vehicle/oop_exercise/CarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/oop_exercise_vehicle/oop_exercise/CarController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/oop_exercise_vehicle/oop_exercise/MotorbikeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/oop_exercise_vehicle/oop_exercise/MotorbikeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/oop_exercise_vehicle/oop_exercise/TruckController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/oop_exercise_vehicle/oop_exercise/TruckController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/oop_exercise_vehicle/oop_exercise/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/oop_exercise_vehicle/oop_exercise/Vehicle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/oop_exercise_vehicle/oop_exercise/CarController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/oop_exercise_vehicle/oop_exercise/CarController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/oop_exercise_vehicle/oop_exercise/MotorbikeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/oop_exercise_vehicle/oop_exercise/MotorbikeController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +87,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Colors" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -104,13 +109,26 @@
       <recent name="D:\CodeGym\project\module2\src\ss7_abstract_class_interface\thuc_hanh\thuc_hanh_3_circle_comparable_to_compare" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TestVehicle">
+  <component name="RunManager" selected="Application.FuramaController">
     <configuration name="CountWordInString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ss11_dsa_stack_queue.exercise.exercise_2_count_word_in_string.CountWordInString" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="ss11_dsa_stack_queue.exercise.exercise_2_count_word_in_string.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FuramaController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="case_study.controllers.FuramaController" />
+      <module name="module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="case_study.controllers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -137,19 +155,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="ss12_java_collection_framework.practice.practice_3_comparable_comparator.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss12_java_collection_framework.practice.practice_2_hashmap_hashset.Test" />
-      <module name="module2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ss12_java_collection_framework.practice.practice_2_hashmap_hashset.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -185,11 +190,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.FuramaController" />
         <item itemvalue="Application.TestVehicle" />
         <item itemvalue="Application.SettingBinarySearchAlgorithms" />
         <item itemvalue="Application.CountWordInString" />
         <item itemvalue="Application.Test (1)" />
-        <item itemvalue="Application.Test" />
       </list>
     </recent_temporary>
   </component>
@@ -238,7 +243,7 @@
       <workItem from="1646098848908" duration="17444000" />
       <workItem from="1646184480954" duration="21052000" />
       <workItem from="1646234737490" duration="1972000" />
-      <workItem from="1646272591460" duration="5476000" />
+      <workItem from="1646272591460" duration="12001000" />
     </task>
     <task id="LOCAL-00001" summary="update thuc hanh">
       <created>1644943142091</created>
@@ -287,10 +292,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1645609884386" />
-    <state x="574" y="113" key="#com.intellij.ide.util.MemberChooser" timestamp="1646274965429">
+    <state x="574" y="113" key="#com.intellij.ide.util.MemberChooser" timestamp="1646296410446">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="113" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1646274965429" />
+    <state x="574" y="113" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1646296410446" />
     <state x="286" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1645933260325">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -303,22 +308,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1645517168554" />
-    <state width="1493" height="198" key="GridCell.Tab.0.bottom" timestamp="1646277884915">
+    <state width="1493" height="198" key="GridCell.Tab.0.bottom" timestamp="1646280383795">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="198" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1646277884915" />
-    <state width="1493" height="198" key="GridCell.Tab.0.center" timestamp="1646277884915">
+    <state width="1493" height="198" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1646280383795" />
+    <state width="1493" height="198" key="GridCell.Tab.0.center" timestamp="1646280383790">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="198" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1646277884915" />
-    <state width="1493" height="198" key="GridCell.Tab.0.left" timestamp="1646277884915">
+    <state width="1493" height="198" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1646280383790" />
+    <state width="1493" height="198" key="GridCell.Tab.0.left" timestamp="1646280383790">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="198" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1646277884915" />
-    <state width="1493" height="198" key="GridCell.Tab.0.right" timestamp="1646277884915">
+    <state width="1493" height="198" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1646280383790" />
+    <state width="1493" height="198" key="GridCell.Tab.0.right" timestamp="1646280383790">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="198" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1646277884915" />
+    <state width="1493" height="198" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1646280383790" />
     <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1646151545242">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -335,10 +340,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1646151545242" />
-    <state x="277" y="0" key="SettingsEditor" timestamp="1646146869392">
+    <state x="277" y="0" key="SettingsEditor" timestamp="1646279188175">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="277" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1646146869392" />
+    <state x="277" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1646279188175" />
     <state x="361" y="132" key="Vcs.Push.Dialog.v2" timestamp="1644943286460">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -367,9 +372,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1645847445710" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1646224291860">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1646282801817">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1646224291860" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1646282801817" />
   </component>
 </project>
