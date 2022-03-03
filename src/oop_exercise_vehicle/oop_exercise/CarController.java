@@ -3,23 +3,27 @@ package oop_exercise_vehicle.oop_exercise;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class CarController {
+public class CarController extends ManufactureBrand {
     public static ArrayList<Car> listCar = new ArrayList<>();
     static Scanner scanner = new Scanner(System.in);
 
     static {
-        listCar.add(new Car("43A.123.23", "Honda", 2020, "Phan An", 5, "Du lịch"));
-        listCar.add(new Car("43A.681.68", "Honda", 2015, "An An", 2, "Thể thao"));
-        listCar.add(new Car("43A.111.11", "Mazda", 2018, "An123", 7, "Gia đình"));
+        listCar.add(new Car("43A.123.23", vehicleBrands[4].getManufacturingBrand(), 2020, "Phan An", 5, "Du lịch"));
+        listCar.add(new Car("43A.681.68", vehicleBrands[5].getManufacturingBrand(), 2015, "An An", 2, "Thể thao"));
+        listCar.add(new Car("43A.111.11", vehicleBrands[6].getManufacturingBrand(), 2018, "An123", 7, "Gia đình"));
     }
 
     public static void addVehicle() {
         System.out.println("Enter License Plates");
         String licensePlates = scanner.nextLine();
-        System.out.println("Enter Brand");
-        String brand = scanner.nextLine();
+        System.out.println("Choose Vehicle Brand");
+        for (int j = 0; j < vehicleBrands.length; j++) {
+            System.out.printf("%d. %s\n", j + 1, vehicleBrands[j].getManufacturingBrand());
+        }
+        int manufacturingBrand = Integer.parseInt(scanner.nextLine());
+        String brand = vehicleBrands[manufacturingBrand].getManufacturingBrand();
         System.out.println("Enter Year Of Manufacture");
-        int yearOfManufacture = Integer.parseInt(scanner.nextLine());
+        int yearOfManufacture = Integer.parseInt(scanner.nextLine()) - 1;
         System.out.println("Enter Owner");
         String owner = scanner.nextLine();
         System.out.println("Enter Seat");

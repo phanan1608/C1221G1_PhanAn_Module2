@@ -2,7 +2,7 @@ package oop_exercise_vehicle.oop_exercise;
 
 import java.util.ArrayList;
 
-public abstract class Vehicle {
+public abstract class Vehicle extends ManufactureBrand {
     private String licensePlates;
     private String brand;
     private int yearOfManufacture;
@@ -53,5 +53,5 @@ public abstract class Vehicle {
     public String toString() {
         return licensePlates + "," + brand + "," + yearOfManufacture + "," + owner;
     }
-    
+
 }
