@@ -15,7 +15,6 @@ public class ProductManager {
     }
 
     public static void addProduct() {
-        System.out.println("Add Product");
         System.out.println("Enter ID");
         int id = Integer.parseInt(scanner.nextLine());
         System.out.println("Enter Name");

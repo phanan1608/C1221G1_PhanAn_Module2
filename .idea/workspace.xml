@@ -22,10 +22,9 @@
     <list default="true" id="5e9923e5-3faa-402b-b0e9-9603d33b2713" name="Default Changelist" comment="update ss2.thuc_hanh">
       <change beforePath="$PROJECT_DIR$/../module1/ss11_cau_truc_lap2/bai_tap/KiemTraSoNguyenTo.html" beforeDir="false" afterPath="$PROJECT_DIR$/../module1/ss11_cau_truc_lap2/bai_tap/KiemTraSoNguyenTo.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/case_study/services/IEmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/case_study/services/IEmployeeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/case_study/services/IService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/case_study/services/IService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/case_study/services/impl/EmployeeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/case_study/services/impl/EmployeeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ss12_java_collection_framework/exercise/exercise_1_arraylist_linkedlist_in_java_collection/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss12_java_collection_framework/exercise/exercise_1_arraylist_linkedlist_in_java_collection/Product.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ss12_java_collection_framework/exercise/exercise_1_arraylist_linkedlist_in_java_collection/ProductManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss12_java_collection_framework/exercise/exercise_1_arraylist_linkedlist_in_java_collection/ProductManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ss12_java_collection_framework/exercise/exercise_1_arraylist_linkedlist_in_java_collection/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss12_java_collection_framework/exercise/exercise_1_arraylist_linkedlist_in_java_collection/Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +78,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Font" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -236,7 +235,8 @@
       <workItem from="1646184480954" duration="21052000" />
       <workItem from="1646234737490" duration="1972000" />
       <workItem from="1646272591460" duration="19371000" />
-      <workItem from="1646356936287" duration="14261000" />
+      <workItem from="1646356936287" duration="15305000" />
+      <workItem from="1646401235401" duration="2681000" />
     </task>
     <task id="LOCAL-00001" summary="update thuc hanh">
       <created>1644943142091</created>
@@ -295,10 +295,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1645609884386" />
-    <state x="574" y="113" key="#com.intellij.ide.util.MemberChooser" timestamp="1646376839715">
+    <state x="574" y="113" key="#com.intellij.ide.util.MemberChooser" timestamp="1646401606870">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="113" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1646376839715" />
+    <state x="574" y="113" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1646401606870" />
     <state x="286" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1646319341234">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -311,22 +311,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1645517168554" />
-    <state width="1493" height="198" key="GridCell.Tab.0.bottom" timestamp="1646387464086">
+    <state width="1493" height="205" key="GridCell.Tab.0.bottom" timestamp="1646403168009">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="198" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1646387464086" />
-    <state width="1493" height="198" key="GridCell.Tab.0.center" timestamp="1646387464086">
+    <state width="1493" height="205" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1646403168009" />
+    <state width="1493" height="205" key="GridCell.Tab.0.center" timestamp="1646403168009">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="198" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1646387464086" />
-    <state width="1493" height="198" key="GridCell.Tab.0.left" timestamp="1646387464086">
+    <state width="1493" height="205" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1646403168009" />
+    <state width="1493" height="205" key="GridCell.Tab.0.left" timestamp="1646403168009">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="198" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1646387464086" />
-    <state width="1493" height="198" key="GridCell.Tab.0.right" timestamp="1646387464086">
+    <state width="1493" height="205" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1646403168009" />
+    <state width="1493" height="205" key="GridCell.Tab.0.right" timestamp="1646403168009">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="198" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1646387464086" />
+    <state width="1493" height="205" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1646403168009" />
     <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1646151545242">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -343,10 +343,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1646151545242" />
-    <state x="277" y="0" key="SettingsEditor" timestamp="1646375519420">
+    <state x="277" y="0" key="SettingsEditor" timestamp="1646403375651">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="277" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1646375519420" />
+    <state x="277" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1646403375651" />
     <state x="361" y="132" key="Vcs.Push.Dialog.v2" timestamp="1644943286460">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
