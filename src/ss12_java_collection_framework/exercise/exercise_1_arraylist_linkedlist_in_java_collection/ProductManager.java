@@ -8,10 +8,10 @@ public class ProductManager {
     static Scanner scanner = new Scanner(System.in);
 
     static {
-        listProduct.add(new Product(1, "A", 15, 1231));
-        listProduct.add(new Product(2, "B", 25, 1235));
-        listProduct.add(new Product(3, "C", 35, 1232));
-        listProduct.add(new Product(4, "D", 5, 1234));
+        listProduct.add(new Product(1, "Laptop", 15, 1231));
+        listProduct.add(new Product(2, "Mouse", 25, 1235));
+        listProduct.add(new Product(3, "Keyboard", 35, 1232));
+        listProduct.add(new Product(4, "Phone", 5, 1234));
     }
 
     public static void addProduct() {
@@ -33,18 +33,35 @@ public class ProductManager {
         int idDelete = Integer.parseInt(scanner.nextLine());
         for (int i = 0; i < listProduct.size(); i++) {
             if (listProduct.get(i).getId() == idDelete) {
-                System.out.println("Enter name need edit ");
-                String name = scanner.nextLine();
-                listProduct.get(i).setName(name);
-                System.out.println("Enter amount need edit ");
-                int amountEdit = Integer.parseInt(scanner.nextLine());
-                listProduct.get(i).setAmount(amountEdit);
-                System.out.println("Enter price need edit ");
-                double priceEdit = Double.parseDouble(scanner.nextLine());
-                listProduct.get(i).setPrice(priceEdit);
+                System.out.println("Enter information need edit");
+                System.out.println("1. Name");
+                System.out.println("2. Amount");
+                System.out.println("3. Price");
+                int choice = Integer.parseInt(scanner.nextLine());
+                switch (choice) {
+                    case 1:
+                        System.out.println("Enter name need edit ");
+                        String name = scanner.nextLine();
+                        listProduct.get(i).setName(name);
+                        break;
+                    case 2:
+                        System.out.println("Enter amount need edit ");
+                        int amountEdit = Integer.parseInt(scanner.nextLine());
+                        listProduct.get(i).setAmount(amountEdit);
+                        break;
+                    case 3:
+                        System.out.println("Enter price need edit ");
+                        double priceEdit = Double.parseDouble(scanner.nextLine());
+                        listProduct.get(i).setPrice(priceEdit);
+                        break;
+                    default:
+                        System.out.println("No Choice");
+                }
+            } else {
+                System.out.println("NOT FOUND ID");
+                break;
             }
         }
-
     }
 
     public static void deleteProduct() {
@@ -66,10 +83,17 @@ public class ProductManager {
     public static void searchByName() {
         System.out.println("Enter Name product need search");
         String nameSearch = scanner.nextLine();
+        ArrayList<Product> listProductSameName = new ArrayList<>();
         for (int i = 0; i < listProduct.size(); i++) {
-            if (nameSearch.equals(listProduct.get(i).getName())) {
-                System.out.println(listProduct.get(i).toString());
+            if (listProduct.get(i).getName().toLowerCase().contains(nameSearch.toLowerCase())) {
+                listProductSameName.add(listProduct.get(i));
             }
+        }
+        if (listProductSameName.size() == 0) {
+            System.out.println("NOT FOUND");
+        }
+        for (Product product : listProductSameName) {
+            System.out.println(product);
         }
     }
 
