@@ -8,9 +8,13 @@ public abstract class Candidates {
     private String address;
     private String phone;
     private String email;
-    private String candidateType;
+    private int candidateType;
 
-    public Candidates(int candidateId, String firstName, String lastName, int birthDay, String address, String phone, String email, String candidateType) {
+    public static final int EXPERIENCE = 0;
+    public static final int FRESHER = 1;
+    public static final int INTERN = 2;
+
+    public Candidates(int candidateId, String firstName, String lastName, int birthDay, String address, String phone, String email, int candidateType) {
         this.candidateId = candidateId;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -77,11 +81,11 @@ public abstract class Candidates {
         this.email = email;
     }
 
-    public String getCandidateType() {
+    public int getCandidateType() {
         return candidateType;
     }
 
-    public void setCandidateType(String candidateType) {
+    public void setCandidateType(int candidateType) {
         this.candidateType = candidateType;
     }
 

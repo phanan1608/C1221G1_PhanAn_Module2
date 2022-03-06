@@ -20,19 +20,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5e9923e5-3faa-402b-b0e9-9603d33b2713" name="Default Changelist" comment="update ss2.thuc_hanh">
-      <change afterPath="$PROJECT_DIR$/src/collection_review/controllers/CandidateController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/collection_review/models/Candidates.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/collection_review/models/ExperienceCandidate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/collection_review/models/FresherCandidate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/collection_review/models/InternCandidate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/collection_review/services/IServices.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/collection_review/services/impl/ExperienceCandidateImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/collection_review/services/impl/FresherCandidateImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/collection_review/services/impl/InternCandidateImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/collection_review/views/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/collection_review/views/Views.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/collection_review/controllers/EnterInformation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../module1/ss11_cau_truc_lap2/bai_tap/KiemTraSoNguyenTo.html" beforeDir="false" afterPath="$PROJECT_DIR$/../module1/ss11_cau_truc_lap2/bai_tap/KiemTraSoNguyenTo.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/collection_review/controllers/CandidateController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/collection_review/controllers/CandidateController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/collection_review/models/Candidates.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/collection_review/models/Candidates.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/collection_review/models/ExperienceCandidate.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/collection_review/models/ExperienceCandidate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/collection_review/models/FresherCandidate.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/collection_review/models/FresherCandidate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/collection_review/models/InternCandidate.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/collection_review/models/InternCandidate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/collection_review/services/impl/ExperienceCandidateImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/collection_review/services/impl/ExperienceCandidateImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/collection_review/services/impl/FresherCandidateImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/collection_review/services/impl/FresherCandidateImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/collection_review/services/impl/InternCandidateImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/collection_review/services/impl/InternCandidateImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/collection_review/views/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/collection_review/controllers/CandidateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/collection_review/controllers/CandidateController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/collection_review/models/Candidates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/collection_review/models/Candidates.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/collection_review/models/ExperienceCandidate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/collection_review/models/ExperienceCandidate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/collection_review/models/FresherCandidate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/collection_review/models/FresherCandidate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/collection_review/models/InternCandidate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/collection_review/models/InternCandidate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/collection_review/services/impl/ExperienceCandidateImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/collection_review/services/impl/ExperienceCandidateImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/collection_review/services/impl/FresherCandidateImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/collection_review/services/impl/FresherCandidateImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/collection_review/services/impl/InternCandidateImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/collection_review/services/impl/InternCandidateImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/collection_review/views/Test.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,12 +130,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="collection_review.views.Test" />
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="case_study.models.Test" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="collection_review.views.*" />
+          <option name="PATTERN" value="case_study.models.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -136,11 +144,11 @@
       </method>
     </configuration>
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="case_study.models.Test" />
+      <option name="MAIN_CLASS_NAME" value="collection_review.Test" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="case_study.models.*" />
+          <option name="PATTERN" value="collection_review.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -190,7 +198,6 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Views" />
-        <item itemvalue="Application.Test (2)" />
         <item itemvalue="Application.Test (1)" />
         <item itemvalue="Application.View" />
         <item itemvalue="Application.Test" />
@@ -245,7 +252,8 @@
       <workItem from="1646272591460" duration="19371000" />
       <workItem from="1646356936287" duration="15305000" />
       <workItem from="1646401235401" duration="2787000" />
-      <workItem from="1646442583811" duration="23815000" />
+      <workItem from="1646442583811" duration="26003000" />
+      <workItem from="1646542762504" duration="4845000" />
     </task>
     <task id="LOCAL-00001" summary="update thuc hanh">
       <created>1644943142091</created>
@@ -320,22 +328,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1645517168554" />
-    <state width="1493" height="264" key="GridCell.Tab.0.bottom" timestamp="1646468683346">
+    <state width="1493" height="264" key="GridCell.Tab.0.bottom" timestamp="1646547712342">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="264" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1646468683346" />
-    <state width="1493" height="264" key="GridCell.Tab.0.center" timestamp="1646468683346">
+    <state width="1493" height="264" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1646547712342" />
+    <state width="1493" height="264" key="GridCell.Tab.0.center" timestamp="1646547712342">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="264" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1646468683346" />
-    <state width="1493" height="264" key="GridCell.Tab.0.left" timestamp="1646468683346">
+    <state width="1493" height="264" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1646547712342" />
+    <state width="1493" height="264" key="GridCell.Tab.0.left" timestamp="1646547712342">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="264" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1646468683346" />
-    <state width="1493" height="264" key="GridCell.Tab.0.right" timestamp="1646468683346">
+    <state width="1493" height="264" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1646547712342" />
+    <state width="1493" height="264" key="GridCell.Tab.0.right" timestamp="1646547712342">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="264" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1646468683346" />
+    <state width="1493" height="264" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1646547712342" />
     <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1646151545242">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

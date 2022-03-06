@@ -1,5 +1,6 @@
 package collection_review.controllers;
 
+import collection_review.models.Candidates;
 import collection_review.models.ExperienceCandidate;
 import collection_review.models.FresherCandidate;
 import collection_review.models.InternCandidate;
@@ -7,25 +8,14 @@ import collection_review.services.impl.ExperienceCandidateImpl;
 import collection_review.services.impl.FresherCandidateImpl;
 import collection_review.services.impl.InternCandidateImpl;
 
-import java.util.Calendar;
 import java.util.Scanner;
 
-public class CandidateController {
-    Calendar instance = Calendar.getInstance();
-    int yearCurrent = instance.get(Calendar.YEAR);
-
-    public static final String EMAIL_FORMAT = "^[_A-Za-z0-9-+]+(\\.[_A-Za-z0-9-]+)*@"
-            + "[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$";
-
-    public static final String PHONE_NUMBER_MINIMUM = "\\d{10}";
-
+public class CandidateController extends EnterInformation {
     public void displayMenu() {
         ExperienceCandidateImpl experienceCandidate = new ExperienceCandidateImpl();
         FresherCandidateImpl fresherCandidate = new FresherCandidateImpl();
         InternCandidateImpl internCandidate = new InternCandidateImpl();
         Scanner scanner = new Scanner(System.in);
-
-
         int choice = -1;
         do {
             System.out.println("==========CANDIDATE MANAGEMENT SYSTEM==========\n" +
@@ -62,7 +52,7 @@ public class CandidateController {
 
     private void search(ExperienceCandidateImpl experienceCandidate, FresherCandidateImpl fresherCandidate, InternCandidateImpl internCandidate, Scanner scanner) {
         experienceCandidate.displayNameList();
-        fresherCandidate.displayNameList();
+        fresherCandidate.displayFullNameList();
         internCandidate.displayNameList();
         System.out.println("Input Candidate name (First name or Last name): ");
         String nameSearch = scanner.nextLine();
@@ -89,39 +79,8 @@ public class CandidateController {
         boolean flag;
         do {
             System.out.println("=====CREATE INTERN=====");
-            System.out.println("Enter Candidate ID");
-            int candidateId = Integer.parseInt(scanner.nextLine());
-            System.out.println("Enter First Name");
-            String firstName = scanner.nextLine();
-            System.out.println("Enter Last Name");
-            String lastName = scanner.nextLine();
-            System.out.println("Enter Birth Day");
-            int birthDay;
-            do {
-                birthDay = Integer.parseInt(scanner.nextLine());
-                if (birthDay < 1900 || birthDay > yearCurrent) {
-                    System.err.println("Please Re-enter Birth Day (from 1900 to now)");
-                } else break;
-            } while (true);
-            System.out.println("Enter Address");
-            String address = scanner.nextLine();
-            System.out.println("Enter Phone");
-            String phone;
-            do {
-                phone = scanner.nextLine();
-                if (!phone.matches(PHONE_NUMBER_MINIMUM)) {
-                    System.err.println("Invalid phone number!!!Please Re-enter(minimum 10 characters)");
-                } else break;
-            } while (true);
-            System.out.println("Enter Email");
-            String email;
-            do {
-                email = scanner.nextLine();
-                if (!email.matches(EMAIL_FORMAT)) {
-                    System.err.println("Invalid email!!!Please Re-enter(accountname>@<domain)");
-                } else break;
-            } while (true);
-            String candidateType = "Intern";
+            super.enterInformationCandidate();
+            int candidateType = Candidates.INTERN;
             System.out.println("Enter Major");
             String major = scanner.nextLine();
             System.out.println("Enter Semester");
@@ -130,9 +89,10 @@ public class CandidateController {
             String universityName = scanner.nextLine();
             InternCandidate intern = new InternCandidate(candidateId, firstName, lastName, birthDay, address, phone, email, candidateType, major, semester, universityName);
             internCandidate.add(intern);
+            System.out.println("Successfully Added");
             System.out.println("Do you want to continue (Y/N)?. ");
             String choiceAdd = scanner.nextLine();
-            flag = choiceAdd.toLowerCase().equals("y");
+            flag = "y".equals(choiceAdd.toLowerCase());
         } while (flag);
     }
 
@@ -141,57 +101,26 @@ public class CandidateController {
         boolean flag;
         do {
             System.out.println("=====CREATE FRESHER=====");
-            System.out.println("Enter Candidate ID");
-            int candidateId = Integer.parseInt(scanner.nextLine());
-            System.out.println("Enter First Name");
-            String firstName = scanner.nextLine();
-            System.out.println("Enter Last Name");
-            String lastName = scanner.nextLine();
-            System.out.println("Enter Birth Day");
-            int birthDay;
-            do {
-                birthDay = Integer.parseInt(scanner.nextLine());
-                if (birthDay < 1900 || birthDay > yearCurrent) {
-                    System.err.println("Please Re-enter Birth Day (from 1900 to now)");
-                } else break;
-            } while (true);
-            System.out.println("Enter Address");
-            String address = scanner.nextLine();
-            System.out.println("Enter Phone");
-            String phone;
-            do {
-                phone = scanner.nextLine();
-                if (!phone.matches(PHONE_NUMBER_MINIMUM)) {
-                    System.err.println("Invalid phone number!!!Please Re-enter(minimum 10 characters)");
-                } else break;
-            } while (true);
-            System.out.println("Enter Email");
-            String email;
-            do {
-                email = scanner.nextLine();
-                if (!email.matches(EMAIL_FORMAT)) {
-                    System.err.println("Invalid email!!!Please Re-enter(accountname>@<domain)");
-                } else break;
-            } while (true);
-            String candidateType = "Fresh";
+            super.enterInformationCandidate();
+            int candidateType = Candidates.FRESHER;
             System.out.println("Enter Graduation Date");
             int graduationDate = Integer.parseInt(scanner.nextLine());
             System.out.println("Enter Graduation Rank");
             String graduationRank;
             do {
                 graduationRank = scanner.nextLine();
-                if (!"excellence".equals(graduationRank) && !"good".equals(graduationRank) && !"fair".equals(graduationRank) && !"poor".equals(graduationRank)) {
+                if (!"excellence".equals(graduationRank.toLowerCase()) && !"good".equals(graduationRank.toLowerCase()) && !"fair".equals(graduationRank.toLowerCase()) && !"poor".equals(graduationRank.toLowerCase())) {
                     System.err.println("Please Re-enter Graduation Rank (Excellence, Good, Fair, Poor)");
                 } else break;
-
             } while (true);
             System.out.println("Enter Education");
             String education = scanner.nextLine();
             FresherCandidate fresher = new FresherCandidate(candidateId, firstName, lastName, birthDay, address, phone, email, candidateType, graduationDate, graduationRank, education);
             fresherCandidate.add(fresher);
+            System.out.println("Successfully Added");
             System.out.println("Do you want to continue (Y/N)?. ");
             String choiceAdd = scanner.nextLine();
-            flag = choiceAdd.toLowerCase().equals("y");
+            flag = "y".equals(choiceAdd.toLowerCase());
         } while (flag);
     }
 
@@ -200,41 +129,8 @@ public class CandidateController {
         boolean flag;
         do {
             System.out.println("=====CREATE EXPERIENCE=====");
-            System.out.println("Enter Candidate ID");
-            int candidateId = Integer.parseInt(scanner.nextLine());
-            System.out.println("Enter First Name");
-            String firstName = scanner.nextLine();
-            System.out.println("Enter Last Name");
-            String lastName = scanner.nextLine();
-            System.out.println("Enter Birth Day");
-            int birthDay;
-            do {
-                birthDay = Integer.parseInt(scanner.nextLine());
-                if (birthDay < 1900 || birthDay > yearCurrent) {
-                    System.err.println("Please Re-enter Birth Day (from 1900 to now)");
-                } else {
-                    break;
-                }
-            } while (true);
-            System.out.println("Enter Address");
-            String address = scanner.nextLine();
-            System.out.println("Enter Phone");
-            String phone;
-            do {
-                phone = scanner.nextLine();
-                if (!phone.matches(PHONE_NUMBER_MINIMUM)) {
-                    System.err.println("Invalid phone number!!!Please Re-enter(minimum 10 characters)");
-                } else break;
-            } while (true);
-            System.out.println("Enter Email");
-            String email;
-            do {
-                email = scanner.nextLine();
-                if (!email.matches(EMAIL_FORMAT)) {
-                    System.err.println("Invalid email!!!Please Re-enter(accountname>@<domain)");
-                } else break;
-            } while (true);
-            String candidateType = "Experience";
+            super.enterInformationCandidate();
+            int candidateType = Candidates.EXPERIENCE;
             System.out.println("Enter Year Of Experience ");
             int expInYear;
             do {
@@ -247,9 +143,10 @@ public class CandidateController {
             String proSkill = scanner.nextLine();
             ExperienceCandidate experience = new ExperienceCandidate(candidateId, firstName, lastName, birthDay, address, phone, email, candidateType, expInYear, proSkill);
             experienceCandidate.add(experience);
+            System.out.println("Successfully Added");
             System.out.println("Do you want to continue (Y/N)?. ");
             String choiceAdd = scanner.nextLine();
-            flag = choiceAdd.toLowerCase().equals("y");
+            flag = "y".equals(choiceAdd.toLowerCase());
         } while (flag);
     }
 }

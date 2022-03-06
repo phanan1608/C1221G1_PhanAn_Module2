@@ -9,7 +9,7 @@ public class FresherCandidateImpl {
     static List<FresherCandidate> fresherList = new ArrayList<>();
 
     static {
-        fresherList.add(new FresherCandidate(2002, "Nguyễn", "Nghĩa", 1997, "Đà Nẵng", "0900111222", "ấđâsđa@gmail.com", "Fresher", 2018, "Good", "University"));
+        fresherList.add(new FresherCandidate(2002, "Nguyen", "Nguyen", 1997, "Da Nang", "0900111222", "hello@gmail.com", 1, 2018, "Good", "University"));
     }
 
     public void add(FresherCandidate fresherCandidate) {
@@ -23,7 +23,7 @@ public class FresherCandidateImpl {
         }
     }
 
-    public void displayNameList() {
+    public void displayFullNameList() {
         System.out.println("=====FRESHER CANDIDATE NAME=====");
         for (FresherCandidate candidate : fresherList) {
             System.out.println(candidate.getFirstName() + " " + candidate.getLastName());

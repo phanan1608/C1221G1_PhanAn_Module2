@@ -10,9 +10,11 @@ public class ExperienceCandidateImpl {
 
     static {
         experienceList.add(new ExperienceCandidate(1001, "Phan", "An", 1997,
-                "Đà Nẵng", "0912123123", "abc@gmail.com", "Experience", 3, "C"));
-        experienceList.add(new ExperienceCandidate(1023, "Trần", "Hoàng", 1997,
-                "Đà Nẵng", "0905123312", "xyz@gmail.com", "Experience", 3, "D"));
+                "Da Nang", "0912123123", "abc@gmail.com", 0, 3, "HTMLOL"));
+        experienceList.add(new ExperienceCandidate(1023, "Tran", "Hoang", 1997,
+                "Da Nang", "0905123312", "xyz@gmail.com", 0, 2, "CSSGO"));
+        experienceList.add(new ExperienceCandidate(1023, "Nguyen", "Nghia", 1997,
+                "Da Nang", "0905111222", "aaa@gmail.com", 0, 1, "PHPUBG Mobile"));
     }
 
     public void displayList() {

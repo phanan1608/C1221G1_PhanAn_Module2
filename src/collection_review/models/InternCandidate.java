@@ -6,7 +6,7 @@ public class InternCandidate extends Candidates {
     private String universityName;
 
 
-    public InternCandidate(int candidateId, String firstName, String lastName, int birthDay, String address, String phone, String email, String candidateType, String major, int semester, String universityName) {
+    public InternCandidate(int candidateId, String firstName, String lastName, int birthDay, String address, String phone, String email, int candidateType, String major, int semester, String universityName) {
         super(candidateId, firstName, lastName, birthDay, address, phone, email, candidateType);
         this.major = major;
         this.semester = semester;

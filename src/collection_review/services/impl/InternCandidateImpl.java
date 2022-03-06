@@ -9,7 +9,7 @@ public class InternCandidateImpl {
     static List<InternCandidate> internList = new ArrayList<>();
 
     static {
-        internList.add(new InternCandidate(3001, "Phan", "Phan", 2000, "ĐN", "0905168168", "ddmjs@gmail.com", "Intern", "Marketing", 6, "Economic"));
+        internList.add(new InternCandidate(3001, "Phan", "Phan", 2000, "Da Nang", "0905168168", "ddmjs@gmail.com", 2, "Marketing", 6, "Economic"));
     }
 
     public void add(InternCandidate internCandidate) {
