@@ -19,7 +19,6 @@ public class EnterInformation {
 
     public static final String EMAIL_FORMAT = "^[_A-Za-z0-9-+]+(\\.[_A-Za-z0-9-]+)*@"
             + "[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$";
-
     public static final String PHONE_NUMBER_MINIMUM = "\\d{10}";
 
     public void enterInformationCandidate() {
@@ -49,9 +48,8 @@ public class EnterInformation {
         do {
             email = scanner.nextLine();
             if (!email.matches(EMAIL_FORMAT)) {
-                System.err.println("Invalid email!!!Please Re-enter(accountname>@<domain)");
+                System.err.println("Invalid email!!!Please Re-enter(accountname@domain)");
             } else break;
         } while (true);
     }
-
 }

@@ -14,6 +14,9 @@ public abstract class Candidates {
     public static final int FRESHER = 1;
     public static final int INTERN = 2;
 
+    public Candidates() {
+    }
+
     public Candidates(int candidateId, String firstName, String lastName, int birthDay, String address, String phone, String email, int candidateType) {
         this.candidateId = candidateId;
         this.firstName = firstName;

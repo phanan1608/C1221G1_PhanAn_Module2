@@ -4,19 +4,19 @@ import collection_review.models.Candidates;
 import collection_review.models.ExperienceCandidate;
 import collection_review.models.FresherCandidate;
 import collection_review.models.InternCandidate;
-import collection_review.services.impl.ExperienceCandidateImpl;
-import collection_review.services.impl.FresherCandidateImpl;
-import collection_review.services.impl.InternCandidateImpl;
+import collection_review.services.impl.impl.ExperienceServicesImpl;
+import collection_review.services.impl.impl.FresherServicesImpl;
+import collection_review.services.impl.impl.InternServicesImpl;
 
 import java.util.Scanner;
 
 public class CandidateController extends EnterInformation {
     public void displayMenu() {
-        ExperienceCandidateImpl experienceCandidate = new ExperienceCandidateImpl();
-        FresherCandidateImpl fresherCandidate = new FresherCandidateImpl();
-        InternCandidateImpl internCandidate = new InternCandidateImpl();
+        ExperienceServicesImpl experienceCandidate = new ExperienceServicesImpl();
+        FresherServicesImpl fresherCandidate = new FresherServicesImpl();
+        InternServicesImpl internCandidate = new InternServicesImpl();
         Scanner scanner = new Scanner(System.in);
-        int choice = -1;
+        int choice;
         do {
             System.out.println("==========CANDIDATE MANAGEMENT SYSTEM==========\n" +
                     "1.\tExperience\n" +
@@ -47,36 +47,42 @@ public class CandidateController extends EnterInformation {
                     System.out.println("No choice!");
             }
         } while (true);
-
     }
 
-    private void search(ExperienceCandidateImpl experienceCandidate, FresherCandidateImpl fresherCandidate, InternCandidateImpl internCandidate, Scanner scanner) {
-        experienceCandidate.displayNameList();
-        fresherCandidate.displayFullNameList();
-        internCandidate.displayNameList();
+    private void search(ExperienceServicesImpl experienceCandidate, FresherServicesImpl fresherCandidate, InternServicesImpl internCandidate, Scanner scanner) {
+        experienceCandidate.displayFullName();
+        fresherCandidate.displayFullName();
+        internCandidate.displayFullName();
         System.out.println("Input Candidate name (First name or Last name): ");
         String nameSearch = scanner.nextLine();
-        System.out.println("Input type of candidate:\n" +
-                "1. Experience\n" +
-                "2. Fresher\n" +
-                "3. Intern");
-        int typeCandidateSearch = Integer.parseInt(scanner.nextLine());
-        if (typeCandidateSearch == 1) {
-            experienceCandidate.searchByName(nameSearch);
-        } else if (typeCandidateSearch == 2) {
-            fresherCandidate.searchByName(nameSearch);
-        } else if (typeCandidateSearch == 3) {
-            internCandidate.searchByName(nameSearch);
-        } else {
-            experienceCandidate.searchByName(nameSearch);
-            fresherCandidate.searchByName(nameSearch);
-            internCandidate.searchByName(nameSearch);
+        int typeCandidateSearch;
+        do {
+            System.out.println("Input type of candidate:\n" +
+                    "0. Experience\n" +
+                    "1. Fresher\n" +
+                    "2. Intern");
+            typeCandidateSearch = Integer.parseInt(scanner.nextLine());
+            if (typeCandidateSearch < 0 || typeCandidateSearch > 2) {
+                System.err.println("Please only choice 0, 1 or 2");
+            } else break;
+        } while (true);
+        switch (typeCandidateSearch) {
+            case 0:
+                System.out.println("=====EXPERIENCE LIST===== ");
+                experienceCandidate.searchByName(nameSearch);
+                break;
+            case 1:
+                System.out.println("=====FRESHER LIST===== ");
+                fresherCandidate.searchByName(nameSearch);
+                break;
+            case 2:
+                System.out.println("=====INTERN LIST===== ");
+                internCandidate.searchByName(nameSearch);
+                break;
         }
     }
 
-    private void addInternList(InternCandidateImpl internCandidate, Scanner scanner) {
-        internCandidate.displayList();
-        boolean flag;
+    private void addInternList(InternServicesImpl internCandidate, Scanner scanner) {
         do {
             System.out.println("=====CREATE INTERN=====");
             super.enterInformationCandidate();
@@ -90,15 +96,16 @@ public class CandidateController extends EnterInformation {
             InternCandidate intern = new InternCandidate(candidateId, firstName, lastName, birthDay, address, phone, email, candidateType, major, semester, universityName);
             internCandidate.add(intern);
             System.out.println("Successfully Added");
+            internCandidate.displayList();
             System.out.println("Do you want to continue (Y/N)?. ");
             String choiceAdd = scanner.nextLine();
-            flag = "y".equals(choiceAdd.toLowerCase());
-        } while (flag);
+            if (!"y".equals(choiceAdd.toLowerCase())) {
+                break;
+            }
+        } while (true);
     }
 
-    private void addFresherList(FresherCandidateImpl fresherCandidate, Scanner scanner) {
-        fresherCandidate.displayList();
-        boolean flag;
+    private void addFresherList(FresherServicesImpl fresherCandidate, Scanner scanner) {
         do {
             System.out.println("=====CREATE FRESHER=====");
             super.enterInformationCandidate();
@@ -118,15 +125,16 @@ public class CandidateController extends EnterInformation {
             FresherCandidate fresher = new FresherCandidate(candidateId, firstName, lastName, birthDay, address, phone, email, candidateType, graduationDate, graduationRank, education);
             fresherCandidate.add(fresher);
             System.out.println("Successfully Added");
+            fresherCandidate.displayList();
             System.out.println("Do you want to continue (Y/N)?. ");
             String choiceAdd = scanner.nextLine();
-            flag = "y".equals(choiceAdd.toLowerCase());
-        } while (flag);
+            if (!"y".equals(choiceAdd.toLowerCase())) {
+                break;
+            }
+        } while (true);
     }
 
-    private void addExperienceList(ExperienceCandidateImpl experienceCandidate, Scanner scanner) {
-        experienceCandidate.displayList();
-        boolean flag;
+    private void addExperienceList(ExperienceServicesImpl experienceCandidate, Scanner scanner) {
         do {
             System.out.println("=====CREATE EXPERIENCE=====");
             super.enterInformationCandidate();
@@ -144,9 +152,12 @@ public class CandidateController extends EnterInformation {
             ExperienceCandidate experience = new ExperienceCandidate(candidateId, firstName, lastName, birthDay, address, phone, email, candidateType, expInYear, proSkill);
             experienceCandidate.add(experience);
             System.out.println("Successfully Added");
+            experienceCandidate.displayList();
             System.out.println("Do you want to continue (Y/N)?. ");
             String choiceAdd = scanner.nextLine();
-            flag = "y".equals(choiceAdd.toLowerCase());
-        } while (flag);
+            if (!"y".equals(choiceAdd.toLowerCase())) {
+                break;
+            }
+        } while (true);
     }
 }

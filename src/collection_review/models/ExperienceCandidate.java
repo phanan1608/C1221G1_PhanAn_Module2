@@ -4,6 +4,8 @@ public class ExperienceCandidate extends Candidates {
     private int expInYear;
     private String proSkill;
 
+    public ExperienceCandidate() {
+    }
 
     public ExperienceCandidate(int candidateId, String firstName, String lastName, int birthDay, String address, String phone, String email, int candidateType, int expInYear, String proSkill) {
         super(candidateId, firstName, lastName, birthDay, address, phone, email, candidateType);

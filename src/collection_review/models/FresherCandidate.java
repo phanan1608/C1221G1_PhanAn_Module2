@@ -5,6 +5,9 @@ public class FresherCandidate extends Candidates {
     private String graduationRank;
     private String education;
 
+    public FresherCandidate() {
+    }
+
     public FresherCandidate(int candidateId, String firstName, String lastName, int birthDay, String address, String phone, String email, int candidateType, int graduationDate, String graduationRank, String education) {
         super(candidateId, firstName, lastName, birthDay, address, phone, email, candidateType);
         this.graduationDate = graduationDate;
