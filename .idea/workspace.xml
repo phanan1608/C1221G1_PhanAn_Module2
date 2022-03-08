@@ -20,28 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5e9923e5-3faa-402b-b0e9-9603d33b2713" name="Default Changelist" comment="update ss2.thuc_hanh">
-      <change afterPath="$PROJECT_DIR$/src/collection_review/services/impl/IServices.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss15_exception_debug/exercise/exercise_1_illegal_triangle_exception/IllegalTriangleException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss15_exception_debug/exercise/exercise_1_illegal_triangle_exception/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss15_exception_debug/practice/practice_1_debug/LinearEquationResolver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss15_exception_debug/practice/practice_2_array_index_out_of_bounds_exception/ArrayExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss15_exception_debug/practice/practice_3_number_format_exception/CalculationExample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../module1/ss11_cau_truc_lap2/bai_tap/KiemTraSoNguyenTo.html" beforeDir="false" afterPath="$PROJECT_DIR$/../module1/ss11_cau_truc_lap2/bai_tap/KiemTraSoNguyenTo.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/collection_review/controllers/CandidateController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/collection_review/controllers/CandidateController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/collection_review/models/Candidates.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/collection_review/models/Candidates.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/collection_review/models/ExperienceCandidate.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/collection_review/models/ExperienceCandidate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/collection_review/models/FresherCandidate.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/collection_review/models/FresherCandidate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/collection_review/models/InternCandidate.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/collection_review/models/InternCandidate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/collection_review/services/IServices.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/collection_review/services/impl/ExperienceCandidateImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/collection_review/services/impl/FresherCandidateImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/collection_review/services/impl/InternCandidateImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/collection_review/controllers/CandidateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/collection_review/controllers/CandidateController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/collection_review/controllers/EnterInformation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/collection_review/controllers/EnterInformation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/collection_review/models/Candidates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/collection_review/models/Candidates.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/collection_review/models/ExperienceCandidate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/collection_review/models/ExperienceCandidate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/collection_review/models/FresherCandidate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/collection_review/models/FresherCandidate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/collection_review/models/InternCandidate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/collection_review/models/InternCandidate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/collection_review/services/IServices.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/collection_review/services/impl/ExperienceCandidateImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/collection_review/services/impl/impl/ExperienceServicesImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/collection_review/services/impl/FresherCandidateImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/collection_review/services/impl/impl/FresherServicesImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/collection_review/services/impl/InternCandidateImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/collection_review/services/impl/impl/InternServicesImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/collection_review/controllers/EnterInformation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/collection_review/controllers/EnterInformation.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,10 +78,10 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Font" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="yiiguxing.plugin.translate" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -117,13 +103,18 @@
       <recent name="D:\CodeGym\project\module2\src\ss7_abstract_class_interface\thuc_hanh\thuc_hanh_3_circle_comparable_to_compare" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Views">
-    <configuration name="Test (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss12_java_collection_framework.exercise.exercise_1_arraylist_linkedlist_in_java_collection.Test" />
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="BubbleSort" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.Test (1)">
+    <configuration name="ArrayExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss15_exception_debug.practice.practice_2_array_index_out_of_bounds_exception.ArrayExample" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss12_java_collection_framework.exercise.exercise_1_arraylist_linkedlist_in_java_collection.*" />
+          <option name="PATTERN" value="ss15_exception_debug.practice.practice_2_array_index_out_of_bounds_exception.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -131,12 +122,51 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="case_study.models.Test" />
+    <configuration name="BubbleSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss14_sorting_algorithms.practice.practice_1_setting_bubble_sort.BubbleSort" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="case_study.models.*" />
+          <option name="PATTERN" value="ss14_sorting_algorithms.practice.practice_1_setting_bubble_sort.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CalculationExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss15_exception_debug.practice.practice_3_number_format_exception.CalculationExample" />
+      <module name="module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ss15_exception_debug.practice.practice_3_number_format_exception.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LinearEquationResolver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss15_exception_debug.practice.practice_1_debug.LinearEquationResolver" />
+      <module name="module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ss15_exception_debug.practice.practice_1_debug.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss15_exception_debug.exercise.exercise_1_illegal_triangle_exception.Test" />
+      <module name="module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ss15_exception_debug.exercise.exercise_1_illegal_triangle_exception.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -170,38 +200,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="View" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="oop_exercise_vehicle.oop_exercise.views.View" />
-      <module name="module2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="oop_exercise_vehicle.oop_exercise.views.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Views" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="collection_review.views.Views" />
-      <module name="module2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="collection_review.models.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Views" />
         <item itemvalue="Application.Test (1)" />
-        <item itemvalue="Application.View" />
-        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.CalculationExample" />
+        <item itemvalue="Application.ArrayExample" />
+        <item itemvalue="Application.LinearEquationResolver" />
+        <item itemvalue="Application.BubbleSort" />
       </list>
     </recent_temporary>
   </component>
@@ -257,6 +262,8 @@
       <workItem from="1646542762504" duration="4845000" />
       <workItem from="1646560884334" duration="8635000" />
       <workItem from="1646573900468" duration="4419000" />
+      <workItem from="1646616817875" duration="9421000" />
+      <workItem from="1646707015219" duration="5225000" />
     </task>
     <task id="LOCAL-00001" summary="update thuc hanh">
       <created>1644943142091</created>
@@ -315,10 +322,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1645609884386" />
-    <state x="574" y="113" key="#com.intellij.ide.util.MemberChooser" timestamp="1646573224671">
+    <state x="574" y="113" key="#com.intellij.ide.util.MemberChooser" timestamp="1646723558403">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="113" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1646573224671" />
+    <state x="574" y="113" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1646723558403" />
+    <state x="485" y="230" key="#com.intellij.refactoring.move.moveMembers.MoveMembersDialog" timestamp="1646721810418">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="485" y="230" key="#com.intellij.refactoring.move.moveMembers.MoveMembersDialog/0.0.1536.824@0.0.1536.824" timestamp="1646721810418" />
     <state x="286" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1646319341234">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -331,42 +342,42 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1645517168554" />
-    <state width="1493" height="264" key="GridCell.Tab.0.bottom" timestamp="1646578364874">
+    <state width="1493" height="261" key="GridCell.Tab.0.bottom" timestamp="1646725382958">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="264" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1646578364874" />
-    <state width="1493" height="264" key="GridCell.Tab.0.center" timestamp="1646578364874">
+    <state width="1493" height="261" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1646725382958" />
+    <state width="1493" height="261" key="GridCell.Tab.0.center" timestamp="1646725382957">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="264" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1646578364874" />
-    <state width="1493" height="264" key="GridCell.Tab.0.left" timestamp="1646578364874">
+    <state width="1493" height="261" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1646725382957" />
+    <state width="1493" height="261" key="GridCell.Tab.0.left" timestamp="1646725382957">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="264" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1646578364874" />
-    <state width="1493" height="264" key="GridCell.Tab.0.right" timestamp="1646578364874">
+    <state width="1493" height="261" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1646725382957" />
+    <state width="1493" height="261" key="GridCell.Tab.0.right" timestamp="1646725382957">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="264" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1646578364874" />
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1646151545242">
+    <state width="1493" height="261" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1646725382957" />
+    <state width="1478" height="258" key="GridCell.Tab.1.bottom" timestamp="1646721892528">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1646151545242" />
-    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1646151545242">
+    <state width="1478" height="258" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1646721892528" />
+    <state width="1478" height="258" key="GridCell.Tab.1.center" timestamp="1646721892527">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1646151545242" />
-    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1646151545242">
+    <state width="1478" height="258" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1646721892527" />
+    <state width="1478" height="258" key="GridCell.Tab.1.left" timestamp="1646721892527">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1646151545242" />
-    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1646151545242">
+    <state width="1478" height="258" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1646721892527" />
+    <state width="1478" height="258" key="GridCell.Tab.1.right" timestamp="1646721892527">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1646151545242" />
-    <state x="277" y="0" key="SettingsEditor" timestamp="1646442623940">
+    <state width="1478" height="258" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1646721892527" />
+    <state x="277" y="0" key="SettingsEditor" timestamp="1646725660381">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="277" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1646442623940" />
+    <state x="277" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1646725660381" />
     <state x="361" y="132" key="Vcs.Push.Dialog.v2" timestamp="1644943286460">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -391,13 +402,30 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="478" y="11" width="579" height="801" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1645174811635" />
-    <state x="425" y="187" key="run.anything.popup" timestamp="1645847445710">
+    <state x="425" y="187" width="672" height="677" key="run.anything.popup" timestamp="1646658149906">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1645847445710" />
+    <state x="425" y="187" width="672" height="677" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1646658149906" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1646461130487">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1646461130487" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ss15_exception_debug/practice/practice_1_debug/LinearEquationResolver.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <condition expression="a!=0" language="JAVA" />
+          <url>file://$PROJECT_DIR$/src/ss15_exception_debug/practice/practice_1_debug/LinearEquationResolver.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
