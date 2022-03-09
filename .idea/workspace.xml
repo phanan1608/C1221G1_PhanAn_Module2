@@ -20,14 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5e9923e5-3faa-402b-b0e9-9603d33b2713" name="Default Changelist" comment="update ss2.thuc_hanh">
-      <change afterPath="$PROJECT_DIR$/src/ss15_exception_debug/exercise/exercise_1_illegal_triangle_exception/IllegalTriangleException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss15_exception_debug/exercise/exercise_1_illegal_triangle_exception/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss15_exception_debug/practice/practice_1_debug/LinearEquationResolver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss15_exception_debug/practice/practice_2_array_index_out_of_bounds_exception/ArrayExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss15_exception_debug/practice/practice_3_number_format_exception/CalculationExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss16_io_text_file/exercise/exercise_1_copy_file_text/CopyFileText.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss16_io_text_file/exercise/exercise_1_copy_file_text/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss16_io_text_file/exercise/exercise_2_read_file_csv/Country.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss16_io_text_file/exercise/exercise_2_read_file_csv/DisplayCountry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss16_io_text_file/practice/practice_1_sum_of_number_file_text/ReadFileExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss16_io_text_file/practice/practice_2_find_max_and_write_file/ReadAndWriteFile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../module1/ss11_cau_truc_lap2/bai_tap/KiemTraSoNguyenTo.html" beforeDir="false" afterPath="$PROJECT_DIR$/../module1/ss11_cau_truc_lap2/bai_tap/KiemTraSoNguyenTo.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/collection_review/controllers/EnterInformation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/collection_review/controllers/EnterInformation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/ss15_exception_debug/exercise/exercise_1_illegal_triangle_exception/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss15_exception_debug/exercise/exercise_1_illegal_triangle_exception/Test.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,13 +88,13 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="ss8_clean_code.thuc_hanh.thuc_hanh_1_tach_bien" />
     </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="ss12_java_collection_framework.exercise.excercise_1_arraylist_linkedlist_in_java_collection" />
       <recent name="ss7_abstract_class_interface.thuc_hanh.thuc_hanh_3_circle_comparable_to_compare" />
       <recent name="ss6_inheritance.bai_tap.bai_tap_4_triangle" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\CodeGym\project\module2\src" />
@@ -108,13 +109,13 @@
       <command value="BubbleSort" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.Test (1)">
-    <configuration name="ArrayExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss15_exception_debug.practice.practice_2_array_index_out_of_bounds_exception.ArrayExample" />
+  <component name="RunManager" selected="Application.DisplayCountry">
+    <configuration name="ConvertDecimalToBinarySystem" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss11_dsa_stack_queue.exercise.exercise_4_convert_decimal_to_binary_system.ConvertDecimalToBinarySystem" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss15_exception_debug.practice.practice_2_array_index_out_of_bounds_exception.*" />
+          <option name="PATTERN" value="ss11_dsa_stack_queue.exercise.exercise_4_convert_decimal_to_binary_system.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -122,12 +123,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BubbleSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss14_sorting_algorithms.practice.practice_1_setting_bubble_sort.BubbleSort" />
+    <configuration name="CopyFileText" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss16_io_text_file.exercise.exercise_1_copy_file_text.CopyFileText" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss14_sorting_algorithms.practice.practice_1_setting_bubble_sort.*" />
+          <option name="PATTERN" value="ss16_io_text_file.exercise.exercise_1_copy_file_text.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -135,12 +136,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CalculationExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss15_exception_debug.practice.practice_3_number_format_exception.CalculationExample" />
+    <configuration name="DisplayCountry" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss16_io_text_file.exercise.exercise_2_read_file_csv.DisplayCountry" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss15_exception_debug.practice.practice_3_number_format_exception.*" />
+          <option name="PATTERN" value="ss16_io_text_file.exercise.exercise_2_read_file_csv.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -148,12 +149,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LinearEquationResolver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss15_exception_debug.practice.practice_1_debug.LinearEquationResolver" />
+    <configuration name="ReadAndWriteFile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss16_io_text_file.practice.practice_2_find_max_and_write_file.ReadAndWriteFile" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss15_exception_debug.practice.practice_1_debug.*" />
+          <option name="PATTERN" value="ss16_io_text_file.practice.practice_2_find_max_and_write_file.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -161,38 +162,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss15_exception_debug.exercise.exercise_1_illegal_triangle_exception.Test" />
+    <configuration name="ReadFileCsv" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss16_io_text_file.exercise.exercise_2_read_file_csv.ReadFileCsv" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss15_exception_debug.exercise.exercise_1_illegal_triangle_exception.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="collection_review.Test" />
-      <module name="module2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="collection_review.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss12_java_collection_framework.exercise.exercise_1_arraylist_linkedlist_in_java_collection.Test" />
-      <module name="module2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ss12_java_collection_framework.exercise.exercise_1_arraylist_linkedlist_in_java_collection.*" />
+          <option name="PATTERN" value="ss16_io_text_file.exercise.exercise_2_read_file_csv.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -202,11 +177,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Test (1)" />
-        <item itemvalue="Application.CalculationExample" />
-        <item itemvalue="Application.ArrayExample" />
-        <item itemvalue="Application.LinearEquationResolver" />
-        <item itemvalue="Application.BubbleSort" />
+        <item itemvalue="Application.DisplayCountry" />
+        <item itemvalue="Application.ReadFileCsv" />
+        <item itemvalue="Application.CopyFileText" />
+        <item itemvalue="Application.ConvertDecimalToBinarySystem" />
+        <item itemvalue="Application.ReadAndWriteFile" />
       </list>
     </recent_temporary>
   </component>
@@ -263,7 +238,10 @@
       <workItem from="1646560884334" duration="8635000" />
       <workItem from="1646573900468" duration="4419000" />
       <workItem from="1646616817875" duration="9421000" />
-      <workItem from="1646707015219" duration="5225000" />
+      <workItem from="1646707015219" duration="8837000" />
+      <workItem from="1646736086326" duration="4411000" />
+      <workItem from="1646789808025" duration="950000" />
+      <workItem from="1646812146681" duration="9313000" />
     </task>
     <task id="LOCAL-00001" summary="update thuc hanh">
       <created>1644943142091</created>
@@ -342,38 +320,38 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1645517168554" />
-    <state width="1493" height="261" key="GridCell.Tab.0.bottom" timestamp="1646725382958">
+    <state width="1493" height="261" key="GridCell.Tab.0.bottom" timestamp="1646838020436">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1646725382958" />
-    <state width="1493" height="261" key="GridCell.Tab.0.center" timestamp="1646725382957">
+    <state width="1493" height="261" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1646838020436" />
+    <state width="1493" height="261" key="GridCell.Tab.0.center" timestamp="1646838020436">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1646725382957" />
-    <state width="1493" height="261" key="GridCell.Tab.0.left" timestamp="1646725382957">
+    <state width="1493" height="261" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1646838020436" />
+    <state width="1493" height="261" key="GridCell.Tab.0.left" timestamp="1646838020436">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1646725382957" />
-    <state width="1493" height="261" key="GridCell.Tab.0.right" timestamp="1646725382957">
+    <state width="1493" height="261" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1646838020436" />
+    <state width="1493" height="261" key="GridCell.Tab.0.right" timestamp="1646838020436">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1646725382957" />
-    <state width="1478" height="258" key="GridCell.Tab.1.bottom" timestamp="1646721892528">
+    <state width="1493" height="261" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1646838020436" />
+    <state width="1478" height="258" key="GridCell.Tab.1.bottom" timestamp="1646734620443">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1478" height="258" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1646721892528" />
-    <state width="1478" height="258" key="GridCell.Tab.1.center" timestamp="1646721892527">
+    <state width="1478" height="258" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1646734620443" />
+    <state width="1478" height="258" key="GridCell.Tab.1.center" timestamp="1646734620443">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1478" height="258" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1646721892527" />
-    <state width="1478" height="258" key="GridCell.Tab.1.left" timestamp="1646721892527">
+    <state width="1478" height="258" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1646734620443" />
+    <state width="1478" height="258" key="GridCell.Tab.1.left" timestamp="1646734620443">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1478" height="258" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1646721892527" />
-    <state width="1478" height="258" key="GridCell.Tab.1.right" timestamp="1646721892527">
+    <state width="1478" height="258" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1646734620443" />
+    <state width="1478" height="258" key="GridCell.Tab.1.right" timestamp="1646734620443">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1478" height="258" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1646721892527" />
+    <state width="1478" height="258" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1646734620443" />
     <state x="277" y="0" key="SettingsEditor" timestamp="1646725660381">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -406,10 +384,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" width="672" height="677" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1646658149906" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1646461130487">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1646835432295">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1646461130487" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1646835432295" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
