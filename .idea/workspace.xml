@@ -20,15 +20,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5e9923e5-3faa-402b-b0e9-9603d33b2713" name="Default Changelist" comment="update ss2.thuc_hanh">
-      <change afterPath="$PROJECT_DIR$/src/ss16_io_text_file/exercise/exercise_1_copy_file_text/CopyFileText.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss16_io_text_file/exercise/exercise_1_copy_file_text/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss16_io_text_file/exercise/exercise_2_read_file_csv/Country.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss16_io_text_file/exercise/exercise_2_read_file_csv/DisplayCountry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss16_io_text_file/practice/practice_1_sum_of_number_file_text/ReadFileExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss16_io_text_file/practice/practice_2_find_max_and_write_file/ReadAndWriteFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss17_binary_file_and_serialization/exercise/exercise_1_product_manager/controllers/ProductControllers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss17_binary_file_and_serialization/exercise/exercise_1_product_manager/data/ProductData.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss17_binary_file_and_serialization/exercise/exercise_1_product_manager/models/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss17_binary_file_and_serialization/exercise/exercise_1_product_manager/services/IService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss17_binary_file_and_serialization/exercise/exercise_1_product_manager/services/ProductServicesImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss17_binary_file_and_serialization/exercise/exercise_1_product_manager/utils/ReadAndWriteFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss17_binary_file_and_serialization/exercise/exercise_1_product_manager/views/Views.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss17_binary_file_and_serialization/practice/practice_1_copy_big_data_file/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss17_binary_file_and_serialization/practice/practice_1_copy_big_data_file/source.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss17_binary_file_and_serialization/practice/practice_2_read_and_write_student_list_binary_system/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss17_binary_file_and_serialization/practice/practice_2_read_and_write_student_list_binary_system/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss17_binary_file_and_serialization/practice/practice_2_read_and_write_student_list_binary_system/student.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../module1/ss11_cau_truc_lap2/bai_tap/KiemTraSoNguyenTo.html" beforeDir="false" afterPath="$PROJECT_DIR$/../module1/ss11_cau_truc_lap2/bai_tap/KiemTraSoNguyenTo.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/ss15_exception_debug/exercise/exercise_1_illegal_triangle_exception/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss15_exception_debug/exercise/exercise_1_illegal_triangle_exception/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/ss16_io_text_file/exercise/exercise_2_read_file_csv/DisplayCountry.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss16_io_text_file/exercise/exercise_2_read_file_csv/DisplayCountry.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,13 +94,13 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="ss8_clean_code.thuc_hanh.thuc_hanh_1_tach_bien" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="ss12_java_collection_framework.exercise.excercise_1_arraylist_linkedlist_in_java_collection" />
       <recent name="ss7_abstract_class_interface.thuc_hanh.thuc_hanh_3_circle_comparable_to_compare" />
       <recent name="ss6_inheritance.bai_tap.bai_tap_4_triangle" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\CodeGym\project\module2\src" />
@@ -109,52 +115,13 @@
       <command value="BubbleSort" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.DisplayCountry">
-    <configuration name="ConvertDecimalToBinarySystem" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss11_dsa_stack_queue.exercise.exercise_4_convert_decimal_to_binary_system.ConvertDecimalToBinarySystem" />
-      <module name="module2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ss11_dsa_stack_queue.exercise.exercise_4_convert_decimal_to_binary_system.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CopyFileText" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss16_io_text_file.exercise.exercise_1_copy_file_text.CopyFileText" />
-      <module name="module2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ss16_io_text_file.exercise.exercise_1_copy_file_text.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Views">
     <configuration name="DisplayCountry" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ss16_io_text_file.exercise.exercise_2_read_file_csv.DisplayCountry" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="ss16_io_text_file.exercise.exercise_2_read_file_csv.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ReadAndWriteFile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss16_io_text_file.practice.practice_2_find_max_and_write_file.ReadAndWriteFile" />
-      <module name="module2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ss16_io_text_file.practice.practice_2_find_max_and_write_file.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -175,13 +142,52 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss17_binary_file_and_serialization.practice.practice_2_read_and_write_student_list_binary_system.Test" />
+      <module name="module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ss17_binary_file_and_serialization.practice.practice_2_read_and_write_student_list_binary_system.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss17_binary_file_and_serialization.practice.practice_1_copy_big_data_file.Test" />
+      <module name="module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ss17_binary_file_and_serialization.practice.practice_1_copy_big_data_file.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Views" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss17_binary_file_and_serialization.exercise.exercise_1_product_manager.views.Views" />
+      <module name="module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ss17_binary_file_and_serialization.exercise.exercise_1_product_manager.views.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Views" />
+        <item itemvalue="Application.Test (1)" />
+        <item itemvalue="Application.Test" />
         <item itemvalue="Application.DisplayCountry" />
         <item itemvalue="Application.ReadFileCsv" />
-        <item itemvalue="Application.CopyFileText" />
-        <item itemvalue="Application.ConvertDecimalToBinarySystem" />
-        <item itemvalue="Application.ReadAndWriteFile" />
       </list>
     </recent_temporary>
   </component>
@@ -241,7 +247,10 @@
       <workItem from="1646707015219" duration="8837000" />
       <workItem from="1646736086326" duration="4411000" />
       <workItem from="1646789808025" duration="950000" />
-      <workItem from="1646812146681" duration="9313000" />
+      <workItem from="1646812146681" duration="9484000" />
+      <workItem from="1646878835707" duration="2781000" />
+      <workItem from="1646893964032" duration="16297000" />
+      <workItem from="1646922316340" duration="978000" />
     </task>
     <task id="LOCAL-00001" summary="update thuc hanh">
       <created>1644943142091</created>
@@ -300,10 +309,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1645609884386" />
-    <state x="574" y="113" key="#com.intellij.ide.util.MemberChooser" timestamp="1646723558403">
+    <state x="509" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1646897594990">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="113" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1646723558403" />
+    <state x="509" y="214" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1646897594990" />
+    <state x="574" y="113" key="#com.intellij.ide.util.MemberChooser" timestamp="1646899169615">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="113" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1646899169615" />
     <state x="485" y="230" key="#com.intellij.refactoring.move.moveMembers.MoveMembersDialog" timestamp="1646721810418">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -320,22 +333,26 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1645517168554" />
-    <state width="1493" height="261" key="GridCell.Tab.0.bottom" timestamp="1646838020436">
+    <state width="1493" height="269" key="GridCell.Tab.0.bottom" timestamp="1646923305746">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1646838020436" />
-    <state width="1493" height="261" key="GridCell.Tab.0.center" timestamp="1646838020436">
+    <state width="1237" height="261" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1646887882408" />
+    <state width="1493" height="269" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1646923305746" />
+    <state width="1493" height="269" key="GridCell.Tab.0.center" timestamp="1646923305746">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1646838020436" />
-    <state width="1493" height="261" key="GridCell.Tab.0.left" timestamp="1646838020436">
+    <state width="1237" height="261" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1646887882408" />
+    <state width="1493" height="269" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1646923305746" />
+    <state width="1493" height="269" key="GridCell.Tab.0.left" timestamp="1646923305746">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1646838020436" />
-    <state width="1493" height="261" key="GridCell.Tab.0.right" timestamp="1646838020436">
+    <state width="1237" height="261" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1646887882408" />
+    <state width="1493" height="269" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1646923305746" />
+    <state width="1493" height="269" key="GridCell.Tab.0.right" timestamp="1646923305746">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1646838020436" />
+    <state width="1237" height="261" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1646887882408" />
+    <state width="1493" height="269" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1646923305746" />
     <state width="1478" height="258" key="GridCell.Tab.1.bottom" timestamp="1646734620443">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
