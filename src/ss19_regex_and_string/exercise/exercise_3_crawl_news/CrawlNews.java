@@ -22,12 +22,8 @@ public class CrawlNews {
             // remove all new line
             content = content.replaceAll("\\n+", "");
 //            System.out.println(content);
-            // regex
-//            Pattern p = Pattern.compile("the-gioi/cang-thang-nga-ukraine.htm\">(.*?)</a>");
-//            <a data-content-name="category-timeline_page_1" data-content-piece="category-timeline_page_1-position_5" data-content-target="/the-gioi/anh-ve-tinh-he-lo-chien-thuat-ukraine-cam-chan-luc-luong-nga-ap-sat-kiev-20220311082137392.htm" data-track-content="" href="
-//            Pattern p = Pattern.compile("data-track-content=\"\" href=\"/the-gioi/\\w+(-\\w*)*\\d+\\.htm\"> <img(.*?)alt=\"(.*?)\"(.*?)\">(.*?)</a>");
-//            Pattern p = Pattern.compile("data-track-content=\"\" href=\"/the-gioi/(.*?)\\.htm\"> <img(.*?)alt=\"(.*?)\"(.*?)\">(.*?)</a>");
-            Pattern p = Pattern.compile("data-track-content=\"\" href=\"(.*?)alt=\"(.*?)\"(.*?)\">(.*?)</a>");
+//            Pattern p = Pattern.compile("data-track-content=\"\" href=\"(.*?)alt=\"(.*?)\"(.*?)\">(.*?)</a>");
+            Pattern p = Pattern.compile("<h3(.*?).htm\">(.*?)</a>");
             Matcher m = p.matcher(content);
             while (m.find()) {
                 System.out.println(m.group(2));
