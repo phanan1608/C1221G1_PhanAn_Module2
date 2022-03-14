@@ -20,33 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5e9923e5-3faa-402b-b0e9-9603d33b2713" name="Default Changelist" comment="update ss2.thuc_hanh">
-      <change afterPath="$PROJECT_DIR$/src/read_and_write_file_review/controllers/VehicleController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/read_and_write_file_review/data/CarList.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/read_and_write_file_review/data/Manufacturer.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/read_and_write_file_review/data/MotorbikeList.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/read_and_write_file_review/data/TruckList.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/read_and_write_file_review/models/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/read_and_write_file_review/models/Motorbike.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/read_and_write_file_review/models/Truck.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/read_and_write_file_review/models/Vehicle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/read_and_write_file_review/models/VehicleBrand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/read_and_write_file_review/services/IServices.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/read_and_write_file_review/services/impl/CarServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/read_and_write_file_review/services/impl/ManufactureServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/read_and_write_file_review/services/impl/MotorbikeServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/read_and_write_file_review/services/impl/TruckServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/read_and_write_file_review/services/impl/VehicleServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/read_and_write_file_review/utils/NotFoundVehicelException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/read_and_write_file_review/utils/ReadAndWriteFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/read_and_write_file_review/utils/Validate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/read_and_write_file_review/views/View.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss16_io_text_file/exercise/demo/Country.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss16_io_text_file/exercise/demo/CountryList.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss16_io_text_file/exercise/demo/DisplayCountry.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../module1/ss11_cau_truc_lap2/bai_tap/KiemTraSoNguyenTo.html" beforeDir="false" afterPath="$PROJECT_DIR$/../module1/ss11_cau_truc_lap2/bai_tap/KiemTraSoNguyenTo.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/ss17_binary_file_and_serialization/exercise/exercise_1_product_manager/data/ProductData.dat" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss17_binary_file_and_serialization/exercise/exercise_1_product_manager/data/ProductData.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ss17_binary_file_and_serialization/exercise/exercise_1_product_manager/data/ProductData.dat" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss17_binary_file_and_serialization/exercise/exercise_1_product_manager/data/ProductData.dat" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +103,7 @@
       <command value="BubbleSort" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.View">
+  <component name="RunManager" selected="Application.Validate">
     <configuration name="ReadFileExample (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ss16_io_text_file.demo1.ReadFileExample" />
       <module name="module2" />
@@ -142,12 +117,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReadFileExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss16_io_text_file.practice.practice_1_sum_of_number_file_text.ReadFileExample" />
+    <configuration name="Validate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="read_and_write_file_review.utils.Validate" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss16_io_text_file.practice.practice_1_sum_of_number_file_text.*" />
+          <option name="PATTERN" value="read_and_write_file_review.utils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -196,11 +171,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Validate" />
         <item itemvalue="Application.View" />
         <item itemvalue="Application.ValidateClassName" />
         <item itemvalue="Application.Views" />
         <item itemvalue="Application.ReadFileExample (1)" />
-        <item itemvalue="Application.ReadFileExample" />
       </list>
     </recent_temporary>
   </component>
@@ -268,7 +243,8 @@
       <workItem from="1647008507749" duration="2505000" />
       <workItem from="1647091812820" duration="12741000" />
       <workItem from="1647156084960" duration="18197000" />
-      <workItem from="1647177607261" duration="2862000" />
+      <workItem from="1647177607261" duration="5895000" />
+      <workItem from="1647221658480" duration="5290000" />
     </task>
     <task id="LOCAL-00001" summary="update thuc hanh">
       <created>1644943142091</created>
@@ -351,26 +327,26 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1645517168554" />
-    <state width="1493" height="266" key="GridCell.Tab.0.bottom" timestamp="1647180137997">
+    <state width="1493" height="266" key="GridCell.Tab.0.bottom" timestamp="1647239825584">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1237" height="261" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1646887882408" />
-    <state width="1493" height="266" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1647180137997" />
-    <state width="1493" height="266" key="GridCell.Tab.0.center" timestamp="1647180137997">
+    <state width="1493" height="266" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1647239825584" />
+    <state width="1493" height="266" key="GridCell.Tab.0.center" timestamp="1647239825584">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1237" height="261" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1646887882408" />
-    <state width="1493" height="266" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1647180137997" />
-    <state width="1493" height="266" key="GridCell.Tab.0.left" timestamp="1647180137997">
+    <state width="1493" height="266" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1647239825584" />
+    <state width="1493" height="266" key="GridCell.Tab.0.left" timestamp="1647239825584">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1237" height="261" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1646887882408" />
-    <state width="1493" height="266" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1647180137997" />
-    <state width="1493" height="266" key="GridCell.Tab.0.right" timestamp="1647180137997">
+    <state width="1493" height="266" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1647239825584" />
+    <state width="1493" height="266" key="GridCell.Tab.0.right" timestamp="1647239825584">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1237" height="261" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1646887882408" />
-    <state width="1493" height="266" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1647180137997" />
+    <state width="1493" height="266" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1647239825584" />
     <state width="1478" height="258" key="GridCell.Tab.1.bottom" timestamp="1646734620443">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
