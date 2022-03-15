@@ -1,9 +1,17 @@
 package case_study.controllers;
 
+import case_study.controllers.impl.EmployeeControllersImpl;
+import case_study.services.IEmployeeService;
+import case_study.services.impl.EmployeeServiceImpl;
+import case_study.utils.InputData;
+
 import java.util.Scanner;
 
-public class FuramaController {
-    public static void displayMainMenu() {
+public class MainFuramaController {
+    IEmployeeService employeeService = new EmployeeServiceImpl();
+    IEmployeeControllers employeeControllers = new EmployeeControllersImpl();
+
+    public void displayMainMenu() {
         Scanner scanner = new Scanner(System.in);
         int choice = -1;
         do {
@@ -14,15 +22,33 @@ public class FuramaController {
                     "4.\tBooking Management\n" +
                     "5.\tPromotion Management\n" +
                     "6.\tExit\n");
-            System.out.println("Enter your choice: ");
-            choice = Integer.parseInt(scanner.nextLine());
+            choice = InputData.inputChoice();
             switch (choice) {
                 case 1:
+                    int choiceEmployee;
                     System.out.println("EMPLOYEE MANAGEMENT");
                     System.out.println("1\tDisplay list employees\n" +
                             "2\tAdd new employee\n" +
                             "3\tEdit employee\n" +
                             "4\tReturn main menu\n");
+                    choiceEmployee = InputData.inputChoice();
+                    switch (choiceEmployee) {
+                        case 1:
+                            System.out.println("DISPLAY LIST EMPLOYEES");
+                            employeeService.displayList();
+                            break;
+                        case 2:
+                            employeeService.add(employeeControllers.inputInformation());
+                            break;
+                        case 3:
+                            System.out.println("EDIT EMPLOYEE");
+                            employeeControllers.edit();
+                            break;
+                        case 4:
+                            System.exit(4);
+                        default:
+                            System.out.println("Only choice 1, 2 or 3!!!");
+                    }
                     break;
                 case 2:
                     System.out.println("CUSTOMER MANAGEMENT");

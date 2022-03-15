@@ -2,13 +2,15 @@ package case_study.models;
 
 public abstract class Person {
     private String fullName;
+    private String dayOfBirth;
     private String gender;
-    private int identityCard;
-    private int telephoneNumber;
+    private String identityCard;
+    private String telephoneNumber;
     private String emailAddress;
 
-    public Person(String fullName, String gender, int identityCard, int telephoneNumber, String emailAddress) {
+    public Person(String fullName, String dayOfBirth, String gender, String identityCard, String telephoneNumber, String emailAddress) {
         this.fullName = fullName;
+        this.dayOfBirth = dayOfBirth;
         this.gender = gender;
         this.identityCard = identityCard;
         this.telephoneNumber = telephoneNumber;
@@ -31,19 +33,27 @@ public abstract class Person {
         this.gender = gender;
     }
 
-    public int getIdentityCard() {
+    public String getDayOfBirth() {
+        return dayOfBirth;
+    }
+
+    public void setDayOfBirth(String dayOfBirth) {
+        this.dayOfBirth = dayOfBirth;
+    }
+
+    public String getIdentityCard() {
         return identityCard;
     }
 
-    public void setIdentityCard(int identityCard) {
+    public void setIdentityCard(String identityCard) {
         this.identityCard = identityCard;
     }
 
-    public int getTelephoneNumber() {
+    public String getTelephoneNumber() {
         return telephoneNumber;
     }
 
-    public void setTelephoneNumber(int telephoneNumber) {
+    public void setTelephoneNumber(String telephoneNumber) {
         this.telephoneNumber = telephoneNumber;
     }
 
@@ -57,12 +67,12 @@ public abstract class Person {
 
     @Override
     public String toString() {
-        return "Person{" +
-                "fullName='" + fullName + '\'' +
+        return "fullName='" + fullName + '\'' +
+                ", dayOfBirth='" + dayOfBirth + '\'' +
                 ", gender='" + gender + '\'' +
-                ", identityCard=" + identityCard +
-                ", telephoneNumber=" + telephoneNumber +
+                ", identityCard='" + identityCard + '\'' +
+                ", telephoneNumber='" + telephoneNumber + '\'' +
                 ", emailAddress='" + emailAddress + '\'' +
-                '}';
+                ", ";
     }
 }

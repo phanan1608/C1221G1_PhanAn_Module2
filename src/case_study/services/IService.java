@@ -1,7 +1,7 @@
 package case_study.services;
 
 public interface IService {
-    void add();
+    void add(Object object);
 
-    void display();
+    void displayList();
 }
