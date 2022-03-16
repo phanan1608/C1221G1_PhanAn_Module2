@@ -1,12 +1,14 @@
 package case_study.models;
 
+import case_study.models.enums.CustomerType;
+
 public class Customer extends Person {
     private String customerId;
-    private String customerType;
+    private CustomerType customerType;
     private String address;
 
-    public Customer(String fullName, String gender, String dayOfBirth, String identityCard, String telephoneNumber, String emailAddress, String customerId, String customerType, String address) {
-        super(fullName, gender, dayOfBirth, identityCard, telephoneNumber, emailAddress);
+    public Customer(String fullName, String dayOfBirth, String gender, String identityCard, String telephoneNumber, String emailAddress, String customerId, CustomerType customerType, String address) {
+        super(fullName, dayOfBirth, gender, identityCard, telephoneNumber, emailAddress);
         this.customerId = customerId;
         this.customerType = customerType;
         this.address = address;
@@ -20,11 +22,11 @@ public class Customer extends Person {
         this.customerId = customerId;
     }
 
-    public String getCustomerType() {
+    public CustomerType getCustomerType() {
         return customerType;
     }
 
-    public void setCustomerType(String customerType) {
+    public void setCustomerType(CustomerType customerType) {
         this.customerType = customerType;
     }
 
@@ -39,8 +41,8 @@ public class Customer extends Person {
     @Override
     public String toString() {
         return "Customer{" + super.toString() +
-                "customerCode='" + customerId + '\'' +
-                ", customerType='" + customerType + '\'' +
+                "customerId='" + customerId + '\'' +
+                ", customerType=" + customerType +
                 ", address='" + address + '\'' +
                 '}';
     }

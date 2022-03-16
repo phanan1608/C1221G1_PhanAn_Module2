@@ -19,7 +19,7 @@ public class EmployeeControllersImpl extends PersonControllersImpl implements IE
 
     @Override
     public Object inputInformation() {
-        super.inputInformationBasic();
+        super.inputPersonInformationBasic();
         String employeeId = getEmployeeIdFromInput();
         AcademicLevel academicLevel = getAcademicLevelFromInput();
         JobTitle jobTitle = getJobTitleFromInput();
@@ -32,7 +32,7 @@ public class EmployeeControllersImpl extends PersonControllersImpl implements IE
         do {
             System.out.println("Enter Employee ID");
             employeeId = scanner.nextLine();
-            if (!Validate.checkEmployeeId(employeeId)) {
+            if (!Validate.isEmployeeId(employeeId)) {
                 System.err.println("Invalid Employee ID. Please Re-enter (XYYYY- X:E Y:number!!!");
             } else break;
         } while (true);
@@ -76,16 +76,16 @@ public class EmployeeControllersImpl extends PersonControllersImpl implements IE
         do {
             System.out.println("Enter Salary");
             checkSalary = scanner.nextLine();
-            if (!Validate.checkSalary(checkSalary)) {
+            if (!Validate.isSalary(checkSalary)) {
                 System.err.println("Invalid Employee ID. Please Re-enter (please input a number with 7 or more digits!!!");
             } else break;
         } while (true);
         return Double.parseDouble(checkSalary);
     }
 
-    public int getIndexNeedEdit() {
+    public int getIndexById() {
         int index = -1;
-        List<Person> personList = employeeService.getListEmployee();
+        List<Person> personList = employeeService.getList();
         String identityCard = super.getIdentityCardFromInput();
         for (int i = 0; i < personList.size(); i++) {
             if (personList.get(i).getIdentityCard().equals(identityCard)) {
@@ -97,8 +97,8 @@ public class EmployeeControllersImpl extends PersonControllersImpl implements IE
 
     @Override
     public void edit() {
-        int index = getIndexNeedEdit();
-        Person employee = employeeService.getListEmployee().get(index);
+        int index = getIndexById();
+        Person employee = employeeService.getList().get(index);
         chooseEditInfo(employee);
         employeeService.edit(index, employee);
     }
@@ -143,7 +143,7 @@ public class EmployeeControllersImpl extends PersonControllersImpl implements IE
                     employee.setEmailAddress(emailAddressEdit);
                     break;
                 case 7:
-                    String employeeIdEdit = scanner.nextLine();
+                    String employeeIdEdit = getEmployeeIdFromInput();
                     ((Employee) employee).setEmployeeId(employeeIdEdit);
                     break;
                 case 8:

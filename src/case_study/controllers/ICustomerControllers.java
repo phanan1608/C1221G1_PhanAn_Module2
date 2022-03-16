@@ -1,4 +1,5 @@
 package case_study.controllers;
 
-public interface ICustomerControllers {
+public interface ICustomerControllers extends IControllers {
+    void edit();
 }

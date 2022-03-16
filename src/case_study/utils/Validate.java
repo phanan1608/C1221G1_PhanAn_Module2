@@ -6,6 +6,11 @@ public class Validate {
         return input.matches(POSITIVE_INTEGERS);
     }
 
+    public static boolean isPositiveDouble(String input) {
+        String DOUBLE_INTEGERS = "^\\+*\\d+(\\.\\d)*$";
+        return input.matches(DOUBLE_INTEGERS);
+    }
+
     public static boolean isFullName(String input) {
         String FULL_NAME_REGEX = "^\\p{Lu}\\p{Ll}+( \\p{Lu}\\p{Ll}+)*$";
         return input.matches(FULL_NAME_REGEX);
@@ -16,17 +21,18 @@ public class Validate {
         return input.matches(BIRTH_DAY_REGEX);
     }
 
-    public static void main(String[] args) {
-        String a = "16/08/1997";
-        System.out.println(isDayOfBirth(a));
-    }
 
-    public static boolean checkEmployeeId(String input) {
+    public static boolean isEmployeeId(String input) {
         String EMPLOYEE_ID_REGEX = "^E\\d{4}$";
         return input.matches(EMPLOYEE_ID_REGEX);
     }
 
-    public static boolean checkSalary(String input) {
+    public static boolean isCustomerId(String input) {
+        String CUSTOMER_ID_REGEX = "^C\\d{4}$";
+        return input.matches(CUSTOMER_ID_REGEX);
+    }
+
+    public static boolean isSalary(String input) {
         String SALARY_REGEX = "^\\d{7,}$";
         return input.matches(SALARY_REGEX);
     }
@@ -49,6 +55,16 @@ public class Validate {
     public static boolean isEmailAddress(String input) {
         String EMAIL_ADDRESS_REGEX = "^[a-z]\\w+@[a-z]{2,}\\.[a-z]{2,}$";
         return input.matches(EMAIL_ADDRESS_REGEX);
+    }
+
+    public static boolean isAddress(String input) {
+        String ADDRESS_REGEX = "^\\d*(\\s\\w+)+|(\\w+)(\\s\\w+)+$";
+        return input.matches(ADDRESS_REGEX);
+    }
+
+    public static boolean isInput(String input) {
+        String INPUT_REGEX = "^\\w+(\\s\\w+)*$";
+        return input.matches(INPUT_REGEX);
     }
 
 

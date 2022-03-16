@@ -5,16 +5,16 @@ import case_study.utils.Validate;
 import java.util.Scanner;
 
 public class PersonControllersImpl {
-    String fullName;
-    String dayOfBirth;
-    String gender;
-    String identityCard;
-    String telephoneNumber;
-    String emailAddress;
+    protected String fullName;
+    protected String dayOfBirth;
+    protected String gender;
+    protected String identityCard;
+    protected String telephoneNumber;
+    protected String emailAddress;
 
     Scanner scanner = new Scanner(System.in);
 
-    public void inputInformationBasic() {
+    protected void inputPersonInformationBasic() {
         fullName = getFullNameFromInput();
         dayOfBirth = getDayOfBirthFromInput();
         gender = getGenderFromInput();

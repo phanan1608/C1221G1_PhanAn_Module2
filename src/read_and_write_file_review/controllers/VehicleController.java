@@ -69,7 +69,7 @@ public class VehicleController {
                 try {
                     throw new NotFoundVehicelException("License Plates does not exist");
                 } catch (NotFoundVehicelException e) {
-                    e.printStackTrace();
+                    System.err.println(e.getMessage());
                 }
             }
         } while (true);

@@ -1,4 +1,4 @@
 package case_study.services;
 
-public interface ICustomerService extends IService {
+public interface ICustomerService extends IPersonService {
 }

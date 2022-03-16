@@ -11,9 +11,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class EmployeeServiceImpl implements IEmployeeService {
-
     static List<Person> listEmployee = new ArrayList<>();
-
 
     static Scanner scanner = new Scanner(System.in);
 
@@ -49,7 +47,7 @@ public class EmployeeServiceImpl implements IEmployeeService {
     }
 
     @Override
-    public List<Person> getListEmployee() {
+    public List<Person> getList() {
         return listEmployee;
     }
 }
