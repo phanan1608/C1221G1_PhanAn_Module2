@@ -33,7 +33,7 @@ public class EmployeeControllersImpl extends PersonControllersImpl implements IE
             System.out.println("Enter Employee ID");
             employeeId = scanner.nextLine();
             if (!Validate.isEmployeeId(employeeId)) {
-                System.err.println("Invalid Employee ID. Please Re-enter (XYYYY- X:E Y:number!!!");
+                System.out.println("Invalid Employee ID. Please Re-enter (XYYYY- X:E Y:number!!!");
             } else break;
         } while (true);
         return employeeId;
@@ -49,7 +49,7 @@ public class EmployeeControllersImpl extends PersonControllersImpl implements IE
             }
             choice = InputData.inputChoice(); //
             if (choice < 1 || choice > AcademicLevel.values().length) {
-                System.err.println("Please choice from 1 to " + AcademicLevel.values().length);
+                System.out.println("Please choice from 1 to " + AcademicLevel.values().length);
             } else break;
         } while (true);
         return AcademicLevel.values()[choice - 1];
@@ -65,7 +65,7 @@ public class EmployeeControllersImpl extends PersonControllersImpl implements IE
             }
             choice = InputData.inputChoice();
             if (choice < 1 || choice > JobTitle.values().length) {
-                System.err.println("Please choice from 1 to " + JobTitle.values().length);
+                System.out.println("Please choice from 1 to " + JobTitle.values().length);
             } else break;
         } while (true);
         return JobTitle.values()[choice - 1];

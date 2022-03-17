@@ -29,7 +29,7 @@ public class PersonControllersImpl {
             System.out.println("Enter Full Name");
             fullName = scanner.nextLine();
             if (!Validate.isFullName(fullName)) {
-                System.err.println("Invalid full name. Please Re-enter(You can input Vietnamese unicode)!!!");
+                System.out.println("Invalid full name. Please Re-enter(Upper first letter- You can input Vietnamese unicode)!!!");
             } else break;
         } while (true);
         return fullName;
@@ -41,7 +41,7 @@ public class PersonControllersImpl {
             System.out.println("Enter Day Of Birth");
             dayOfBirth = scanner.nextLine();
             if (!Validate.isDayOfBirth(dayOfBirth)) {
-                System.err.println("Invalid Day Of Birth. Please Re-enter(dd/mm/yyyy)");
+                System.out.println("Invalid Day Of Birth. Please Re-enter(dd/mm/yyyy)");
             } else break;
         } while (true);
         return dayOfBirth;
@@ -53,7 +53,7 @@ public class PersonControllersImpl {
             System.out.println("Enter Gender");
             gender = scanner.nextLine();
             if (!Validate.isGender(gender.toLowerCase())) {
-                System.err.println("Invalid Gender. Please Re-enter(Please input letter!!!");
+                System.out.println("Invalid Gender. Please Re-enter(Please input letter!!!");
             } else break;
         } while (true);
         return gender;
@@ -65,7 +65,7 @@ public class PersonControllersImpl {
             System.out.println("Enter Identity Card");
             identityCard = scanner.nextLine();
             if (!Validate.isIdentityCard(identityCard)) {
-                System.err.println("Invalid Identity Card. Please Re-enter(Please input number(9 or 12 character)!!!");
+                System.out.println("Invalid Identity Card. Please Re-enter(Please input number(9 or 12 character)!!!");
             } else break;
         } while (true);
         return identityCard;
@@ -77,7 +77,7 @@ public class PersonControllersImpl {
             System.out.println("Enter Telephone Number");
             telephoneNumber = scanner.nextLine();
             if (!Validate.isTelephoneNumber(telephoneNumber)) {
-                System.err.println("Invalid Telephone Number. Please Re-enter(Please input number(10 character)!!!");
+                System.out.println("Invalid Telephone Number. Please Re-enter(Please input number(10 character)!!!");
             } else break;
         } while (true);
         return telephoneNumber;
@@ -89,7 +89,7 @@ public class PersonControllersImpl {
             System.out.println("Enter Email Address");
             emailAddress = scanner.nextLine();
             if (!Validate.isEmailAddress(emailAddress)) {
-                System.err.println("Invalid Email Address. Please Re-enter(user@domain. Example: abc@gmail.com) !!!");
+                System.out.println("Invalid Email Address. Please Re-enter(user@domain. Example: abc@gmail.com) !!!");
             } else break;
         } while (true);
         return emailAddress;

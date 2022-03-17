@@ -28,8 +28,8 @@ public class FacilityControllerImpl {
         do {
             System.out.println("Enter Name Service");
             nameService = scanner.nextLine();
-            if (!Validate.isInput(nameService)) {
-                System.err.println("Invalid Name Service. Please Re-enter!!!");
+            if (!Validate.isStandardName(nameService)) {
+                System.out.println("Invalid Name Service. Please Re-enter(Upper first letter)!!!");
             } else break;
         } while (true);
         return nameService;
@@ -40,8 +40,8 @@ public class FacilityControllerImpl {
         do {
             System.out.println("Enter Usable Area");
             usableArea = scanner.nextLine();
-            if (!Validate.isPositiveDouble(usableArea)) {
-                System.err.println("Invalid Usable Area. Please Re-enter(Position Double)!!!");
+            if (!Validate.isArea(usableArea)) {
+                System.out.println("Invalid Usable Area. Please Re-enter(number>=30)!!!");
             } else break;
         } while (true);
         return Double.parseDouble(usableArea);
@@ -53,7 +53,7 @@ public class FacilityControllerImpl {
             System.out.println("Enter Rent Cost");
             rentCost = scanner.nextLine();
             if (!Validate.isPositiveDouble(rentCost)) {
-                System.err.println("Invalid Rent Cost. Please Re-enter(Position Double)!!!");
+                System.out.println("Invalid Rent Cost. Please Re-enter(Position Double)!!!");
             } else break;
         } while (true);
         return Double.parseDouble(rentCost);
@@ -64,8 +64,8 @@ public class FacilityControllerImpl {
         do {
             System.out.println("Enter Maximum People");
             maximumPeople = scanner.nextLine();
-            if (!Validate.isPositiveInteger(maximumPeople)) {
-                System.err.println("Invalid Maximum People. Please Re-enter(Position Integer)!!!");
+            if (!Validate.isMaximumPeople(maximumPeople)) {
+                System.out.println("Invalid Maximum People. Please Re-enter(from 1 to 19)!!!");
             } else break;
         } while (true);
         return Integer.parseInt(maximumPeople);
@@ -81,7 +81,7 @@ public class FacilityControllerImpl {
             }
             choice = InputData.inputChoice();
             if (choice < 1 || choice > RentType.values().length) {
-                System.err.println("Please choice from 1 to " + RentType.values().length);
+                System.out.println("Please choice from 1 to " + RentType.values().length);
             } else break;
         } while (true);
         return RentType.values()[choice - 1];

@@ -14,9 +14,9 @@ public class RoomServiceImpl extends FacilityServiceImpl implements IRoomService
     static Scanner scanner = new Scanner(System.in);
 
     static {
-        roomList.add(new Room("Room1", 60, 1500000, 2,
+        roomList.add(new Room("SVRO-1233", "Room1", 60, 1500000, 2,
                 RentType.DAY, "buffet"));
-        roomList.add(new Room("Room2", 80, 2000000, 3,
+        roomList.add(new Room("SVRO-3213", "Room2", 80, 2000000, 3,
                 RentType.DAY, "buffet, taxi"));
     }
 

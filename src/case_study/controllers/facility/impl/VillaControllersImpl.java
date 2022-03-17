@@ -15,10 +15,23 @@ public class VillaControllersImpl extends FacilityControllerImpl implements IVil
     @Override
     public Object inputInformation() {
         super.inputFacilityInformationBasic();
+        String serviceId = getServiceIdFromInput();
         String roomStandard = getRoomStandardFromInput();
         double poolArea = getPoolAreaFromInput();
         int numberOfFloors = getNumberOfFloorsFromInput();
-        return new Villa(nameService, usableArea, rentCost, maximumPeopleNumber, rentType, roomStandard, poolArea, numberOfFloors);
+        return new Villa(serviceId, nameService, usableArea, rentCost, maximumPeopleNumber, rentType, roomStandard, poolArea, numberOfFloors);
+    }
+
+    public String getServiceIdFromInput() {
+        String serviceId;
+        do {
+            System.out.println("Enter Room ID");
+            serviceId = scanner.nextLine();
+            if (!Validate.isVillaId(serviceId)) {
+                System.out.println("Invalid Villa ID. Please Re-enter(SVVL-XXXX X:number))!!!");
+            } else break;
+        } while (true);
+        return serviceId;
     }
 
     public String getRoomStandardFromInput() {
@@ -26,8 +39,8 @@ public class VillaControllersImpl extends FacilityControllerImpl implements IVil
         do {
             System.out.println("Enter Room Standard");
             roomStandard = scanner.nextLine();
-            if (!Validate.isInput(roomStandard)) {
-                System.err.println("Invalid Room Standard!!!");
+            if (!Validate.isStandardName(roomStandard)) {
+                System.out.println("Invalid Room Standard. Please Re-enter(Upper first letter)!!!");
             } else break;
         } while (true);
         return roomStandard;
@@ -39,8 +52,8 @@ public class VillaControllersImpl extends FacilityControllerImpl implements IVil
         do {
             System.out.println("Enter Pool Area");
             poolArea = scanner.nextLine();
-            if (!Validate.isPositiveDouble(poolArea)) {
-                System.err.println("Invalid Pool Area. Please Re-enter(Position Double)!!!");
+            if (!Validate.isArea(poolArea)) {
+                System.out.println("Invalid Pool Area. Please Re-enter(Position Double)!!!");
             } else break;
         } while (true);
         return Double.parseDouble(poolArea);
@@ -52,10 +65,9 @@ public class VillaControllersImpl extends FacilityControllerImpl implements IVil
             System.out.println("Enter Number Of Floors");
             numberOfFloors = scanner.nextLine();
             if (!Validate.isPositiveInteger(numberOfFloors)) {
-                System.err.println("Invalid Number Of Floors. Please Re-enter(Position Integer)!!!");
+                System.out.println("Invalid Number Of Floors. Please Re-enter(Position Integer)!!!");
             } else break;
         } while (true);
         return Integer.parseInt(numberOfFloors);
     }
-
 }

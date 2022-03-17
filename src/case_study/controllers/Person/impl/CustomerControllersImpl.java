@@ -30,8 +30,8 @@ public class CustomerControllersImpl extends PersonControllersImpl implements IC
         do {
             System.out.println("Enter Customer ID");
             customerId = scanner.nextLine();
-            if (!Validate.isEmployeeId(customerId)) {
-                System.err.println("Invalid Customer ID. Please Re-enter (XYYYY- X:C Y:number)!!!");
+            if (!Validate.isCustomerId(customerId)) {
+                System.out.println("Invalid Customer ID. Please Re-enter (XYYYY- X:C Y:number)!!!");
             } else break;
         } while (true);
         return customerId;
@@ -47,7 +47,7 @@ public class CustomerControllersImpl extends PersonControllersImpl implements IC
             }
             choice = InputData.inputChoice();
             if (choice < 1 || choice > CustomerType.values().length) {
-                System.err.println("Please choice from 1 to " + CustomerType.values().length);
+                System.out.println("Please choice from 1 to " + CustomerType.values().length);
             } else break;
         } while (true);
         return CustomerType.values()[choice - 1];
@@ -59,7 +59,7 @@ public class CustomerControllersImpl extends PersonControllersImpl implements IC
             System.out.println("Enter Address");
             address = scanner.nextLine();
             if (!Validate.isAddress(address)) {
-                System.err.println("Invalid Employee Address. Please Re-enter (Example:Nguyen Tat Thanh or 1234 Nguyen Tat Thanh)!!!");
+                System.out.println("Invalid Employee Address. Please Re-enter (Example:Nguyen Tat Thanh or 1234 Nguyen Tat Thanh)!!!");
             } else break;
         } while (true);
         return address;

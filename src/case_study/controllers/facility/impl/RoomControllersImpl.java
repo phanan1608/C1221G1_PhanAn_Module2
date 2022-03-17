@@ -15,8 +15,21 @@ public class RoomControllersImpl extends FacilityControllerImpl implements IRoom
     @Override
     public Object inputInformation() {
         super.inputFacilityInformationBasic();
+        String serviceId = getServiceIdFromInput();
         String freeService = getFreeServiceFromInput();
-        return new Room(nameService, usableArea, rentCost, maximumPeopleNumber, rentType, freeService);
+        return new Room(serviceId, nameService, usableArea, rentCost, maximumPeopleNumber, rentType, freeService);
+    }
+
+    public String getServiceIdFromInput() {
+        String serviceId;
+        do {
+            System.out.println("Enter Room ID");
+            serviceId = scanner.nextLine();
+            if (!Validate.isRoomId(serviceId)) {
+                System.out.println("Invalid Room ID. Please Re-enter(SVRO-XXXX X:number))!!!");
+            } else break;
+        } while (true);
+        return serviceId;
     }
 
     public String getFreeServiceFromInput() {
@@ -25,7 +38,7 @@ public class RoomControllersImpl extends FacilityControllerImpl implements IRoom
             System.out.println("Enter Free Service");
             freeService = scanner.nextLine();
             if (!Validate.isInput(freeService)) {
-                System.err.println("Invalid Free Service!!!");
+                System.out.println("Invalid Free Service!!!");
             } else break;
         } while (true);
         return freeService;

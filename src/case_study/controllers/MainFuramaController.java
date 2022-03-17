@@ -160,6 +160,9 @@ public class MainFuramaController {
         switch (choiceFacility) {
             case 1:
                 System.out.println("DISPLAY LIST FACILITY");
+//                roomService.displayList();
+//                villaService.displayList();
+//                houseService.displayList();
                 facilityService.displayList();
                 break;
             case 2:

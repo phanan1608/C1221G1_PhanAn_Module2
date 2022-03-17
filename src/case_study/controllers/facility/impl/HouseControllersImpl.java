@@ -15,9 +15,22 @@ public class HouseControllersImpl extends FacilityControllerImpl implements IHou
     @Override
     public Object inputInformation() {
         super.inputFacilityInformationBasic();
+        String serviceId = getServiceIdFromInput();
         String roomStandard = getRoomStandardFromInput();
         int numberOfFloors = getNumberOfFloorsFromInput();
-        return new House(nameService, usableArea, rentCost, maximumPeopleNumber, rentType, roomStandard, numberOfFloors);
+        return new House(serviceId, nameService, usableArea, rentCost, maximumPeopleNumber, rentType, roomStandard, numberOfFloors);
+    }
+
+    public String getServiceIdFromInput() {
+        String serviceId;
+        do {
+            System.out.println("Enter House ID");
+            serviceId = scanner.nextLine();
+            if (!Validate.isHouseId(serviceId)) {
+                System.out.println("Invalid House ID. Please Re-enter(SVH0-XXXX X:number))!!!");
+            } else break;
+        } while (true);
+        return serviceId;
     }
 
     public String getRoomStandardFromInput() {
@@ -25,8 +38,8 @@ public class HouseControllersImpl extends FacilityControllerImpl implements IHou
         do {
             System.out.println("Enter Room Standard");
             roomStandard = scanner.nextLine();
-            if (!Validate.isInput(roomStandard)) {
-                System.err.println("Invalid Room Standard!!!");
+            if (!Validate.isStandardName(roomStandard)) {
+                System.out.println("Invalid Room Standard. Please Re-enter(Upper first letter)!!!");
             } else break;
         } while (true);
         return roomStandard;
@@ -39,7 +52,7 @@ public class HouseControllersImpl extends FacilityControllerImpl implements IHou
             System.out.println("Enter Number Of Floors");
             numberOfFloors = scanner.nextLine();
             if (!Validate.isPositiveInteger(numberOfFloors)) {
-                System.err.println("Invalid Number Of Floors. Please Re-enter(Position Integer)!!!");
+                System.out.println("Invalid Number Of Floors. Please Re-enter(Position Integer)!!!");
             } else break;
         } while (true);
         return Integer.parseInt(numberOfFloors);

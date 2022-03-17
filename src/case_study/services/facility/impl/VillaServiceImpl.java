@@ -14,9 +14,9 @@ public class VillaServiceImpl implements IVillaService {
     static Scanner scanner = new Scanner(System.in);
 
     static {
-        villaList.add(new Villa("Villa1", 100, 4000000, 4,
+        villaList.add(new Villa("SVVL-1222", "Villa1", 100, 4000000, 4,
                 RentType.DAY, "Gold", 25, 1));
-        villaList.add(new Villa("Villa2", 150, 5000000, 6,
+        villaList.add(new Villa("SVVL-3333", "Villa2", 150, 5000000, 6,
                 RentType.DAY, "Gold", 25, 1));
     }
 

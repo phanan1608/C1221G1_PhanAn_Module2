@@ -7,7 +7,7 @@ public class Validate {
     }
 
     public static boolean isPositiveDouble(String input) {
-        String DOUBLE_INTEGERS = "^\\+*\\d+(\\.\\d)*$";
+        String DOUBLE_INTEGERS = "^\\+*\\d+(\\.\\d+)*$";
         return input.matches(DOUBLE_INTEGERS);
     }
 
@@ -33,7 +33,7 @@ public class Validate {
     }
 
     public static boolean isSalary(String input) {
-        String SALARY_REGEX = "^\\d{7,}$";
+        String SALARY_REGEX = "\\d{7,}(\\.\\d+)*$";
         return input.matches(SALARY_REGEX);
     }
 
@@ -53,7 +53,7 @@ public class Validate {
     }
 
     public static boolean isEmailAddress(String input) {
-        String EMAIL_ADDRESS_REGEX = "^[a-z]\\w+@[a-z]{2,}\\.[a-z]{2,}$";
+        String EMAIL_ADDRESS_REGEX = "^\\w+([.-]?\\w+)*@[a-z]+\\.(\\w+)(\\.\\w{2,3})?";
         return input.matches(EMAIL_ADDRESS_REGEX);
     }
 
@@ -67,5 +67,34 @@ public class Validate {
         return input.matches(INPUT_REGEX);
     }
 
+    public static boolean isArea(String input) {
+        String POOL_AREA = "^([3-9]\\d+)|(\\d){3,}(.\\d+)*$";
+        return input.matches(POOL_AREA);
+    }
+
+    public static boolean isVillaId(String input) {
+        String VILLA_ID = "^SVVL-\\d{4}$";
+        return input.matches(VILLA_ID);
+    }
+
+    public static boolean isRoomId(String input) {
+        String ROOM_ID = "^SVRO-\\d{4}$";
+        return input.matches(ROOM_ID);
+    }
+
+    public static boolean isHouseId(String input) {
+        String HOUSE_ID = "^SVHO-\\d{4}$";
+        return input.matches(HOUSE_ID);
+    }
+
+    public static boolean isStandardName(String input) {
+        String SERVICE_NAME_REGEX = "^[A-Z]\\w+$";
+        return input.matches(SERVICE_NAME_REGEX);
+    }
+
+    public static boolean isMaximumPeople(String input) {
+        String SERVICE_NAME_REGEX = "^([1-9]|(1\\d))$";
+        return input.matches(SERVICE_NAME_REGEX);
+    }
 
 }

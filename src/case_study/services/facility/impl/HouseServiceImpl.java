@@ -14,9 +14,9 @@ public class HouseServiceImpl implements IHouseService {
     static Scanner scanner = new Scanner(System.in);
 
     static {
-        houseList.add(new House("House1", 200, 1000000, 2,
+        houseList.add(new House("SVHO-1111", "House1", 200, 1000000, 2,
                 RentType.DAY, "front of garden", 2));
-        houseList.add(new House("House2", 250, 15000000, 3,
+        houseList.add(new House("SVHO-1233", "House2", 250, 15000000, 3,
                 RentType.DAY, "front of sea", 1));
     }
 
