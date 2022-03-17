@@ -46,4 +46,9 @@ public class Villa extends Facility {
                 ", numberOfFloors=" + numberOfFloors +
                 '}';
     }
+
+    @Override
+    public String getInfoToCSV() {
+        return super.getInfoToCSV() + "," + this.roomStandard + "," + this.poolArea + "," + this.numberOfFloors;
+    }
 }

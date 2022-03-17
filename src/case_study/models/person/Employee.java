@@ -56,8 +56,12 @@ public class Employee extends Person {
                 "employeeId='" + employeeId + '\'' +
                 ", academicLevel='" + academicLevel + '\'' +
                 ", jobTitle='" + jobTitle + '\'' +
-                ", salary=" + salary +
+                ", salary=" + String.format("%.3f", salary) +
                 '}';
     }
 
+    @Override
+    public String getInfoToCSV() {
+        return super.getInfoToCSV() + "," + this.employeeId + "," + this.academicLevel + "," + this.jobTitle + "," + String.format("%.0f", this.salary);
+    }
 }

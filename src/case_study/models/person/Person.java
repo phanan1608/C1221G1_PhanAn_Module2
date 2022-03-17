@@ -75,4 +75,9 @@ public abstract class Person {
                 ", emailAddress='" + emailAddress + '\'' +
                 ", ";
     }
+
+    public String getInfoToCSV() {
+        return this.fullName + "," + this.dayOfBirth + "," + this.gender + "," + this.identityCard
+                + "," + this.telephoneNumber + "," + this.emailAddress;
+    }
 }

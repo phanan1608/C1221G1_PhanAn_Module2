@@ -46,4 +46,9 @@ public class Customer extends Person {
                 ", address='" + address + '\'' +
                 '}';
     }
+
+    @Override
+    public String getInfoToCSV() {
+        return super.getInfoToCSV() + "," + this.customerId + "," + this.customerType + "," + this.address;
+    }
 }

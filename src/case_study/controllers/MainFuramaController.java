@@ -29,6 +29,7 @@ import case_study.utils.InputData;
 
 import java.util.Scanner;
 
+
 public class MainFuramaController {
     IEmployeeService employeeService = new EmployeeServiceImpl();
     IEmployeeControllers employeeControllers = new EmployeeControllersImpl();
@@ -44,36 +45,42 @@ public class MainFuramaController {
 
     public void displayMainMenu() {
         Scanner scanner = new Scanner(System.in);
-        int choice = -1;
         do {
-            System.out.println("-----DISPLAY-----");
-            System.out.println("1.\tEmployee Management\n" +
-                    "2.\tCustomer Management\n" +
-                    "3.\tFacility Management \n" +
-                    "4.\tBooking Management\n" +
-                    "5.\tPromotion Management\n" +
-                    "6.\tExit\n");
-            choice = InputData.inputChoice();
-            switch (choice) {
-                case 1:
-                    employeeManagement();
-                    break;
-                case 2:
-                    customerManagement();
-                    break;
-                case 3:
-                    facilityManagement();
-                    break;
-                case 4:
-                    bookingManagement();
-                    break;
-                case 5:
-                    promotionManagement();
-                    break;
-                case 6:
-                    System.exit(6);
-                default:
-                    System.out.println("No choice!");
+            try {
+                int choice = -1;
+
+                System.out.println("-----DISPLAY-----");
+                System.out.println("1.\tEmployee Management\n" +
+                        "2.\tCustomer Management\n" +
+                        "3.\tFacility Management \n" +
+                        "4.\tBooking Management\n" +
+                        "5.\tPromotion Management\n" +
+                        "6.\tExit\n");
+                choice = Integer.parseInt(scanner.nextLine());
+//                choice = InputData.inputChoice();
+                switch (choice) {
+                    case 1:
+                        employeeManagement();
+                        break;
+                    case 2:
+                        customerManagement();
+                        break;
+                    case 3:
+                        facilityManagement();
+                        break;
+                    case 4:
+                        bookingManagement();
+                        break;
+                    case 5:
+                        promotionManagement();
+                        break;
+                    case 6:
+                        System.exit(6);
+                    default:
+                        System.out.println("No choice!");
+                }
+            } catch (NumberFormatException e) {
+                System.err.println("Không được nhập chữ");
             }
         } while (true);
     }
@@ -160,10 +167,10 @@ public class MainFuramaController {
         switch (choiceFacility) {
             case 1:
                 System.out.println("DISPLAY LIST FACILITY");
-//                roomService.displayList();
-//                villaService.displayList();
-//                houseService.displayList();
-                facilityService.displayList();
+                roomService.displayList();
+                villaService.displayList();
+                houseService.displayList();
+//                facilityService.displayList();
                 break;
             case 2:
                 addFacilityManagement();
