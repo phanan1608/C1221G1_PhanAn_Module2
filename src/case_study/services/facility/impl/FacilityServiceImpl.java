@@ -9,7 +9,6 @@ import case_study.services.facility.IFacilityService;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
-import java.util.Scanner;
 
 public class FacilityServiceImpl implements IFacilityService {
     static Map<Facility, Integer> facilityIntegerMap = new LinkedHashMap<>();
@@ -29,7 +28,6 @@ public class FacilityServiceImpl implements IFacilityService {
                 RentType.DAY, "Gold", 25, 1), 5);
     }
 
-    static Scanner scanner = new Scanner(System.in);
 
     @Override
     public void displayMaintain() {

@@ -56,8 +56,8 @@ public class MainFuramaController {
                         "4.\tBooking Management\n" +
                         "5.\tPromotion Management\n" +
                         "6.\tExit\n");
+                System.out.print("Enter your choice: ");
                 choice = Integer.parseInt(scanner.nextLine());
-//                choice = InputData.inputChoice();
                 switch (choice) {
                     case 1:
                         employeeManagement();
@@ -96,7 +96,7 @@ public class MainFuramaController {
         System.out.println("BOOKING MANAGEMENT");
         System.out.println("1.\tAdd new booking\n" +
                 "2.\tDisplay list booking\n" +
-                "3.\tCreate new constracts\n" +
+                "3.\tCreate new contracts\n" +
                 "4.\tDisplay list contracts\n" +
                 "5.\tEdit contracts\n" +
                 "6.\tReturn main menu\n");
@@ -109,7 +109,7 @@ public class MainFuramaController {
                 "2.\tAdd new customer\n" +
                 "3.\tEdit customer\n" +
                 "4.\tReturn main menu\n");
-        choiceCustomer = InputData.inputChoice();
+        choiceCustomer = InputData.inputIntegerChoice();
         switch (choiceCustomer) {
             case 1:
                 System.out.println("DISPLAY LIST CUSTOMER");
@@ -136,7 +136,7 @@ public class MainFuramaController {
                 "2\tAdd new employee\n" +
                 "3\tEdit employee\n" +
                 "4\tReturn main menu\n");
-        choiceEmployee = InputData.inputChoice();
+        choiceEmployee = InputData.inputIntegerChoice();
         switch (choiceEmployee) {
             case 1:
                 System.out.println("DISPLAY LIST EMPLOYEES");
@@ -163,7 +163,7 @@ public class MainFuramaController {
                 "2\tAdd new facility\n" +
                 "3\tDisplay list facility maintenance\n" +
                 "4\tReturn main menu\n");
-        choiceFacility = InputData.inputChoice();
+        choiceFacility = InputData.inputIntegerChoice();
         switch (choiceFacility) {
             case 1:
                 System.out.println("DISPLAY LIST FACILITY");
@@ -193,7 +193,7 @@ public class MainFuramaController {
                 "2.\tAdd New House\n" +
                 "3.\tAdd New Room\n" +
                 "4.\tBack to menu\n");
-        choiceAddFacility = InputData.inputChoice();
+        choiceAddFacility = InputData.inputIntegerChoice();
         switch (choiceAddFacility) {
             case 1:
                 System.out.println("ADD NEW HOUSE");

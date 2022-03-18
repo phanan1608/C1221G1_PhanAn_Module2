@@ -26,26 +26,20 @@ public class CustomerControllersImpl extends PersonControllersImpl implements IC
     }
 
     public String getCustomerIdFromInput() {
-        String customerId;
-        do {
-            System.out.println("Enter Customer ID");
-            customerId = scanner.nextLine();
-            if (!Validate.isCustomerId(customerId)) {
-                System.out.println("Invalid Customer ID. Please Re-enter (XYYYY- X:C Y:number)!!!");
-            } else break;
-        } while (true);
-        return customerId;
+        System.out.print("Enter Customer Id: ");
+        return Validate.regexCustomerId(scanner.nextLine(),
+                "Invalid Customer ID. Please Re-enter (XYYYY- X:C Y:number)!!!");
     }
 
     public CustomerType getCustomerTypeFromInput() {
         int choice;
         do {
             int i = 1;
-            System.out.println("Enter Customer Address");
+            System.out.println("Enter Customer Type");
             for (CustomerType type : CustomerType.values()) {
                 System.out.printf("%d.%s", i++, type + "\n");
             }
-            choice = InputData.inputChoice();
+            choice = InputData.inputIntegerChoice();
             if (choice < 1 || choice > CustomerType.values().length) {
                 System.out.println("Please choice from 1 to " + CustomerType.values().length);
             } else break;
@@ -54,15 +48,9 @@ public class CustomerControllersImpl extends PersonControllersImpl implements IC
     }
 
     public String getAddressFromInput() {
-        String address;
-        do {
-            System.out.println("Enter Address");
-            address = scanner.nextLine();
-            if (!Validate.isAddress(address)) {
-                System.out.println("Invalid Employee Address. Please Re-enter (Example:Nguyen Tat Thanh or 1234 Nguyen Tat Thanh)!!!");
-            } else break;
-        } while (true);
-        return address;
+        System.out.print("Enter Address: ");
+        return Validate.regexAddress(scanner.nextLine(), "Invalid Employee Address. " +
+                "Please Re-enter (Example:Nguyen Tat Thanh or 1234 Nguyen Tat Thanh)!!!");
     }
 
     public int getIndexById() {
@@ -97,7 +85,7 @@ public class CustomerControllersImpl extends PersonControllersImpl implements IC
                     "7. Customer ID\n" +
                     "8. Customer Type\n" +
                     "9. Address\n");
-            int choiceInformation = InputData.inputChoice();
+            int choiceInformation = InputData.inputIntegerChoice();
             switch (choiceInformation) {
                 case 1:
                     String fullNameEdit = super.getFullNameFromInput();

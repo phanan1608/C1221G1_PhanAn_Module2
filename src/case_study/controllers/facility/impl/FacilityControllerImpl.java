@@ -24,77 +24,41 @@ public class FacilityControllerImpl {
     }
 
     protected String getNameServiceFromInput() {
-        String nameService;
-        do {
-            System.out.println("Enter Name Service");
-            nameService = scanner.nextLine();
-            if (!Validate.isStandardName(nameService)) {
-                System.out.println("Invalid Name Service. Please Re-enter(Upper first letter)!!!");
-            } else break;
-        } while (true);
-        return nameService;
+        System.out.print("Enter Name Service: ");
+        return Validate.regexStandardName(scanner.nextLine(), "Invalid Name Service. " +
+                "Please Re-enter(Upper first letter)!!!");
     }
 
     protected Double getUsableAreaFromInput() {
-        String usableArea;
-        do {
-            System.out.println("Enter Usable Area");
-            usableArea = scanner.nextLine();
-            if (!Validate.isArea(usableArea)) {
-                System.out.println("Invalid Usable Area. Please Re-enter(number>=30)!!!");
-            } else break;
-        } while (true);
-        return Double.parseDouble(usableArea);
+        System.out.print("Enter Usable Area: ");
+        return Double.parseDouble(Validate.regexArea(scanner.nextLine(),
+                "Invalid Usable Area. Please Re-enter(number>=30)!!!"));
     }
 
     protected Double getRentCostFromInput() {
-        String rentCost;
-        do {
-            System.out.println("Enter Rent Cost");
-            rentCost = scanner.nextLine();
-            if (!Validate.isPositiveDouble(rentCost)) {
-                System.out.println("Invalid Rent Cost. Please Re-enter(Position Double)!!!");
-            } else break;
-        } while (true);
-        return Double.parseDouble(rentCost);
+        System.out.print("Enter Rent Cost: ");
+        return Double.parseDouble(Validate.regexPositiveDouble(scanner.nextLine(),
+                "Invalid Rent Cost. Please Re-enter(Position Double)!!!"));
     }
 
     protected Integer getMaximumPeopleFromInput() {
-        String maximumPeople;
-        do {
-            System.out.println("Enter Maximum People");
-            maximumPeople = scanner.nextLine();
-            if (!Validate.isMaximumPeople(maximumPeople)) {
-                System.out.println("Invalid Maximum People. Please Re-enter(from 1 to 19)!!!");
-            } else break;
-        } while (true);
-        return Integer.parseInt(maximumPeople);
+        System.out.println("Enter Maximum People: ");
+        return Integer.parseInt(Validate.regexMaximumPeople(scanner.nextLine(), "Invalid Maximum People. Please Re-enter(from 1 to 19)!!!"));
     }
 
     protected RentType getRentTypeFromInput() {
         int choice;
         do {
             int i = 1;
-            System.out.println("Enter Rent Type");
+            System.out.println("Enter Rent Type: ");
             for (RentType rentType : RentType.values()) {
                 System.out.printf("%d.%s", i++, rentType + "\n");
             }
-            choice = InputData.inputChoice();
+            choice = InputData.inputIntegerChoice();
             if (choice < 1 || choice > RentType.values().length) {
                 System.out.println("Please choice from 1 to " + RentType.values().length);
             } else break;
         } while (true);
         return RentType.values()[choice - 1];
     }
-
-//    protected void displayFacilityList(List<Facility> facilityList) {
-//        if (facilityList.size() != 0) {
-//            for (Facility facility : facilityList) {
-//                System.out.println(facility);
-//            }
-//        } else {
-//            System.out.println("List Empty");
-//        }
-//    }
-
 }

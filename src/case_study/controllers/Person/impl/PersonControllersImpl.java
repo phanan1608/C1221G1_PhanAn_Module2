@@ -24,74 +24,38 @@ public class PersonControllersImpl {
     }
 
     protected String getFullNameFromInput() {
-        String fullName;
-        do {
-            System.out.println("Enter Full Name");
-            fullName = scanner.nextLine();
-            if (!Validate.isFullName(fullName)) {
-                System.out.println("Invalid full name. Please Re-enter(Upper first letter- You can input Vietnamese unicode)!!!");
-            } else break;
-        } while (true);
-        return fullName;
+        System.out.print("Enter Full Name: ");
+        return Validate.regexFullName(scanner.nextLine(),
+                "Invalid full name. Please Re-enter(Upper first letter- You can input Vietnamese unicode)!!!");
     }
 
     protected String getDayOfBirthFromInput() {
-        String dayOfBirth;
-        do {
-            System.out.println("Enter Day Of Birth");
-            dayOfBirth = scanner.nextLine();
-            if (!Validate.isDayOfBirth(dayOfBirth)) {
-                System.out.println("Invalid Day Of Birth. Please Re-enter(dd/mm/yyyy)");
-            } else break;
-        } while (true);
-        return dayOfBirth;
+        System.out.print("Enter Day Of Birth: ");
+        return Validate.regexDayOfBirth(scanner.nextLine(),
+                "Invalid Day Of Birth. Please Re-enter(dd/mm/yyyy)");
     }
 
     protected String getGenderFromInput() {
-        String gender;
-        do {
-            System.out.println("Enter Gender");
-            gender = scanner.nextLine();
-            if (!Validate.isGender(gender.toLowerCase())) {
-                System.out.println("Invalid Gender. Please Re-enter(Please input letter!!!");
-            } else break;
-        } while (true);
-        return gender;
+        System.out.print("Enter Gender: ");
+        return Validate.regexGender(scanner.nextLine(),
+                "Invalid Gender. Please Re-enter(Please input letter!!!");
     }
 
     protected String getIdentityCardFromInput() {
-        String identityCard;
-        do {
-            System.out.println("Enter Identity Card");
-            identityCard = scanner.nextLine();
-            if (!Validate.isIdentityCard(identityCard)) {
-                System.out.println("Invalid Identity Card. Please Re-enter(Please input number(9 or 12 character)!!!");
-            } else break;
-        } while (true);
-        return identityCard;
+        System.out.print("Enter Identity Card: ");
+        return Validate.regexIdentityCard(scanner.nextLine(),
+                "Invalid Identity Card. Please Re-enter(Please input number(9 or 12 character)!!!");
     }
 
     protected String getTelephoneNumberFromInput() {
-        String telephoneNumber;
-        do {
-            System.out.println("Enter Telephone Number");
-            telephoneNumber = scanner.nextLine();
-            if (!Validate.isTelephoneNumber(telephoneNumber)) {
-                System.out.println("Invalid Telephone Number. Please Re-enter(Please input number(10 character)!!!");
-            } else break;
-        } while (true);
-        return telephoneNumber;
+        System.out.print("Enter Telephone Number: ");
+        return Validate.regexTelephoneNumber(scanner.nextLine(),
+                "Invalid Telephone Number. Please Re-enter(Please input number(10 character)!!!");
     }
 
     protected String getEmailAddressFromInput() {
-        String emailAddress;
-        do {
-            System.out.println("Enter Email Address");
-            emailAddress = scanner.nextLine();
-            if (!Validate.isEmailAddress(emailAddress)) {
-                System.out.println("Invalid Email Address. Please Re-enter(user@domain. Example: abc@gmail.com) !!!");
-            } else break;
-        } while (true);
-        return emailAddress;
+        System.out.print("Enter Email Address: ");
+        return Validate.regexEmailAddress(scanner.nextLine(),
+                "Invalid Email Address. Please Re-enter(user@domain. Example: abc@gmail.com) !!!");
     }
 }

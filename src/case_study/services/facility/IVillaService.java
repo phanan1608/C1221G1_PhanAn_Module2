@@ -1,4 +1,6 @@
 package case_study.services.facility;
 
-public interface IVillaService extends IFacilityService {
+import case_study.services.IService;
+
+public interface IVillaService extends IService {
 }

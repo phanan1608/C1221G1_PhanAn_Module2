@@ -22,40 +22,22 @@ public class HouseControllersImpl extends FacilityControllerImpl implements IHou
     }
 
     public String getServiceIdFromInput() {
-        String serviceId;
-        do {
-            System.out.println("Enter House ID");
-            serviceId = scanner.nextLine();
-            if (!Validate.isHouseId(serviceId)) {
-                System.out.println("Invalid House ID. Please Re-enter(SVH0-XXXX X:number))!!!");
-            } else break;
-        } while (true);
-        return serviceId;
+        System.out.print("Enter Service Id: ");
+        return Validate.regexHouseId(scanner.nextLine(),
+                "Invalid House ID. Please Re-enter(SVH0-XXXX X:number))!!!");
     }
 
     public String getRoomStandardFromInput() {
-        String roomStandard;
-        do {
-            System.out.println("Enter Room Standard");
-            roomStandard = scanner.nextLine();
-            if (!Validate.isStandardName(roomStandard)) {
-                System.out.println("Invalid Room Standard. Please Re-enter(Upper first letter)!!!");
-            } else break;
-        } while (true);
-        return roomStandard;
+        System.out.print("Enter Room Standard: ");
+        return Validate.regexStandardName(scanner.nextLine(),
+                "Invalid Room Standard. Please Re-enter(Upper first letter)!!!");
     }
 
 
     protected Integer getNumberOfFloorsFromInput() {
-        String numberOfFloors;
-        do {
-            System.out.println("Enter Number Of Floors");
-            numberOfFloors = scanner.nextLine();
-            if (!Validate.isPositiveInteger(numberOfFloors)) {
-                System.out.println("Invalid Number Of Floors. Please Re-enter(Position Integer)!!!");
-            } else break;
-        } while (true);
-        return Integer.parseInt(numberOfFloors);
+        System.out.print("Enter Number Of Floors: ");
+        return Integer.parseInt(Validate.regexPositiveInteger(scanner.nextLine(),
+                "Invalid Number Of Floors. Please Re-enter(Position Integer)!!!"));
     }
 
 }

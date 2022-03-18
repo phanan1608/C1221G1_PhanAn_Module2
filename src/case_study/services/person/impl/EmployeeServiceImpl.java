@@ -16,15 +16,7 @@ public class EmployeeServiceImpl implements IEmployeeService {
 
     static {
         listEmployee = ReadAndWriteFile.readEmployeeListFromCSV(EMPLOYEE_FILE);
-//        listEmployee.add(new Employee("Trần Ngọc Luật", "12/12/2003", "Nam", "123453214", "1900123123",
-//                "abc@gmail.com", "E1011", AcademicLevel.UNIVERSITY, JobTitle.DIRECTOR, 100000000));
-//        listEmployee.add(new Employee("Nguyễn Trần Thanh Nghĩa", "26/01/1997", "Nam", "260018271197", "1900262626",
-//                "nguyens@gmail.com", "E1231", AcademicLevel.INTERMEDIATE, JobTitle.DIRECTOR, 150000000));
-//        listEmployee.add(new Employee("Trần Hữu Nhật Hoàng", "05/05/1997", "Nam", "551999872617", "1900555555",
-//                "hoangtran@gmail.com", "E3123", AcademicLevel.POSTGRADUATE, JobTitle.STAFF, 120000000));
-//        ReadAndWriteFile.writeListPersonToCSV(EMPLOYEE_FILE, listEmployee);
     }
-
 
     @Override
     public void add(Object object) {

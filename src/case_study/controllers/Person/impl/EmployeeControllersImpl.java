@@ -28,15 +28,9 @@ public class EmployeeControllersImpl extends PersonControllersImpl implements IE
     }
 
     public String getEmployeeIdFromInput() {
-        String employeeId;
-        do {
-            System.out.println("Enter Employee ID");
-            employeeId = scanner.nextLine();
-            if (!Validate.isEmployeeId(employeeId)) {
-                System.out.println("Invalid Employee ID. Please Re-enter (XYYYY- X:E Y:number!!!");
-            } else break;
-        } while (true);
-        return employeeId;
+        System.out.print("Enter Employee ID: ");
+        return Validate.regexEmployeeId(scanner.nextLine(),
+                "Invalid Employee ID. Please Re-enter (XYYYY- X:E Y:number)!!!");
     }
 
     public AcademicLevel getAcademicLevelFromInput() {
@@ -47,7 +41,7 @@ public class EmployeeControllersImpl extends PersonControllersImpl implements IE
             for (AcademicLevel level : AcademicLevel.values()) {
                 System.out.printf("%d.%s", i++, level + "\n");
             }
-            choice = InputData.inputChoice(); //
+            choice = InputData.inputIntegerChoice(); //
             if (choice < 1 || choice > AcademicLevel.values().length) {
                 System.out.println("Please choice from 1 to " + AcademicLevel.values().length);
             } else break;
@@ -63,7 +57,7 @@ public class EmployeeControllersImpl extends PersonControllersImpl implements IE
             for (JobTitle jobTitle : JobTitle.values()) {
                 System.out.printf("%d.%s", i++, jobTitle + "\n");
             }
-            choice = InputData.inputChoice();
+            choice = InputData.inputIntegerChoice();
             if (choice < 1 || choice > JobTitle.values().length) {
                 System.out.println("Please choice from 1 to " + JobTitle.values().length);
             } else break;
@@ -72,15 +66,9 @@ public class EmployeeControllersImpl extends PersonControllersImpl implements IE
     }
 
     private Double getSalaryFromInput() {
-        String checkSalary;
-        do {
-            System.out.println("Enter Salary");
-            checkSalary = scanner.nextLine();
-            if (!Validate.isSalary(checkSalary)) {
-                System.err.println("Invalid Employee ID. Please Re-enter (please input a number with 7 or more digits!!!");
-            } else break;
-        } while (true);
-        return Double.parseDouble(checkSalary);
+        System.out.print("Enter Salary: ");
+        return Double.parseDouble(Validate.regexSalary(scanner.nextLine(),
+                "Invalid Employee ID. Please Re-enter (please input a number with 7 or more digits)!!!"));
     }
 
     public int getIndexById() {
@@ -116,7 +104,7 @@ public class EmployeeControllersImpl extends PersonControllersImpl implements IE
                     "8. Academic Level\n" +
                     "9. Job Title\n" +
                     "10. Salary\n");
-            int choiceInformation = InputData.inputChoice();
+            int choiceInformation = InputData.inputIntegerChoice();
             switch (choiceInformation) {
                 case 1:
                     String fullNameEdit = super.getFullNameFromInput();

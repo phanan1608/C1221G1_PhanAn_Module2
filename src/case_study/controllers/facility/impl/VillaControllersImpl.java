@@ -23,51 +23,27 @@ public class VillaControllersImpl extends FacilityControllerImpl implements IVil
     }
 
     public String getServiceIdFromInput() {
-        String serviceId;
-        do {
-            System.out.println("Enter Room ID");
-            serviceId = scanner.nextLine();
-            if (!Validate.isVillaId(serviceId)) {
-                System.out.println("Invalid Villa ID. Please Re-enter(SVVL-XXXX X:number))!!!");
-            } else break;
-        } while (true);
-        return serviceId;
+        System.out.print("Enter Service Id: ");
+        return Validate.regexVillaId(scanner.nextLine(),
+                "Invalid Villa ID. Please Re-enter(SVVL-XXXX X:number))!!!");
     }
 
     public String getRoomStandardFromInput() {
-        String roomStandard;
-        do {
-            System.out.println("Enter Room Standard");
-            roomStandard = scanner.nextLine();
-            if (!Validate.isStandardName(roomStandard)) {
-                System.out.println("Invalid Room Standard. Please Re-enter(Upper first letter)!!!");
-            } else break;
-        } while (true);
-        return roomStandard;
+        System.out.print("Enter Room Standard: ");
+        return Validate.regexStandardName(scanner.nextLine(),
+                "Invalid Room Standard. Please Re-enter(Upper first letter)!!!");
     }
 
 
     protected Double getPoolAreaFromInput() {
-        String poolArea;
-        do {
-            System.out.println("Enter Pool Area");
-            poolArea = scanner.nextLine();
-            if (!Validate.isArea(poolArea)) {
-                System.out.println("Invalid Pool Area. Please Re-enter(Position Double)!!!");
-            } else break;
-        } while (true);
-        return Double.parseDouble(poolArea);
+        System.out.print("Enter Pool Area: ");
+        return Double.parseDouble(Validate.regexArea(scanner.nextLine(),
+                "Invalid Pool Area. Please Re-enter(Position Double)!!!"));
     }
 
     protected Integer getNumberOfFloorsFromInput() {
-        String numberOfFloors;
-        do {
-            System.out.println("Enter Number Of Floors");
-            numberOfFloors = scanner.nextLine();
-            if (!Validate.isPositiveInteger(numberOfFloors)) {
-                System.out.println("Invalid Number Of Floors. Please Re-enter(Position Integer)!!!");
-            } else break;
-        } while (true);
-        return Integer.parseInt(numberOfFloors);
+        System.out.print("Enter Number Of Floors: ");
+        return Integer.parseInt(Validate.regexPositiveInteger(scanner.nextLine(),
+                "Invalid Number Of Floors. Please Re-enter(Position Integer)!!!"));
     }
 }

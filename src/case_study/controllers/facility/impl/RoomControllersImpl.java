@@ -21,27 +21,14 @@ public class RoomControllersImpl extends FacilityControllerImpl implements IRoom
     }
 
     public String getServiceIdFromInput() {
-        String serviceId;
-        do {
-            System.out.println("Enter Room ID");
-            serviceId = scanner.nextLine();
-            if (!Validate.isRoomId(serviceId)) {
-                System.out.println("Invalid Room ID. Please Re-enter(SVRO-XXXX X:number))!!!");
-            } else break;
-        } while (true);
-        return serviceId;
+        System.out.print("Enter Service Id: ");
+        return Validate.regexRoomId(scanner.nextLine(),
+                "Invalid Room ID. Please Re-enter(SVRO-XXXX X:number))!!!");
     }
 
     public String getFreeServiceFromInput() {
-        String freeService;
-        do {
-            System.out.println("Enter Free Service");
-            freeService = scanner.nextLine();
-            if (!Validate.isInput(freeService)) {
-                System.out.println("Invalid Free Service!!!");
-            } else break;
-        } while (true);
-        return freeService;
+        System.out.print("Enter Free Service: ");
+        return Validate.regexInput(scanner.nextLine(), "Invalid Free Service!!!");
     }
 
 }
