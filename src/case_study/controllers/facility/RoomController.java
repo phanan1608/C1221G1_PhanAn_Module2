@@ -7,26 +7,17 @@ import case_study.utils.Validate;
 
 import java.util.Scanner;
 
-public class RoomControllersImpl extends FacilityControllerImpl {
+public class RoomController extends FacilityController {
     IRoomService roomService = new RoomServiceImpl();
     Scanner scanner = new Scanner(System.in);
 
     public Object inputInformation() {
         super.inputFacilityInformationBasic();
-        String serviceId = getServiceIdFromInput();
-        String freeService = getFreeServiceFromInput();
+        System.out.print("Enter Service Id: ");
+        String serviceId = Validate.regexRoomId(scanner.nextLine(),
+                "Invalid Room ID. Please Re-enter(SVRO-XXXX X:number))!!!");
+        System.out.print("Enter Free Service: ");
+        String freeService = Validate.regexInput(scanner.nextLine(), "Invalid Free Service!!!");
         return new Room(serviceId, nameService, usableArea, rentCost, maximumPeopleNumber, rentType, freeService);
     }
-
-    public String getServiceIdFromInput() {
-        System.out.print("Enter Service Id: ");
-        return Validate.regexRoomId(scanner.nextLine(),
-                "Invalid Room ID. Please Re-enter(SVRO-XXXX X:number))!!!");
-    }
-
-    public String getFreeServiceFromInput() {
-        System.out.print("Enter Free Service: ");
-        return Validate.regexInput(scanner.nextLine(), "Invalid Free Service!!!");
-    }
-
 }

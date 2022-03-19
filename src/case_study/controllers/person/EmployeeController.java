@@ -12,7 +12,7 @@ import case_study.utils.Validate;
 import java.util.List;
 import java.util.Scanner;
 
-public class EmployeeControllersImpl extends PersonControllersImpl {
+public class EmployeeController extends PersonController {
     IEmployeeService employeeService = new EmployeeServiceImpl();
     Scanner scanner = new Scanner(System.in);
 

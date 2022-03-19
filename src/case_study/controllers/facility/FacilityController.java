@@ -6,7 +6,7 @@ import case_study.utils.Validate;
 
 import java.util.Scanner;
 
-public class FacilityControllerImpl {
+public class FacilityController {
     protected String nameService;
     protected double usableArea;
     protected double rentCost;
@@ -16,34 +16,19 @@ public class FacilityControllerImpl {
     Scanner scanner = new Scanner(System.in);
 
     protected void inputFacilityInformationBasic() {
-        nameService = getNameServiceFromInput();
-        usableArea = getUsableAreaFromInput();
-        rentCost = getRentCostFromInput();
-        maximumPeopleNumber = getMaximumPeopleFromInput();
-        rentType = getRentTypeFromInput();
-    }
-
-    protected String getNameServiceFromInput() {
         System.out.print("Enter Name Service: ");
-        return Validate.regexStandardName(scanner.nextLine(), "Invalid Name Service. " +
+        nameService = Validate.regexStandardName(scanner.nextLine(), "Invalid Name Service. " +
                 "Please Re-enter(Upper first letter)!!!");
-    }
-
-    protected Double getUsableAreaFromInput() {
         System.out.print("Enter Usable Area: ");
-        return Double.parseDouble(Validate.regexArea(scanner.nextLine(),
+        usableArea = Double.parseDouble(Validate.regexArea(scanner.nextLine(),
                 "Invalid Usable Area. Please Re-enter(number>=30)!!!"));
-    }
-
-    protected Double getRentCostFromInput() {
         System.out.print("Enter Rent Cost: ");
-        return Double.parseDouble(Validate.regexPositiveDouble(scanner.nextLine(),
+        rentCost = Double.parseDouble(Validate.regexPositiveDouble(scanner.nextLine(),
                 "Invalid Rent Cost. Please Re-enter(Position Double)!!!"));
-    }
-
-    protected Integer getMaximumPeopleFromInput() {
         System.out.println("Enter Maximum People: ");
-        return Integer.parseInt(Validate.regexMaximumPeople(scanner.nextLine(), "Invalid Maximum People. Please Re-enter(from 1 to 19)!!!"));
+        maximumPeopleNumber = Integer.parseInt(Validate.regexMaximumPeople(scanner.nextLine(),
+                "Invalid Maximum People. Please Re-enter(from 1 to 19)!!!"));
+        rentType = getRentTypeFromInput();
     }
 
     protected RentType getRentTypeFromInput() {

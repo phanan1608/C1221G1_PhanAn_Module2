@@ -4,7 +4,7 @@ import case_study.utils.Validate;
 
 import java.util.Scanner;
 
-public class PersonControllersImpl {
+public class PersonController {
     protected String fullName;
     protected String dayOfBirth;
     protected String gender;

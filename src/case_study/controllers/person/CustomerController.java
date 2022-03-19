@@ -11,7 +11,7 @@ import case_study.utils.Validate;
 import java.util.List;
 import java.util.Scanner;
 
-public class CustomerControllersImpl extends PersonControllersImpl {
+public class CustomerController extends PersonController {
     ICustomerService customerService = new CustomerServiceImpl();
     Scanner scanner = new Scanner(System.in);
 
@@ -52,7 +52,7 @@ public class CustomerControllersImpl extends PersonControllersImpl {
     }
 
     public int getIndexById() {
-        int index = -1;
+        int index;
         List<Person> personList = CustomerServiceImpl.listCustomer;
         do {
             identityCard = super.getIdentityCardFromInput();
@@ -127,8 +127,8 @@ public class CustomerControllersImpl extends PersonControllersImpl {
                     System.out.println("No choice");
             }
             System.out.print("Do you want to continue editing?(Y/N) ");
-            String s = scanner.nextLine();
-            if ("n".equals(s.toLowerCase())) {
+            String confirm = scanner.nextLine();
+            if ("n".equals(confirm.toLowerCase())) {
                 break;
             }
         } while (true);

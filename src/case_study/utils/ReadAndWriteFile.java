@@ -14,6 +14,7 @@ import case_study.models.person.Person;
 
 import java.io.*;
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 public class ReadAndWriteFile {
@@ -63,7 +64,7 @@ public class ReadAndWriteFile {
     }
 
     public static List<Person> readCustomerListFromCSV(String filePath) {
-        List<Person> customerList = new ArrayList<>();
+        List<Person> customerList = new LinkedList<>();
         List<String> stringList = readListStringFromCSV(filePath);
         String[] arr = null;
         for (String string : stringList) {

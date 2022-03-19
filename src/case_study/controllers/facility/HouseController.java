@@ -7,15 +7,21 @@ import case_study.utils.Validate;
 
 import java.util.Scanner;
 
-public class HouseControllersImpl extends FacilityControllerImpl {
+public class HouseController extends FacilityController {
     IRoomService roomService = new RoomServiceImpl();
     Scanner scanner = new Scanner(System.in);
 
     public Object inputInformation() {
         super.inputFacilityInformationBasic();
-        String serviceId = getServiceIdFromInput();
-        String roomStandard = getRoomStandardFromInput();
-        int numberOfFloors = getNumberOfFloorsFromInput();
+        System.out.print("Enter Service Id: ");
+        String serviceId = Validate.regexHouseId(scanner.nextLine(),
+                "Invalid House ID. Please Re-enter(SVH0-XXXX X:number))!!!");
+        System.out.print("Enter Room Standard: ");
+        String roomStandard = Validate.regexStandardName(scanner.nextLine(),
+                "Invalid Room Standard. Please Re-enter(Upper first letter)!!!");
+        System.out.print("Enter Number Of Floors: ");
+        int numberOfFloors = Integer.parseInt(Validate.regexPositiveInteger(scanner.nextLine(),
+                "Invalid Number Of Floors. Please Re-enter(Position Integer)!!!"));
         return new House(serviceId, nameService, usableArea, rentCost, maximumPeopleNumber, rentType, roomStandard, numberOfFloors);
     }
 
@@ -24,18 +30,4 @@ public class HouseControllersImpl extends FacilityControllerImpl {
         return Validate.regexHouseId(scanner.nextLine(),
                 "Invalid House ID. Please Re-enter(SVH0-XXXX X:number))!!!");
     }
-
-    public String getRoomStandardFromInput() {
-        System.out.print("Enter Room Standard: ");
-        return Validate.regexStandardName(scanner.nextLine(),
-                "Invalid Room Standard. Please Re-enter(Upper first letter)!!!");
-    }
-
-
-    protected Integer getNumberOfFloorsFromInput() {
-        System.out.print("Enter Number Of Floors: ");
-        return Integer.parseInt(Validate.regexPositiveInteger(scanner.nextLine(),
-                "Invalid Number Of Floors. Please Re-enter(Position Integer)!!!"));
-    }
-
 }

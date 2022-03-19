@@ -1,11 +1,11 @@
 package case_study.controllers;
 
 import case_study.controllers.booking.BookingControllerImpl;
-import case_study.controllers.facility.HouseControllersImpl;
-import case_study.controllers.facility.RoomControllersImpl;
-import case_study.controllers.facility.VillaControllersImpl;
-import case_study.controllers.person.CustomerControllersImpl;
-import case_study.controllers.person.EmployeeControllersImpl;
+import case_study.controllers.facility.HouseController;
+import case_study.controllers.facility.RoomController;
+import case_study.controllers.facility.VillaController;
+import case_study.controllers.person.CustomerController;
+import case_study.controllers.person.EmployeeController;
 import case_study.models.facility.House;
 import case_study.models.facility.Room;
 import case_study.models.facility.Villa;
@@ -30,15 +30,15 @@ import java.util.Scanner;
 
 public class MainFuramaController {
     IEmployeeService employeeService = new EmployeeServiceImpl();
-    EmployeeControllersImpl employeeControllers = new EmployeeControllersImpl();
+    EmployeeController employeeControllers = new EmployeeController();
     ICustomerService customerService = new CustomerServiceImpl();
-    CustomerControllersImpl customerControllers = new CustomerControllersImpl();
+    CustomerController customerControllers = new CustomerController();
     IRoomService roomService = new RoomServiceImpl();
-    RoomControllersImpl roomControllers = new RoomControllersImpl();
+    RoomController roomController = new RoomController();
     IVillaService villaService = new VillaServiceImpl();
-    VillaControllersImpl villaControllers = new VillaControllersImpl();
+    VillaController villaController = new VillaController();
     IHouseService houseService = new HouseServiceImpl();
-    HouseControllersImpl houseControllers = new HouseControllersImpl();
+    HouseController houseController = new HouseController();
     IFacilityService facilityService = new FacilityServiceImpl();
     IBookingService bookingService = new BookingServiceImpl();
     BookingControllerImpl bookingController = new BookingControllerImpl();
@@ -47,7 +47,7 @@ public class MainFuramaController {
         Scanner scanner = new Scanner(System.in);
         do {
             try {
-                int choice = -1;
+                int choice;
                 System.out.println("-----DISPLAY-----");
                 System.out.println("1.\tEmployee Management\n" +
                         "2.\tCustomer Management\n" +
@@ -226,19 +226,19 @@ public class MainFuramaController {
         switch (choiceAddFacility) {
             case 1:
                 System.out.println("ADD NEW HOUSE");
-                House house = (House) houseControllers.inputInformation();
+                House house = (House) houseController.inputInformation();
                 houseService.add(house);
                 facilityService.add(house);
                 break;
             case 2:
                 System.out.println("ADD NEW VILLA");
-                Villa villa = (Villa) villaControllers.inputInformation();
+                Villa villa = (Villa) villaController.inputInformation();
                 villaService.add(villa);
                 facilityService.add(villa);
                 break;
             case 3:
                 System.out.println("ADD NEW ROOM");
-                Room room = (Room) roomControllers.inputInformation();
+                Room room = (Room) roomController.inputInformation();
                 roomService.add(room);
                 facilityService.add(room);
                 break;
