@@ -1,6 +1,5 @@
-package case_study.controllers.Person.impl;
+package case_study.controllers.person;
 
-import case_study.controllers.Person.ICustomerControllers;
 import case_study.models.enums.CustomerType;
 import case_study.models.person.Customer;
 import case_study.models.person.Person;
@@ -12,11 +11,10 @@ import case_study.utils.Validate;
 import java.util.List;
 import java.util.Scanner;
 
-public class CustomerControllersImpl extends PersonControllersImpl implements ICustomerControllers {
+public class CustomerControllersImpl extends PersonControllersImpl {
     ICustomerService customerService = new CustomerServiceImpl();
     Scanner scanner = new Scanner(System.in);
 
-    @Override
     public Object inputInformation() {
         super.inputPersonInformationBasic();
         String customerId = getCustomerIdFromInput();
@@ -28,7 +26,7 @@ public class CustomerControllersImpl extends PersonControllersImpl implements IC
     public String getCustomerIdFromInput() {
         System.out.print("Enter Customer Id: ");
         return Validate.regexCustomerId(scanner.nextLine(),
-                "Invalid Customer ID. Please Re-enter (XYYYY- X:C Y:number)!!!");
+                "Invalid Customer ID. Please Re-enter (XYYYYY- X:C Y:number)!!!");
     }
 
     public CustomerType getCustomerTypeFromInput() {
@@ -55,20 +53,22 @@ public class CustomerControllersImpl extends PersonControllersImpl implements IC
 
     public int getIndexById() {
         int index = -1;
-        List<Person> personList = customerService.getList();
-        String identityCard = super.getIdentityCardFromInput();
-        for (int i = 0; i < personList.size(); i++) {
-            if (personList.get(i).getIdentityCard().equals(identityCard)) {
-                index = i;
+        List<Person> personList = CustomerServiceImpl.listCustomer;
+        do {
+            identityCard = super.getIdentityCardFromInput();
+            for (int i = 0; i < personList.size(); i++) {
+                if (personList.get(i).getIdentityCard().equals(identityCard)) {
+                    index = i;
+                    return index;
+                }
             }
-        }
-        return index;
+            System.out.println("ID of Customer does not exist. Please Re-enter");
+        } while (true);
     }
 
-    @Override
     public void edit() {
         int index = getIndexById();
-        Person customer = customerService.getList().get(index);
+        Person customer = CustomerServiceImpl.listCustomer.get(index);
         chooseEditInfo(customer);
         customerService.edit(index, customer);
     }

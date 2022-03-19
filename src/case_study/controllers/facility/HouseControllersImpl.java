@@ -1,31 +1,28 @@
-package case_study.controllers.facility.impl;
+package case_study.controllers.facility;
 
-import case_study.controllers.facility.IVillaControllers;
-import case_study.models.facility.Villa;
+import case_study.models.facility.House;
 import case_study.services.facility.IRoomService;
 import case_study.services.facility.impl.RoomServiceImpl;
 import case_study.utils.Validate;
 
 import java.util.Scanner;
 
-public class VillaControllersImpl extends FacilityControllerImpl implements IVillaControllers {
+public class HouseControllersImpl extends FacilityControllerImpl {
     IRoomService roomService = new RoomServiceImpl();
     Scanner scanner = new Scanner(System.in);
 
-    @Override
     public Object inputInformation() {
         super.inputFacilityInformationBasic();
         String serviceId = getServiceIdFromInput();
         String roomStandard = getRoomStandardFromInput();
-        double poolArea = getPoolAreaFromInput();
         int numberOfFloors = getNumberOfFloorsFromInput();
-        return new Villa(serviceId, nameService, usableArea, rentCost, maximumPeopleNumber, rentType, roomStandard, poolArea, numberOfFloors);
+        return new House(serviceId, nameService, usableArea, rentCost, maximumPeopleNumber, rentType, roomStandard, numberOfFloors);
     }
 
     public String getServiceIdFromInput() {
         System.out.print("Enter Service Id: ");
-        return Validate.regexVillaId(scanner.nextLine(),
-                "Invalid Villa ID. Please Re-enter(SVVL-XXXX X:number))!!!");
+        return Validate.regexHouseId(scanner.nextLine(),
+                "Invalid House ID. Please Re-enter(SVH0-XXXX X:number))!!!");
     }
 
     public String getRoomStandardFromInput() {
@@ -35,15 +32,10 @@ public class VillaControllersImpl extends FacilityControllerImpl implements IVil
     }
 
 
-    protected Double getPoolAreaFromInput() {
-        System.out.print("Enter Pool Area: ");
-        return Double.parseDouble(Validate.regexArea(scanner.nextLine(),
-                "Invalid Pool Area. Please Re-enter(Position Double)!!!"));
-    }
-
     protected Integer getNumberOfFloorsFromInput() {
         System.out.print("Enter Number Of Floors: ");
         return Integer.parseInt(Validate.regexPositiveInteger(scanner.nextLine(),
                 "Invalid Number Of Floors. Please Re-enter(Position Integer)!!!"));
     }
+
 }

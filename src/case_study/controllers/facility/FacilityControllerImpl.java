@@ -1,4 +1,4 @@
-package case_study.controllers.facility.impl;
+package case_study.controllers.facility;
 
 import case_study.models.enums.RentType;
 import case_study.utils.InputData;

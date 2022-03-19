@@ -1,4 +1,4 @@
-package case_study.controllers.Person.impl;
+package case_study.controllers.person;
 
 import case_study.utils.Validate;
 
@@ -31,8 +31,7 @@ public class PersonControllersImpl {
 
     protected String getDayOfBirthFromInput() {
         System.out.print("Enter Day Of Birth: ");
-        return Validate.regexDayOfBirth(scanner.nextLine(),
-                "Invalid Day Of Birth. Please Re-enter(dd/mm/yyyy)");
+        return Validate.regexAge18to100(scanner.nextLine());
     }
 
     protected String getGenderFromInput() {
@@ -50,7 +49,7 @@ public class PersonControllersImpl {
     protected String getTelephoneNumberFromInput() {
         System.out.print("Enter Telephone Number: ");
         return Validate.regexTelephoneNumber(scanner.nextLine(),
-                "Invalid Telephone Number. Please Re-enter(Please input number(10 character)!!!");
+                "Invalid Telephone Number. Please Re-enter(Please input number(10 character and start with 0 or 1)!!!");
     }
 
     protected String getEmailAddressFromInput() {

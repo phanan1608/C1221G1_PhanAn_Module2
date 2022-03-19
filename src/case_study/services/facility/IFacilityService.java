@@ -4,5 +4,4 @@ import case_study.services.IService;
 
 public interface IFacilityService extends IService {
     void displayMaintain();
-
 }

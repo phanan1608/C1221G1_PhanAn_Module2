@@ -9,10 +9,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class VillaServiceImpl implements IVillaService {
-    static List<Facility> villaList = new ArrayList<>();
+    public static List<Facility> villaList;
     public static final String VILLA_FILE = "src\\case_study\\data\\villa_list.csv";
 
     static {
+        villaList = new ArrayList<>();
         villaList = ReadAndWriteFile.readVillaListFromCSV(VILLA_FILE);
     }
 

@@ -10,11 +10,12 @@ import java.util.List;
 import java.util.Scanner;
 
 public class EmployeeServiceImpl implements IEmployeeService {
-    static List<Person> listEmployee = new ArrayList<>();
+    public static List<Person> listEmployee;
     public static final String EMPLOYEE_FILE = "src\\case_study\\data\\employee_list.csv";
     static Scanner scanner = new Scanner(System.in);
 
     static {
+        listEmployee = new ArrayList<>();
         listEmployee = ReadAndWriteFile.readEmployeeListFromCSV(EMPLOYEE_FILE);
     }
 
@@ -44,9 +45,5 @@ public class EmployeeServiceImpl implements IEmployeeService {
         System.out.println(listEmployee.get(index));
     }
 
-    @Override
-    public List<Person> getList() {
-        return listEmployee;
-    }
 }
 

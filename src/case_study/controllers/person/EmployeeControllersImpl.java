@@ -1,6 +1,5 @@
-package case_study.controllers.Person.impl;
+package case_study.controllers.person;
 
-import case_study.controllers.Person.IEmployeeControllers;
 import case_study.models.enums.AcademicLevel;
 import case_study.models.enums.JobTitle;
 import case_study.models.person.Employee;
@@ -13,11 +12,10 @@ import case_study.utils.Validate;
 import java.util.List;
 import java.util.Scanner;
 
-public class EmployeeControllersImpl extends PersonControllersImpl implements IEmployeeControllers {
+public class EmployeeControllersImpl extends PersonControllersImpl {
     IEmployeeService employeeService = new EmployeeServiceImpl();
     Scanner scanner = new Scanner(System.in);
 
-    @Override
     public Object inputInformation() {
         super.inputPersonInformationBasic();
         String employeeId = getEmployeeIdFromInput();
@@ -30,7 +28,7 @@ public class EmployeeControllersImpl extends PersonControllersImpl implements IE
     public String getEmployeeIdFromInput() {
         System.out.print("Enter Employee ID: ");
         return Validate.regexEmployeeId(scanner.nextLine(),
-                "Invalid Employee ID. Please Re-enter (XYYYY- X:E Y:number)!!!");
+                "Invalid Employee ID. Please Re-enter (XYYYYY- X:E Y:number)!!!");
     }
 
     public AcademicLevel getAcademicLevelFromInput() {
@@ -72,21 +70,24 @@ public class EmployeeControllersImpl extends PersonControllersImpl implements IE
     }
 
     public int getIndexById() {
-        int index = -1;
-        List<Person> personList = employeeService.getList();
-        String identityCard = super.getIdentityCardFromInput();
-        for (int i = 0; i < personList.size(); i++) {
-            if (personList.get(i).getIdentityCard().equals(identityCard)) {
-                index = i;
+        int index;
+        List<Person> personList = EmployeeServiceImpl.listEmployee;
+        String identityCard;
+        do {
+            identityCard = super.getIdentityCardFromInput();
+            for (int i = 0; i < personList.size(); i++) {
+                if (personList.get(i).getIdentityCard().equals(identityCard)) {
+                    index = i;
+                    return index;
+                }
             }
-        }
-        return index;
+            System.out.println("ID of Employee does not exist. Please Re-enter");
+        } while (true);
     }
 
-    @Override
     public void edit() {
         int index = getIndexById();
-        Person employee = employeeService.getList().get(index);
+        Person employee = EmployeeServiceImpl.listEmployee.get(index);
         chooseEditInfo(employee);
         employeeService.edit(index, employee);
     }

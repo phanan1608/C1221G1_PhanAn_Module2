@@ -1,20 +1,23 @@
 package case_study.models.booking;
 
+import case_study.models.facility.Facility;
+import case_study.models.person.Customer;
+
+import java.util.Objects;
+
 public class Booking {
     private String bookingCode;
     private String startDate;
     private String endDate;
-    private String customerId;
-    private String serviceName;
-    private String serviceType;
+    private Customer customer;
+    private Facility facility;
 
-    public Booking(String bookingCode, String startDate, String endDate, String customerId, String serviceName, String serviceType) {
+    public Booking(String bookingCode, String startDate, String endDate, Customer customer, Facility facility) {
         this.bookingCode = bookingCode;
         this.startDate = startDate;
         this.endDate = endDate;
-        this.customerId = customerId;
-        this.serviceName = serviceName;
-        this.serviceType = serviceType;
+        this.customer = customer;
+        this.facility = facility;
     }
 
     public String getBookingCode() {
@@ -41,28 +44,20 @@ public class Booking {
         this.endDate = endDate;
     }
 
-    public String getCustomerId() {
-        return customerId;
+    public Customer getCustomer() {
+        return customer;
     }
 
-    public void setCustomerId(String customerId) {
-        this.customerId = customerId;
+    public void setCustomer(Customer customer) {
+        this.customer = customer;
     }
 
-    public String getServiceName() {
-        return serviceName;
+    public Facility getFacility() {
+        return facility;
     }
 
-    public void setServiceName(String serviceName) {
-        this.serviceName = serviceName;
-    }
-
-    public String getServiceType() {
-        return serviceType;
-    }
-
-    public void setServiceType(String serviceType) {
-        this.serviceType = serviceType;
+    public void setFacility(Facility facility) {
+        this.facility = facility;
     }
 
     @Override
@@ -71,9 +66,21 @@ public class Booking {
                 "bookingCode='" + bookingCode + '\'' +
                 ", startDate='" + startDate + '\'' +
                 ", endDate='" + endDate + '\'' +
-                ", customerId='" + customerId + '\'' +
-                ", serviceName='" + serviceName + '\'' +
-                ", serviceType='" + serviceType + '\'' +
+                ", " + customer +
+                ", " + facility +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Booking booking = (Booking) o;
+        return bookingCode.equals(booking.bookingCode);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(bookingCode);
     }
 }

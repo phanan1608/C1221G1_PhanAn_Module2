@@ -9,10 +9,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class HouseServiceImpl implements IHouseService {
-    static List<Facility> houseList = new ArrayList<>();
+    public static List<Facility> houseList;
     public static final String HOUSE_FILE = "src\\case_study\\data\\house_list.csv";
 
     static {
+        houseList = new ArrayList<>();
         houseList = ReadAndWriteFile.readHouseListFromCSV(HOUSE_FILE);
     }
 

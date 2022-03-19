@@ -1,6 +1,5 @@
-package case_study.controllers.facility.impl;
+package case_study.controllers.facility;
 
-import case_study.controllers.facility.IRoomControllers;
 import case_study.models.facility.Room;
 import case_study.services.facility.IRoomService;
 import case_study.services.facility.impl.RoomServiceImpl;
@@ -8,11 +7,10 @@ import case_study.utils.Validate;
 
 import java.util.Scanner;
 
-public class RoomControllersImpl extends FacilityControllerImpl implements IRoomControllers {
+public class RoomControllersImpl extends FacilityControllerImpl {
     IRoomService roomService = new RoomServiceImpl();
     Scanner scanner = new Scanner(System.in);
 
-    @Override
     public Object inputInformation() {
         super.inputFacilityInformationBasic();
         String serviceId = getServiceIdFromInput();

@@ -9,10 +9,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class RoomServiceImpl extends FacilityServiceImpl implements IRoomService {
-    static List<Facility> roomList = new ArrayList<>();
+    public static List<Facility> roomList;
     public static final String ROOM_FILE = "src\\case_study\\data\\room_list.csv";
 
     static {
+        roomList = new ArrayList<>();
         roomList = ReadAndWriteFile.readRoomListFromCSV(ROOM_FILE);
     }
 

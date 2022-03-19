@@ -1,18 +1,16 @@
 package case_study.controllers;
 
-import case_study.controllers.Person.ICustomerControllers;
-import case_study.controllers.Person.IEmployeeControllers;
-import case_study.controllers.Person.impl.CustomerControllersImpl;
-import case_study.controllers.Person.impl.EmployeeControllersImpl;
-import case_study.controllers.facility.IHouseControllers;
-import case_study.controllers.facility.IRoomControllers;
-import case_study.controllers.facility.IVillaControllers;
-import case_study.controllers.facility.impl.HouseControllersImpl;
-import case_study.controllers.facility.impl.RoomControllersImpl;
-import case_study.controllers.facility.impl.VillaControllersImpl;
+import case_study.controllers.booking.BookingControllerImpl;
+import case_study.controllers.facility.HouseControllersImpl;
+import case_study.controllers.facility.RoomControllersImpl;
+import case_study.controllers.facility.VillaControllersImpl;
+import case_study.controllers.person.CustomerControllersImpl;
+import case_study.controllers.person.EmployeeControllersImpl;
 import case_study.models.facility.House;
 import case_study.models.facility.Room;
 import case_study.models.facility.Villa;
+import case_study.services.booking.IBookingService;
+import case_study.services.booking.impl.BookingServiceImpl;
 import case_study.services.facility.IFacilityService;
 import case_study.services.facility.IHouseService;
 import case_study.services.facility.IRoomService;
@@ -32,23 +30,24 @@ import java.util.Scanner;
 
 public class MainFuramaController {
     IEmployeeService employeeService = new EmployeeServiceImpl();
-    IEmployeeControllers employeeControllers = new EmployeeControllersImpl();
+    EmployeeControllersImpl employeeControllers = new EmployeeControllersImpl();
     ICustomerService customerService = new CustomerServiceImpl();
-    ICustomerControllers customerControllers = new CustomerControllersImpl();
+    CustomerControllersImpl customerControllers = new CustomerControllersImpl();
     IRoomService roomService = new RoomServiceImpl();
-    IRoomControllers roomControllers = new RoomControllersImpl();
+    RoomControllersImpl roomControllers = new RoomControllersImpl();
     IVillaService villaService = new VillaServiceImpl();
-    IVillaControllers villaControllers = new VillaControllersImpl();
+    VillaControllersImpl villaControllers = new VillaControllersImpl();
     IHouseService houseService = new HouseServiceImpl();
-    IHouseControllers houseControllers = new HouseControllersImpl();
+    HouseControllersImpl houseControllers = new HouseControllersImpl();
     IFacilityService facilityService = new FacilityServiceImpl();
+    IBookingService bookingService = new BookingServiceImpl();
+    BookingControllerImpl bookingController = new BookingControllerImpl();
 
     public void displayMainMenu() {
         Scanner scanner = new Scanner(System.in);
         do {
             try {
                 int choice = -1;
-
                 System.out.println("-----DISPLAY-----");
                 System.out.println("1.\tEmployee Management\n" +
                         "2.\tCustomer Management\n" +
@@ -80,7 +79,7 @@ public class MainFuramaController {
                         System.out.println("No choice!");
                 }
             } catch (NumberFormatException e) {
-                System.err.println("Không được nhập chữ");
+                System.err.println("Invalid Number. Please don't enter text");
             }
         } while (true);
     }
@@ -93,6 +92,7 @@ public class MainFuramaController {
     }
 
     private void bookingManagement() {
+        int choiceBooking;
         System.out.println("BOOKING MANAGEMENT");
         System.out.println("1.\tAdd new booking\n" +
                 "2.\tDisplay list booking\n" +
@@ -100,6 +100,30 @@ public class MainFuramaController {
                 "4.\tDisplay list contracts\n" +
                 "5.\tEdit contracts\n" +
                 "6.\tReturn main menu\n");
+        choiceBooking = InputData.inputIntegerChoice();
+        switch (choiceBooking) {
+            case 1:
+                System.out.println("ADD NEW BOOKING");
+                bookingService.add(bookingController.inputInformation());
+                break;
+            case 2:
+                System.out.println("DISPLAY LIST BOOKING");
+                bookingService.displayList();
+                break;
+            case 3:
+                System.out.println("CREATE NEW CONSTRACTS");
+                break;
+            case 4:
+                System.out.println("DISPLAY LIST CONTRACTS");
+                break;
+            case 5:
+                System.out.println("EDIT CONTRACTS");
+                break;
+            case 6:
+                break;
+            default:
+                System.out.println("Only choice 1, 2, 3 or 4!!!");
+        }
     }
 
     private void customerManagement() {
@@ -116,10 +140,12 @@ public class MainFuramaController {
                 customerService.displayList();
                 break;
             case 2:
+                System.out.println("CREATE CUSTOMER");
                 customerService.add(customerControllers.inputInformation());
                 break;
             case 3:
                 System.out.println("EDIT CUSTOMER");
+                customerService.displayList();
                 customerControllers.edit();
                 break;
             case 4:
@@ -143,10 +169,12 @@ public class MainFuramaController {
                 employeeService.displayList();
                 break;
             case 2:
+                System.out.println("CREATE EMPLOYEE");
                 employeeService.add(employeeControllers.inputInformation());
                 break;
             case 3:
                 System.out.println("EDIT EMPLOYEE");
+                employeeService.displayList();
                 employeeControllers.edit();
                 break;
             case 4:
@@ -173,6 +201,7 @@ public class MainFuramaController {
 //                facilityService.displayList();
                 break;
             case 2:
+                System.out.println("ADD FACILITY");
                 addFacilityManagement();
                 break;
             case 3:

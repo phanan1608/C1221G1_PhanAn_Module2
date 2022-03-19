@@ -9,10 +9,11 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class CustomerServiceImpl implements ICustomerService {
-    static List<Person> listCustomer = new LinkedList<>();
+    public static List<Person> listCustomer;
     public static final String CUSTOMER_FILE = "src\\case_study\\data\\customer_list.csv";
 
     static {
+        listCustomer = new LinkedList<>();
         listCustomer = ReadAndWriteFile.readCustomerListFromCSV(CUSTOMER_FILE);
     }
 
@@ -41,10 +42,5 @@ public class CustomerServiceImpl implements ICustomerService {
         System.out.println("Successfully edited");
         ReadAndWriteFile.writeListPersonToCSV(CUSTOMER_FILE, listCustomer);
         System.out.println(listCustomer.get(index));
-    }
-
-    @Override
-    public List<Person> getList() {
-        return listCustomer;
     }
 }
