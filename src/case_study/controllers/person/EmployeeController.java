@@ -16,13 +16,20 @@ public class EmployeeController extends PersonController {
     IEmployeeService employeeService = new EmployeeServiceImpl();
     Scanner scanner = new Scanner(System.in);
 
-    public Object inputInformation() {
+    public void displayEmpoyeeList() {
+        employeeService.displayList();
+    }
+
+    public void addEmployee() {
         super.inputPersonInformationBasic();
         String employeeId = getEmployeeIdFromInput();
         AcademicLevel academicLevel = getAcademicLevelFromInput();
         JobTitle jobTitle = getJobTitleFromInput();
         double salary = getSalaryFromInput();
-        return new Employee(fullName, dayOfBirth, gender, identityCard, telephoneNumber, emailAddress, employeeId, academicLevel, jobTitle, salary);
+        Employee employee = new Employee(fullName, dayOfBirth, gender, identityCard, telephoneNumber, emailAddress, employeeId, academicLevel, jobTitle, salary);
+        employeeService.add(employee);
+        System.out.println(employee);
+        System.out.println("Employee created successfully!!!");
     }
 
     public String getEmployeeIdFromInput() {
@@ -65,7 +72,7 @@ public class EmployeeController extends PersonController {
 
     private Double getSalaryFromInput() {
         System.out.print("Enter Salary: ");
-        return Double.parseDouble(Validate.regexSalary(scanner.nextLine(),
+        return Double.parseDouble(Validate.regexMoney(scanner.nextLine(),
                 "Invalid Employee ID. Please Re-enter (please input a number with 7 or more digits)!!!"));
     }
 

@@ -22,7 +22,6 @@ public class CustomerServiceImpl implements ICustomerService {
         listCustomer.add((Customer) object);
         System.out.println("Successfully Added");
         ReadAndWriteFile.writeListPersonToCSV(CUSTOMER_FILE, listCustomer);
-        displayList();
     }
 
     @Override

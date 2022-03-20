@@ -23,7 +23,6 @@ public class EmployeeServiceImpl implements IEmployeeService {
     public void add(Object object) {
         listEmployee.add((Employee) object);
         System.out.println("Successfully Added");
-        displayList();
     }
 
     @Override

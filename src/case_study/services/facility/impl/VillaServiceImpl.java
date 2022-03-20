@@ -22,7 +22,6 @@ public class VillaServiceImpl implements IVillaService {
         villaList.add((Villa) object);
         System.out.println("Successfully Added");
         ReadAndWriteFile.writeListFacilityToCSV(VILLA_FILE, villaList);
-        displayList();
     }
 
     @Override

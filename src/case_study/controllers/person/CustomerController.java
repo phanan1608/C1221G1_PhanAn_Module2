@@ -15,12 +15,19 @@ public class CustomerController extends PersonController {
     ICustomerService customerService = new CustomerServiceImpl();
     Scanner scanner = new Scanner(System.in);
 
-    public Object inputInformation() {
+    public void displayCustomerList() {
+        customerService.displayList();
+    }
+
+    public void addCustomer() {
         super.inputPersonInformationBasic();
         String customerId = getCustomerIdFromInput();
         CustomerType customerType = getCustomerTypeFromInput();
         String address = getAddressFromInput();
-        return new Customer(fullName, dayOfBirth, gender, identityCard, telephoneNumber, emailAddress, customerId, customerType, address);
+        Customer customer = new Customer(fullName, dayOfBirth, gender, identityCard, telephoneNumber, emailAddress, customerId, customerType, address);
+        customerService.add(customer);
+        System.out.println(customer);
+        System.out.println("Customer created successfully!!!");
     }
 
     public String getCustomerIdFromInput() {

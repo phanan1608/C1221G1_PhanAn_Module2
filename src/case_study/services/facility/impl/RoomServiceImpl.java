@@ -22,7 +22,6 @@ public class RoomServiceImpl extends FacilityServiceImpl implements IRoomService
         roomList.add((Room) object);
         System.out.println("Successfully Added");
         ReadAndWriteFile.writeListFacilityToCSV(ROOM_FILE, roomList);
-        displayList();
     }
 
     @Override

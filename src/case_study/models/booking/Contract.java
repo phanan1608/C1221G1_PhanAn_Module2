@@ -66,4 +66,8 @@ public class Contract {
                 '}';
     }
 
+    public String getInfoToCSV() {
+        return this.contractNumber + "," + this.bookingCode + "," + this.depositMoney + "," + this.totalMoney
+                + "," + this.customerId;
+    }
 }

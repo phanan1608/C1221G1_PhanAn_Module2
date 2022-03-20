@@ -14,7 +14,6 @@ public class Validate {
     private static final String DATE_REGEX = "^(3[01]|[12][0-9]|0[1-9])/(1[0-2]|0[1-9])/[0-9]{4}$";
     private static final String EMPLOYEE_ID_REGEX = "^E\\d{5}$";
     private static final String CUSTOMER_ID_REGEX = "^C\\d{5}$";
-    private static final String SALARY_REGEX = "\\d{7,}(\\.\\d+)*$";
     private static final String GENDER_REGEX = "^[a-zA-Z]+$";
     private static final String ID_REGEX = "^\\d{9}|\\d{12}$";
     private static final String TELEPHONE_NUMBER_REGEX = "^[01]\\d{9}$";
@@ -94,8 +93,8 @@ public class Validate {
         return regexString(CUSTOMER_ID_REGEX, input, error);
     }
 
-    public static String regexSalary(String input, String error) {
-        return regexString(SALARY_REGEX, input, error);
+    public static String regexMoney(String input, String error) {
+        return regexString(POSITION_DOUBLE_REGEX, input, error);
     }
 
     public static String regexGender(String input, String error) {

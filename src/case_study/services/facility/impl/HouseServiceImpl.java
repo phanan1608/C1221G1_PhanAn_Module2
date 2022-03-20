@@ -23,7 +23,6 @@ public class HouseServiceImpl implements IHouseService {
         houseList.add((House) object);
         ReadAndWriteFile.writeListFacilityToCSV(HOUSE_FILE, houseList);
         System.out.println("Successfully Added");
-        displayList();
     }
 
     @Override

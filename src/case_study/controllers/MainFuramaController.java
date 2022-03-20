@@ -1,6 +1,7 @@
 package case_study.controllers;
 
-import case_study.controllers.booking.BookingControllerImpl;
+import case_study.controllers.booking.BookingController;
+import case_study.controllers.booking.ContractController;
 import case_study.controllers.facility.HouseController;
 import case_study.controllers.facility.RoomController;
 import case_study.controllers.facility.VillaController;
@@ -9,8 +10,6 @@ import case_study.controllers.person.EmployeeController;
 import case_study.models.facility.House;
 import case_study.models.facility.Room;
 import case_study.models.facility.Villa;
-import case_study.services.booking.IBookingService;
-import case_study.services.booking.impl.BookingServiceImpl;
 import case_study.services.facility.IFacilityService;
 import case_study.services.facility.IHouseService;
 import case_study.services.facility.IRoomService;
@@ -19,29 +18,24 @@ import case_study.services.facility.impl.FacilityServiceImpl;
 import case_study.services.facility.impl.HouseServiceImpl;
 import case_study.services.facility.impl.RoomServiceImpl;
 import case_study.services.facility.impl.VillaServiceImpl;
-import case_study.services.person.ICustomerService;
-import case_study.services.person.IEmployeeService;
-import case_study.services.person.impl.CustomerServiceImpl;
-import case_study.services.person.impl.EmployeeServiceImpl;
 import case_study.utils.InputData;
 
 import java.util.Scanner;
 
 
 public class MainFuramaController {
-    IEmployeeService employeeService = new EmployeeServiceImpl();
     EmployeeController employeeControllers = new EmployeeController();
-    ICustomerService customerService = new CustomerServiceImpl();
     CustomerController customerControllers = new CustomerController();
-    IRoomService roomService = new RoomServiceImpl();
     RoomController roomController = new RoomController();
-    IVillaService villaService = new VillaServiceImpl();
     VillaController villaController = new VillaController();
-    IHouseService houseService = new HouseServiceImpl();
     HouseController houseController = new HouseController();
+    BookingController bookingController = new BookingController();
+    ContractController contractController = new ContractController();
+
     IFacilityService facilityService = new FacilityServiceImpl();
-    IBookingService bookingService = new BookingServiceImpl();
-    BookingControllerImpl bookingController = new BookingControllerImpl();
+    IRoomService roomService = new RoomServiceImpl();
+    IVillaService villaService = new VillaServiceImpl();
+    IHouseService houseService = new HouseServiceImpl();
 
     public void displayMainMenu() {
         Scanner scanner = new Scanner(System.in);
@@ -104,20 +98,24 @@ public class MainFuramaController {
         switch (choiceBooking) {
             case 1:
                 System.out.println("ADD NEW BOOKING");
-                bookingService.add(bookingController.inputInformation());
+                bookingController.addBooking();
                 break;
             case 2:
                 System.out.println("DISPLAY LIST BOOKING");
-                bookingService.displayList();
+                bookingController.displayBookingList();
                 break;
             case 3:
                 System.out.println("CREATE NEW CONSTRACTS");
+                contractController.addContract();
                 break;
             case 4:
                 System.out.println("DISPLAY LIST CONTRACTS");
+                contractController.displayContractList();
                 break;
             case 5:
                 System.out.println("EDIT CONTRACTS");
+                contractController.displayContractList();
+                contractController.edit();
                 break;
             case 6:
                 break;
@@ -137,15 +135,15 @@ public class MainFuramaController {
         switch (choiceCustomer) {
             case 1:
                 System.out.println("DISPLAY LIST CUSTOMER");
-                customerService.displayList();
+                customerControllers.displayCustomerList();
                 break;
             case 2:
                 System.out.println("CREATE CUSTOMER");
-                customerService.add(customerControllers.inputInformation());
+                customerControllers.addCustomer();
                 break;
             case 3:
                 System.out.println("EDIT CUSTOMER");
-                customerService.displayList();
+                customerControllers.displayCustomerList();
                 customerControllers.edit();
                 break;
             case 4:
@@ -166,15 +164,15 @@ public class MainFuramaController {
         switch (choiceEmployee) {
             case 1:
                 System.out.println("DISPLAY LIST EMPLOYEES");
-                employeeService.displayList();
+                employeeControllers.displayEmpoyeeList();
                 break;
             case 2:
                 System.out.println("CREATE EMPLOYEE");
-                employeeService.add(employeeControllers.inputInformation());
+                employeeControllers.addEmployee();
                 break;
             case 3:
                 System.out.println("EDIT EMPLOYEE");
-                employeeService.displayList();
+                employeeControllers.displayEmpoyeeList();
                 employeeControllers.edit();
                 break;
             case 4:
@@ -195,10 +193,10 @@ public class MainFuramaController {
         switch (choiceFacility) {
             case 1:
                 System.out.println("DISPLAY LIST FACILITY");
-                roomService.displayList();
-                villaService.displayList();
-                houseService.displayList();
-//                facilityService.displayList();
+//                roomController.displayRoomList();
+//                villaController.displayVillaList();
+//                houseController.displayHouseList();
+                facilityService.displayList();
                 break;
             case 2:
                 System.out.println("ADD FACILITY");
@@ -226,19 +224,19 @@ public class MainFuramaController {
         switch (choiceAddFacility) {
             case 1:
                 System.out.println("ADD NEW HOUSE");
-                House house = (House) houseController.inputInformation();
+                House house = houseController.inputInformation();
                 houseService.add(house);
                 facilityService.add(house);
                 break;
             case 2:
                 System.out.println("ADD NEW VILLA");
-                Villa villa = (Villa) villaController.inputInformation();
+                Villa villa = villaController.inputInformation();
                 villaService.add(villa);
                 facilityService.add(villa);
                 break;
             case 3:
                 System.out.println("ADD NEW ROOM");
-                Room room = (Room) roomController.inputInformation();
+                Room room = roomController.inputInformation();
                 roomService.add(room);
                 facilityService.add(room);
                 break;

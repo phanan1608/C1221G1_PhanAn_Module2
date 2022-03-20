@@ -71,16 +71,22 @@ public class Booking {
                 '}';
     }
 
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Booking booking = (Booking) o;
-        return bookingCode.equals(booking.bookingCode);
+        return Objects.equals(bookingCode, booking.bookingCode);
     }
 
     @Override
     public int hashCode() {
         return Objects.hash(bookingCode);
+    }
+
+    public String getInfoToCSV() {
+        return this.bookingCode + "," + this.startDate + "," + this.endDate + "," + this.customer
+                + "," + this.facility;
     }
 }

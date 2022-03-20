@@ -1,5 +1,6 @@
 package case_study.utils;
 
+import case_study.models.booking.Contract;
 import case_study.models.enums.AcademicLevel;
 import case_study.models.enums.CustomerType;
 import case_study.models.enums.JobTitle;
@@ -84,6 +85,41 @@ public class ReadAndWriteFile {
         }
         return customerList;
     }
+
+    public static List<Contract> readContractListFromCSV(String filePath) {
+        List<Contract> contractList = new ArrayList<>();
+        List<String> stringList = readListStringFromCSV(filePath);
+        String[] arr = null;
+        for (String string : stringList) {
+            arr = string.split(",");
+            int contractNumber = Integer.parseInt(arr[0]);
+            String bookingCode = arr[1];
+            double depositMoney = Double.parseDouble(arr[2]);
+            double totalMoney = Double.parseDouble(arr[3]);
+            String customerId = arr[4];
+            Contract contract = new Contract(contractNumber, bookingCode, depositMoney, totalMoney, customerId);
+            contractList.add(contract);
+        }
+        return contractList;
+    }
+//
+//    public static Set<Booking> readBookingListFromCSV(String filePath) {
+//        Set<Booking> bookingSet = new TreeSet<>(new BookingComparator());
+//        List<String> stringList = readListStringFromCSV(filePath);
+//        ICustomerService customerService = new CustomerServiceImpl()
+//        String[] arr = null;
+//        for (String string : stringList) {
+//            arr = string.split(",");
+//            String bookingCode = arr[0];
+//            String startDate = arr[1];
+//            String endDate = arr[2];
+//            Customer customer = new Customer(arr[3]);
+//            Facility facility;
+//            Booking booking = new Booking(bookingCode, startDate, endDate, customer, facility);
+//            bookingSet.add(booking);
+//        }
+//        return bookingSet;
+//    }
 
     public static List<Facility> readVillaListFromCSV(String filePath) {
         List<Facility> villaList = new ArrayList<>();
@@ -183,5 +219,12 @@ public class ReadAndWriteFile {
         writeListStringToCSV(filePath, stringList);
     }
 
+    public static void writeListContractToCSV(String filePath, List<Contract> contractList) {
+        List<String> stringList = new ArrayList<>();
+        for (Contract contract : contractList) {
+            stringList.add(contract.getInfoToCSV());
+        }
+        writeListStringToCSV(filePath, stringList);
+    }
 
 }

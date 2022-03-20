@@ -7,5 +7,4 @@ public class View {
         MainFuramaController mainFuramaController = new MainFuramaController();
         mainFuramaController.displayMainMenu();
     }
-
 }
