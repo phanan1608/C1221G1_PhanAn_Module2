@@ -34,4 +34,13 @@ public class VillaServiceImpl implements IVillaService {
             System.out.println("List Empty");
         }
     }
+
+    public Villa findVillaById(String id) {
+        for (Facility villa : villaList) {
+            if (villa.getServiceId().equals(id)) {
+                return (Villa) villa;
+            }
+        }
+        return null;
+    }
 }

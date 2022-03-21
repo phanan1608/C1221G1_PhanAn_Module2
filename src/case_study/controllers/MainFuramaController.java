@@ -26,13 +26,14 @@ import java.util.Scanner;
 public class MainFuramaController {
     EmployeeController employeeControllers = new EmployeeController();
     CustomerController customerControllers = new CustomerController();
+    IFacilityService facilityService = new FacilityServiceImpl();
     RoomController roomController = new RoomController();
     VillaController villaController = new VillaController();
     HouseController houseController = new HouseController();
     BookingController bookingController = new BookingController();
     ContractController contractController = new ContractController();
 
-    IFacilityService facilityService = new FacilityServiceImpl();
+
     IRoomService roomService = new RoomServiceImpl();
     IVillaService villaService = new VillaServiceImpl();
     IHouseService houseService = new HouseServiceImpl();
@@ -193,10 +194,10 @@ public class MainFuramaController {
         switch (choiceFacility) {
             case 1:
                 System.out.println("DISPLAY LIST FACILITY");
-//                roomController.displayRoomList();
-//                villaController.displayVillaList();
-//                houseController.displayHouseList();
-                facilityService.displayList();
+                roomController.displayRoomList();
+                villaController.displayVillaList();
+                houseController.displayHouseList();
+//                facilityService.displayList();
                 break;
             case 2:
                 System.out.println("ADD FACILITY");

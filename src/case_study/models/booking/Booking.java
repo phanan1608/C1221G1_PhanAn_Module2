@@ -77,16 +77,20 @@ public class Booking {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Booking booking = (Booking) o;
-        return Objects.equals(bookingCode, booking.bookingCode);
+        return bookingCode.equals(booking.bookingCode) &&
+                startDate.equals(booking.startDate) &&
+                endDate.equals(booking.endDate) &&
+                customer.equals(booking.customer) &&
+                facility.equals(booking.facility);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(bookingCode);
+        return Objects.hash(bookingCode, startDate, endDate, customer, facility);
     }
 
     public String getInfoToCSV() {
-        return this.bookingCode + "," + this.startDate + "," + this.endDate + "," + this.customer
-                + "," + this.facility;
+        return this.bookingCode + "," + this.startDate + "," + this.endDate + "," + this.customer.getCustomerId()
+                + "," + this.facility.getServiceId();
     }
 }

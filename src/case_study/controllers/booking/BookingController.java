@@ -5,7 +5,6 @@ import case_study.models.facility.Facility;
 import case_study.models.person.Customer;
 import case_study.services.booking.IBookingService;
 import case_study.services.booking.impl.BookingServiceImpl;
-import case_study.services.facility.IFacilityService;
 import case_study.services.facility.IHouseService;
 import case_study.services.facility.IRoomService;
 import case_study.services.facility.IVillaService;
@@ -16,6 +15,7 @@ import case_study.services.facility.impl.VillaServiceImpl;
 import case_study.services.person.ICustomerService;
 import case_study.services.person.impl.CustomerServiceImpl;
 import case_study.utils.InputData;
+import case_study.utils.ReadAndWriteFile;
 import case_study.utils.Validate;
 
 import java.time.LocalDate;
@@ -31,7 +31,9 @@ public class BookingController {
     IVillaService villaService = new VillaServiceImpl();
     IBookingService bookingService = new BookingServiceImpl();
     Scanner scanner = new Scanner(System.in);
-    IFacilityService facilityService = new FacilityServiceImpl();
+
+    Map<Facility, Integer> facilityIntegerMap = FacilityServiceImpl.facilityIntegerMap;
+    public static final String FACILITY_MAINTAIN_FILE = "src\\case_study\\data\\facility_maintain_list.csv";
 
 
     public void displayBookingList() {
@@ -48,12 +50,12 @@ public class BookingController {
         bookingService.add(booking);
         System.out.println(booking);
         System.out.println("Booking created successfully!!!");
-        Map<Facility, Integer> facilityIntegerMap = FacilityServiceImpl.facilityIntegerMap;
         for (Map.Entry<Facility, Integer> element : facilityIntegerMap.entrySet()) {
             if (element.getKey().equals(booking.getFacility())) {
                 element.setValue(element.getValue() + 1);
             }
         }
+        ReadAndWriteFile.writeFacilityMapToCSVFile(FACILITY_MAINTAIN_FILE, facilityIntegerMap);
     }
 
     public Object inputInformation() {
@@ -176,5 +178,4 @@ public class BookingController {
             }
         } while (true);
     }
-
 }

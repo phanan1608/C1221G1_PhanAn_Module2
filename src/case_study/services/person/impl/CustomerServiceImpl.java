@@ -42,4 +42,13 @@ public class CustomerServiceImpl implements ICustomerService {
         ReadAndWriteFile.writeListPersonToCSV(CUSTOMER_FILE, listCustomer);
         System.out.println(listCustomer.get(index));
     }
+
+    public static Customer findCustomerById(String id) {
+        for (Person customer : listCustomer) {
+            if (((Customer) customer).getCustomerId().equals(id)) {
+                return (Customer) customer;
+            }
+        }
+        return null;
+    }
 }

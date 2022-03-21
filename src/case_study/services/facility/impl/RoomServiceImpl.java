@@ -34,4 +34,13 @@ public class RoomServiceImpl extends FacilityServiceImpl implements IRoomService
             System.out.println("List Empty");
         }
     }
+
+    public Room findRoomById(String id) {
+        for (Facility room : roomList) {
+            if (room.getServiceId().equals(id)) {
+                return (Room) room;
+            }
+        }
+        return null;
+    }
 }

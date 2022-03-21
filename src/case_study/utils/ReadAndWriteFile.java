@@ -1,5 +1,6 @@
 package case_study.utils;
 
+import case_study.models.booking.Booking;
 import case_study.models.booking.Contract;
 import case_study.models.enums.AcademicLevel;
 import case_study.models.enums.CustomerType;
@@ -12,11 +13,13 @@ import case_study.models.facility.Villa;
 import case_study.models.person.Customer;
 import case_study.models.person.Employee;
 import case_study.models.person.Person;
+import case_study.services.facility.impl.HouseServiceImpl;
+import case_study.services.facility.impl.RoomServiceImpl;
+import case_study.services.facility.impl.VillaServiceImpl;
+import case_study.services.person.impl.CustomerServiceImpl;
 
 import java.io.*;
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 public class ReadAndWriteFile {
     private static List<String> readListStringFromCSV(String pathFile) {
@@ -102,24 +105,44 @@ public class ReadAndWriteFile {
         }
         return contractList;
     }
-//
-//    public static Set<Booking> readBookingListFromCSV(String filePath) {
-//        Set<Booking> bookingSet = new TreeSet<>(new BookingComparator());
-//        List<String> stringList = readListStringFromCSV(filePath);
-//        ICustomerService customerService = new CustomerServiceImpl()
-//        String[] arr = null;
-//        for (String string : stringList) {
-//            arr = string.split(",");
-//            String bookingCode = arr[0];
-//            String startDate = arr[1];
-//            String endDate = arr[2];
-//            Customer customer = new Customer(arr[3]);
-//            Facility facility;
-//            Booking booking = new Booking(bookingCode, startDate, endDate, customer, facility);
-//            bookingSet.add(booking);
-//        }
-//        return bookingSet;
-//    }
+
+    public static Set<Booking> readBookingListFromCSV(String filePath) throws ParseObjectException {
+        Set<Booking> bookingSet = new TreeSet<>(new BookingComparator());
+        List<String> stringList = readListStringFromCSV(filePath);
+        RoomServiceImpl roomService = new RoomServiceImpl();
+        HouseServiceImpl houseService = new HouseServiceImpl();
+        VillaServiceImpl villaService = new VillaServiceImpl();
+        String[] arr = null;
+        for (String string : stringList) {
+            arr = string.split(",");
+            String bookingCode = arr[0];
+            String startDate = arr[1];
+            String endDate = arr[2];
+            Customer customer;
+            String customerID = arr[3];
+            customer = CustomerServiceImpl.findCustomerById(customerID);
+            if (customer == null) {
+                throw new ParseObjectException("Customer Id Invalid");
+            }
+            Facility facility;
+            String facilityID = arr[4];
+            if (facilityID.startsWith("SVVL")) {
+                facility = villaService.findVillaById(facilityID);
+            } else if (facilityID.startsWith("SVRO")) {
+                facility = roomService.findRoomById(facilityID);
+            } else if (facilityID.startsWith("SVHO")) {
+                facility = houseService.findHouseById(facilityID);
+            } else {
+                facility = null;
+            }
+            if (facility == null) {
+                throw new ParseObjectException("Facility Id Invalid");
+            }
+            Booking booking = new Booking(bookingCode, startDate, endDate, customer, facility);
+            bookingSet.add(booking);
+        }
+        return bookingSet;
+    }
 
     public static List<Facility> readVillaListFromCSV(String filePath) {
         List<Facility> villaList = new ArrayList<>();
@@ -226,5 +249,66 @@ public class ReadAndWriteFile {
         }
         writeListStringToCSV(filePath, stringList);
     }
+
+    public static void writeListBookingToCSV(String filePath, Set<Booking> bookingList) {
+        List<String> stringList = new ArrayList<>();
+        for (Booking booking : bookingList) {
+            stringList.add(booking.getInfoToCSV());
+        }
+        writeListStringToCSV(filePath, stringList);
+    }
+
+    public static void writeListFacilityMaintainToCSV(String filePath, List<Contract> contractList) {
+        List<String> stringList = new ArrayList<>();
+        for (Contract contract : contractList) {
+            stringList.add(contract.getInfoToCSV());
+        }
+        writeListStringToCSV(filePath, stringList);
+    }
+
+    public static void writeFacilityMapToCSVFile(String filePath, Map<Facility, Integer> map) {
+        File file = new File(filePath);
+        FileWriter fileWriter;
+        BufferedWriter bufferedWriter;
+        try {
+            fileWriter = new FileWriter(file);
+            bufferedWriter = new BufferedWriter(fileWriter);
+            Set<Facility> facilities = map.keySet();
+            for (Facility facility : facilities) {
+                bufferedWriter.write(facility.getServiceId() + "," + map.get(facility));
+                bufferedWriter.newLine();
+            }
+            bufferedWriter.close();
+            fileWriter.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static Map<Facility, Integer> readFacilityMapFromCSVFile(String filePath) throws ParseObjectException {
+        Map<Facility, Integer> result = new LinkedHashMap<>();
+        List<String> stringList = readListStringFromCSV(filePath);
+        RoomServiceImpl roomService = new RoomServiceImpl();
+        HouseServiceImpl houseService = new HouseServiceImpl();
+        VillaServiceImpl villaService = new VillaServiceImpl();
+        for (String line : stringList) {
+            String[] field = line.split(",");
+            Facility facility;
+            String facilityID = field[0];
+            if (facilityID.startsWith("SVRO")) {
+                facility = roomService.findRoomById(facilityID);
+            } else if (facilityID.startsWith("SVHO")) {
+                facility = houseService.findHouseById(facilityID);
+            } else if (facilityID.startsWith("SVVL")) {
+                facility = villaService.findVillaById(facilityID);
+            } else {
+                throw new ParseObjectException("!!!CAN'T FIND FACILITY WITH THIS ID!!!");
+            }
+            int useTime = Integer.parseInt(field[1]);
+            result.put(facility, useTime);
+        }
+        return result;
+    }
+
 
 }

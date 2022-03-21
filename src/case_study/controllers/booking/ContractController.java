@@ -32,6 +32,11 @@ public class ContractController {
         while (!bookingQueue.isEmpty()) {
             Booking booking = bookingQueue.poll();
             if (booking.getFacility() instanceof Villa || booking.getFacility() instanceof House) {
+                for (Contract contract : contractList) {
+                    if (booking.getBookingCode().equals(contract.getBookingCode())) {
+                        System.out.println("Booking Code existed");
+                    }
+                }
                 Customer customer = booking.getCustomer();
                 System.out.println("Creating a contract for" + booking);
                 System.out.println("Creating a contract for" + customer);
@@ -79,11 +84,6 @@ public class ContractController {
         contactService.edit(index, contract);
     }
 
-    //    private int contractNumber;
-//    private String bookingCode;
-//    private double depositMoney;
-//    private double totalMoney;
-//    private String customerId;
     private void chooseEditInfo(Contract contract) {
         do {
             System.out.println("Enter information you want to Edit");

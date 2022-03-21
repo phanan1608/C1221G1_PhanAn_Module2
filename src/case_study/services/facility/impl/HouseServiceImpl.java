@@ -35,4 +35,13 @@ public class HouseServiceImpl implements IHouseService {
             System.out.println("List Empty");
         }
     }
+
+    public House findHouseById(String id) {
+        for (Facility house : houseList) {
+            if (house.getServiceId().equals(id)) {
+                return (House) house;
+            }
+        }
+        return null;
+    }
 }
